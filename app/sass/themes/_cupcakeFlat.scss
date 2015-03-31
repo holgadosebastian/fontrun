@@ -1,0 +1,170 @@
+body {
+	background-color: #FFF;
+}
+
+
+// Fonts
+
+h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 32px;
+	font-weight: 700;
+	color: darken($fillColor,35%);
+}
+
+// Layout
+
+.titleWrapper {
+	padding-top: 36px;
+	padding-bottom: 16px;
+	background: $fillColor;
+}
+
+.section {
+	padding-bottom: 20px;
+	.wrapper {
+		padding-top: 15px;
+	}
+}
+
+button {
+	padding: 5px 10px;
+	font-family: 'secondaryFont';
+	font-size: 15px;
+	color: #FFF;
+	background: $secondaryColor;
+	border: none;
+	border-radius: 5px;
+	&:hover {
+		background: lighten($secondaryColor,10%);
+	}
+}
+
+
+// fontsVersus
+
+#fontsVersus {
+	background-color: $fillColor;
+	.vsBig1, .vsBig2 {
+		font-weight: 700;
+	}
+	.vsBig1 {
+		color: $mainColor;
+	}
+	.vsBig2 {
+		color: $secondaryColor;
+	}
+	.vsTagInner {
+		display: inline-block;
+		padding-top: 9px;
+		width: 50px;
+		height: 50px;
+		color: #FFF;
+		background-color: rgba($darkGray, 0.3);
+		border-radius: 50%;
+	}
+}
+
+
+// Navbar
+
+#homeNav {
+	background: $fillColor;
+	.navbar-brand {
+		color: $darkGray;
+	}
+	li {
+		color: $darkGray;
+	}
+	li:hover {
+		color: #FFF;
+		background: darken($fillColor,30%);
+	}
+	li.activeNav {
+		color: #FFF;
+		background: darken($fillColor,30%);
+	}
+}
+
+// Header
+
+#header {
+	background-image: url('http://lorempixel.com/1920/800/food/');
+	h1 {
+		color: $mainColor;
+	}
+	p {
+		max-width: 50%;
+	}
+}
+
+
+// Skills
+
+#skills {
+	h3 {
+		color: $mainColor;
+	}
+}
+
+
+// About Us
+
+#aboutUs {
+	padding-top: 15px;
+	padding-bottom: 20px;
+	background-color: $mainColor;
+	.aboutUsBig {
+		color: #FFF;
+	}
+	h4 {
+		color: darken($mainColor, 30%);
+	}
+	h3 {
+		color: #FFF;
+	}
+	h6 {
+		margin-bottom: 2px;
+	}
+}
+
+// Blog
+
+#blogPosts {
+	h5 {
+		color: $mainColor;
+	}
+}
+
+
+// Contact
+
+#contact {
+	h3 {
+		color: $mainColor;
+	}
+	input, textarea {
+		padding-left: 10px;
+		font-size: 18px;
+		background-color: $fillColor;
+		border: none;
+		&:focus {
+			outline: none;
+		}
+	}
+	input {
+		height: 40px;
+	}
+	textarea {
+		padding-top: 10px;
+	}
+}
+
+// Footer
+
+footer {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	background-color: $fillColor;
+}

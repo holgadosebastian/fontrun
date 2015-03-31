@@ -1,0 +1,375 @@
+body {
+	background-color: #FFF;
+}
+
+// Fonts
+
+h1 {
+	color: $mainColor;
+	font-weight: 700;
+}
+
+h2 {
+	font-family: 'secondaryFont';
+	display: inline-block;
+	position: relative;
+	margin: 8px 0;
+	padding: 0;
+	font-size: 36px;
+	color: $darkGray;
+	font-weight: 700;
+}
+
+p {
+	font-weight: 400;
+	color: $darkGray;
+}
+
+#history p {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+}
+
+// Layout
+
+.titleWrapper {
+	margin-top: 30px;
+	.container {
+	}
+}
+
+// fontVersus
+
+#fontsVersus {
+	text-transform: uppercase;
+	.vsTag {
+		margin-bottom: 20px;		
+	}
+	.vsTagInner {
+		padding: 5px 15px;
+		border: 2px solid black;
+	}
+}
+
+// Navbar
+
+#homeNav {
+	background: $darkGray url("../images/retroTile.png") repeat scroll center;
+	.navbar-brand {
+		color: #FFF;
+		background-color: $mainColor;
+		&:hover {
+			background-color: lighten($mainColor, 10%);
+		}
+	}
+	li a {
+		color: #FFF;
+	}
+}
+
+// Header
+
+#header {
+	background: #1a1a1a url("http://lorempixel.com/g/1920/600/nature/") no-repeat fixed center;
+	background-size: cover;
+	border-bottom: 10px solid $fillColor;
+	h1 {
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	p {
+		margin-top: 20px;
+		margin-bottom: 15px;
+		max-width: 50%;
+		color: #FFF;
+	}
+	.headerOverlay {
+		background-color: rgba($fillColor, 0.3);
+	}
+}
+
+button {
+	padding: 6px 20px;
+	font-family: 'mainFont';
+	font-size: 18px;
+	color: $mainColor;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 2px solid $mainColor;
+	transition: all 0.4s ease-in-out;
+	&:hover {
+		color: #FFF;
+		background-color: $mainColor;
+	}
+}
+
+// Skills
+
+#skills {
+	.col-sm-4 {
+		margin-top: 15px;
+	}
+}
+
+.skillBox {
+	color: #FFF;
+	border: 5px solid $darkGray;
+	h3 {
+		text-align: center;
+		position: relative;
+		margin: 0;
+		padding: 50px 15px 15px;
+		color: $darkGray;
+		&:before {
+			position: absolute;
+			content: "";
+			margin-left: -15px;
+			width: 30px;
+			height: 4px;
+			left: 50%;
+			bottom: -4px;
+			background-color: $darkGray;
+		}
+	}
+	p {
+		margin: 0;
+		padding: 15px;
+		color: $fillColor;
+	}
+	button {
+		margin-bottom: 10px;
+		padding: 0;
+		font-family: 'secondaryFont';
+		font-size: 18px;
+		color: $darkGray;
+		font-weight: 300;
+		text-transform: lowercase;
+		background-color: transparent;
+		border: none;
+		&:hover {
+			color: lighten($secondaryColor, 10%);
+		}
+	}
+}
+
+
+// history
+
+#history {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	.titleIcon:before {
+		content: "34";
+	}
+	.wrapper {
+		padding-top: 20px;
+		background-color: $lightGray;
+	}
+	p {
+		padding: 15px;
+	}
+}
+
+
+// randomWords
+
+#randomWords {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	.titleIcon:before {
+		content: "56";
+	}
+	.wrapper {
+		.row {
+			margin-left: 0;
+			margin-right: 0;
+			padding-top: 30px;
+		}
+	}
+	p {
+		padding: 15px;
+	}
+}
+
+
+// aboutUs
+
+#aboutUs {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: $lightGray;
+	border-bottom: 5px solid $mainColor;
+	.container .wrapper{
+		overflow: hidden;
+		padding: 15px;	
+		border-radius: 7px;
+	}
+	.aboutUsTag {
+		margin-top: 80px;
+	}
+	.aboutUsBig {
+		font-family: 'mainFont';
+		font-size: 76px;
+		font-weight: 700;
+		color: $mainColor;
+		line-height: 0.8;
+	}
+	h3 {
+		margin-top: 5px;
+		margin-bottom: 25px;
+		padding-bottom: 5px;
+		font-family: 'mainFont';
+		font-size: 28px;
+		font-weight: 700;
+		color: $darkGray;
+		text-transform: uppercase;
+		border-bottom: 4px solid $darkGray;
+	}
+	h4 {
+		font-weight: 700;
+	}
+	h6 {
+		z-index: 10;
+		margin-bottom: 2px;
+		font-family: 'mainFont';		
+		font-weight: 700;
+		color: $mainColor;
+	}
+}
+
+
+// Prices
+
+#prices {
+	margin-bottom: 100px;
+	.titleIcon:before {
+		content: "78";
+	}
+	.row {
+		margin-right: 0;
+		margin-left: 0;
+		padding-top: 20px;
+	}
+	h3 {
+		font-weight: 700;
+		color: $mainColor;
+	}
+	h4 {
+		font-size: 18px;
+		font-weight: 300;
+		color: $fillColor;
+		text-transform: uppercase;
+	}	
+	.priceTag {
+		margin-bottom: 15px;
+		font-family: 'mainFont';
+		font-weight: 700;
+	}
+	ul {
+		text-align: left;
+		padding-left: 3%;
+		padding-right: 3%;
+		li {
+			font-family: 'mainFont';
+			font-size: 18px;
+			font-weight: 700;
+			color: $darkGray;
+			border-bottom: 4px solid $darkGray;
+		}
+	}
+	button {
+		margin-top: 20px;
+		margin-bottom: -40px;
+		padding: 0;
+		width: 100px;
+		height: 100px;
+		font-size: 14px;
+		color: #FFF;
+		border: 0;
+		border-radius: 50%;
+		background-color: $mainColor;
+		@include box-shadow(0 4px darken($mainColor, 10%));
+		&:hover {
+			background-color: lighten($mainColor, 10%);
+			@include box-shadow(0 4px $mainColor);
+		}
+	}
+}
+
+// Blog
+
+#blogPosts {
+	.titleIcon:before {
+		content: "09";
+	}
+	.row {
+		margin-right: 0;
+		margin-left: 0;
+		padding-top: 15px;
+	}
+	h3 {
+		color: $darkGray;
+	}
+	h5 {
+		font-weight: 700;
+		color: $mainColor;
+	}
+}
+
+
+// Contact
+
+#contact {
+	margin-bottom: 30px;
+	.titleIcon:before {
+		content: "10";
+	}
+	.row {
+		margin-right: 0;
+		margin-left: 0;
+		padding-top: 20px;
+	}
+	.textBox {
+		min-height: 203px;
+		padding: 15px;
+	}
+	h3 {
+		font-weight: 300;
+		color: $mainColor;
+	}
+	p {
+		color: $darkGray;
+	}
+	input, textarea {
+		padding: 12px;
+		font-family: 'secondaryFont';
+		font-size: 16px;
+		font-weight: 700;
+		color: $secondaryColor;
+		background-color: transparent;
+		border-bottom: 4px solid $secondaryColor;
+		@include transitionNormal(all);
+		&:hover, &:focus {
+			background-color: $secondaryColor;
+			color: #FFF;
+		}
+	}
+	textarea {
+		min-height: 140px;
+	}
+}
+
+// Footer
+
+footer {
+	padding-top: 10px;
+	background-color: $mainColor;
+	p {
+		color: #FFF;
+	}
+	.copyRight {
+		text-align: right;
+	}
+}

@@ -1,0 +1,178 @@
+body {
+	background-color: $lightGray;
+}
+
+// Fonts
+
+h1 {
+	color: $mainColor;
+	font-weight: 700;
+}
+
+h2 {
+	margin: 10px 0;
+	padding: 6px 15px;
+	color: $darkGray;
+	font-weight: 700;
+	border-top: 1px solid $darkGray;
+	border-bottom: 1px solid $darkGray;
+}
+
+#history p {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+}
+
+
+// fontVersus
+
+#fontsVersus {
+	.wrapper {
+		padding-right: 20px;
+		padding-left: 20px;
+		border-top: 1px solid $darkGray;
+		border-bottom: 1px solid $darkGray;
+	}
+}
+
+// Header
+
+#header {
+	text-align: center;
+	background: #1a1a1a url("http://lorempixel.com/g/1920/600/nature/") no-repeat fixed center;
+	background-size: cover;
+	h1 {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 300px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-weight: 300;
+		text-align: center;
+		text-transform: uppercase;
+		border-top: 1px solid #FFF;
+		border-bottom: 1px solid #FFF;
+	}
+	p {
+		margin-top: 30px;
+		margin-bottom: 20px;
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 500px;
+		color: #FFF;
+		text-align: center;
+	}
+}
+
+button {
+	padding: 6px 20px;
+	font-family: 'secondaryFont';
+	font-size: 18px;
+	color: #FFF;
+	font-weight: 300;
+	text-transform: uppercase;
+	background-color: $secondaryColor;
+	border: none;
+	&:hover {
+		background-color: lighten($secondaryColor, 10%);
+	}
+}
+
+// Skills
+
+#skills {
+	.col-sm-4 {
+		margin-top: 15px;
+	}
+}
+
+.skillBox {
+	color: #FFF;
+	border-radius: 7px;
+	text-align: center;
+	h3 {
+		margin: 0;
+		padding: 50px 15px 15px;
+		color: $secondaryColor;
+	}
+	.bottomWrapper {
+		border-top: 1px solid $fillColor;
+		border-bottom: 1px solid $fillColor;	
+	}
+	p {
+		margin: 0;
+		padding: 15px;
+		position: relative;
+		color: $fillColor;
+	}
+	button {
+		margin-bottom: 10px;
+		padding: 0;
+		font-family: 'secondaryFont';
+		font-size: 18px;
+		color: $darkGray;
+		font-weight: 300;
+		text-transform: lowercase;
+		background-color: transparent;
+		border: none;
+		&:hover {
+			color: lighten($secondaryColor, 10%);
+		}
+	}
+}
+
+
+// history
+
+#history {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	.wrapper {
+	}
+	h2 {
+		display: block;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	p {
+		padding: 15px;
+	}
+}
+
+
+// randomWords
+
+#randomWords {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	.wrapper {
+		.row {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	h2 {
+		display: block;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	p {
+		padding: 15px;
+	}
+}
+
+
+// Footer
+
+footer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: $mainColor;
+	p {
+		color: #FFF;
+	}
+	.copyRight {
+		text-align: right;
+	}
+}

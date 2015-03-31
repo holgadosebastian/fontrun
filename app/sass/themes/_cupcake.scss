@@ -1,0 +1,183 @@
+body {
+	background-color: #FFF;
+}
+
+
+// Fonts
+
+h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 32px;
+	font-weight: 700;
+	color: darken($fillColor,35%);
+	text-shadow: 0 1px 0 rgba(#FFF, 0.5), 0 -1px 0 rgba($darkGray, 0.7);
+}
+
+// Layout
+
+.titleWrapper {
+	padding-top: 36px;
+	padding-bottom: 16px;
+	background: linear-gradient(lighten($fillColor,10%) 1%, $fillColor 5%, darken($fillColor,20%));
+	box-shadow: 0 3px 3px $darkGray;
+}
+
+.section {
+	padding-bottom: 20px;
+	.wrapper {
+		padding-top: 15px;
+	}
+}
+
+button {
+	padding: 5px 10px;
+	font-family: 'secondaryFont';
+	font-size: 15px;
+	color: #FFF;
+	background: linear-gradient(lighten($secondaryColor,20%) 1%, $secondaryColor 5%, darken($secondaryColor,10%));
+	border: none;
+	border-radius: 5px;
+	&:hover {
+		background: linear-gradient(darken($secondaryColor,20%) 3%, $secondaryColor 50%, lighten($secondaryColor,10%) );
+	}
+}
+
+
+// fontsVersus
+
+#fontsVersus {
+	background-color: $fillColor;
+	.vsBig1, .vsBig2 {
+		font-weight: 700;
+		text-shadow: 0 2px 1px #FFF, 0 -2px 1px $darkGray;
+	}
+	.vsBig1 {
+		color: rgba($mainColor, 0.8);
+	}
+	.vsBig2 {
+		color: rgba($secondaryColor, 0.8);
+	}
+	.vsTagInner {
+		display: inline-block;
+		padding-top: 9px;
+		width: 50px;
+		height: 50px;
+		color: #FFF;
+		text-shadow: 0 2px 1px $darkGray;
+		background-color: rgba($darkGray, 0.3);
+		border-radius: 50%;
+		box-shadow: 0 2px 1px #FFF, 0 -2px 1px $darkGray;
+	}
+}
+
+
+// Navbar
+
+#homeNav {
+	background: linear-gradient($fillColor, darken($fillColor,20%));
+	.navbar-brand {
+		color: $darkGray;
+	}
+	li {
+		color: $darkGray;
+		border-left: 1px solid transparent;
+		border-right: 1px solid transparent;
+	}
+	li:hover {
+		color: #FFF;
+		text-shadow: 0 2px 1px $darkGray;
+		border-left: 1px solid rgba($darkGray, 0.3);
+		border-right: 1px solid rgba($darkGray, 0.3);
+		background: linear-gradient(darken($fillColor,40%) 5%,darken($fillColor,30%) 25% , darken($fillColor,25%) 75% ,darken($fillColor,20%) 95%) !important;
+	}
+	li.activeNav {
+		color: #FFF;
+		text-shadow: 0 2px 1px $darkGray;
+		border-left: 1px solid rgba($darkGray, 0.3);
+		border-right: 1px solid rgba($darkGray, 0.3);
+		background: linear-gradient(darken($fillColor,40%) 5%,darken($fillColor,30%) 25% , darken($fillColor,25%) 75% ,darken($fillColor,20%) 95%) !important;
+	}
+}
+
+// Header
+
+#header {
+	background-image: url('http://lorempixel.com/1920/800/food/');
+	h1 {
+		color: $mainColor;
+	}
+	p {
+		max-width: 50%;
+	}
+}
+
+
+// Skills
+
+#skills {
+	h3 {
+		color: $mainColor;
+	}
+}
+
+
+// About Us
+
+#aboutUs {
+	padding-top: 15px;
+	padding-bottom: 20px;
+	background-color: $mainColor;
+	.aboutUsBig {
+		color: #FFF;
+	}
+	h4 {
+		color: darken($mainColor, 30%);
+	}
+	h3 {
+		color: #FFF;
+	}
+	h6 {
+		margin-bottom: 2px;
+	}
+}
+
+// Blog
+
+#blogPosts {
+	h5 {
+		color: $mainColor;
+	}
+}
+
+
+// Contact
+
+#contact {
+	h3 {
+		color: $mainColor;
+	}
+	input, textarea {
+		padding-left: 10px;
+		font-size: 18px;
+		background-color: $fillColor;
+		border: none;
+		&:focus {
+			outline: none;
+		}
+	}
+	input {
+		height: 40px;
+	}
+	textarea {
+		padding-top: 10px;
+	}
+}
+
+// Footer
+
+footer {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	background-color: $fillColor;
+}

@@ -1,0 +1,280 @@
+body {
+	background-color: $contrastColorLight;
+}
+
+// Fonts
+
+h1 {
+	color: $mainColor;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+h2 {
+	display: inline-block;
+	margin: 40px 0 10px;
+	padding: 6px 15px 4px;
+	color: #FFF;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	background-color: $fillColor;
+	border-left: 6px solid $mainColor;
+}
+
+// Layout
+
+button {
+	padding: 6px 20px;
+	font-family: 'secondaryFont';
+	font-size: 18px;
+	color: $contrastColorLight;
+	font-weight: 300;
+	text-transform: capitalize;
+	background-color: $secondaryColor;
+	border: none;
+	&:hover {
+		background-color: lighten($secondaryColor, 10%);
+	}
+}
+
+// fontVersus
+
+#fontsVersus {
+	text-transform: uppercase;
+	.vsTag {
+		margin-bottom: 20px;		
+	}
+	.vsTagInner {
+		padding: 5px 15px;
+		color: $contrastColorLight;
+		background-color: $fillColor;
+	}
+	.vsBig1, .vsBig2 {
+		padding-right: 20px;
+		padding-left: 20px;
+		color: $contrastColorLight;
+		font-weight: 300;
+	}
+	.vsBig1 {
+		background-color: $mainColor;
+		border-left: 15px solid $fillColor;
+	}
+	.vsBig2 {
+		background-color: $secondaryColor;
+		border-left: 15px solid $fillColor;
+	}
+}
+
+// Nav
+
+#homeNav {
+	background-color: $fillColor;
+	.navbar-brand {
+		font-family: 'mainFont';
+		font-size: 24px;
+		font-weight: 300;
+		color: $contrastColorLight;
+	}
+	ul {
+		li {
+			a {
+				font-weight: 300;
+				color: $contrastColorLight;
+				text-transform: uppercase;
+				@include transitionNormal();
+				&:hover {
+					padding-bottom: 10px;
+					border-bottom: 5px solid $mainColor;
+				}
+			}
+		}
+	}
+}
+
+// Header
+
+#header {
+	background: #1a1a1a url("../images/escheresque_ste.png") repeat fixed center;
+	.headerTag {
+		.headerTagInner {
+			padding: 15px;
+			background-color: $secondaryColor;
+			border-left: 8px solid $mainColor;
+		}
+		h1, h3 {
+			color: $contrastColorLight;
+			text-align: left;
+		}
+		h1 {
+			margin-bottom: 10px;
+			color: #FFF;
+		}
+		h3 {
+			text-transform: uppercase;
+			letter-spacing: 3px;
+		}
+	}
+	p {
+		color: $contrastColorLight;
+	}
+}
+
+// Skills
+
+.skillBox {
+	background-color: $fillColor;
+	color: $contrastColorLight;
+	h3 {
+		margin-right: 15px;
+		margin-left: 15px;
+		padding: 30px 0 10px;
+		border-bottom: 1px solid $mainColor;
+	}
+	p {
+		padding: 5px 15px;
+	}
+	button {
+		width: 100%;
+	}
+}
+
+// About Us
+
+#aboutUs {
+	margin-bottom: 15px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-color: $darkGray;
+	.aboutUsTag {
+		margin-top: 80px;
+	}
+	.aboutUsBig {
+		font-family: 'mainFont';
+		font-size: 76px;
+		font-weight: 300;
+		color: $mainColor;
+		line-height: 0.9;
+		text-transform: uppercase;
+	}
+	.aboutUsPerson {
+		margin-bottom: 12px;
+		padding: 5px 10px;
+		background-color: $lightGray;
+		border-left: 5px solid $mainColor;
+	}
+	h3 {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-family: 'mainFont';
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $darkGray;
+	}
+	h4 {
+		color: $contrastColorLight;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	h6 {
+		margin-bottom: 2px;
+		font-family: 'secondaryFont';		
+		font-weight: 300;
+		color: $mainColor;
+		text-transform: uppercase;
+	}
+}
+
+
+// Prices
+
+#prices {
+	.pricesBox {
+		padding-top: 5px;
+		background-color: $fillColor;
+	}
+	h3 {
+		font-weight: 300;
+		color: $lightGray;
+		text-transform: uppercase;
+	}
+	h4 {
+		font-weight: 700;
+		color: $mainColor;
+		text-transform: uppercase;
+	}	
+	.priceTag {
+		margin-bottom: 15px;
+		font-family: 'mainFont';
+		font-weight: 700;
+	}
+	ul {
+		margin-bottom: 20px;
+		padding-right: 15px;
+		padding-left: 15px;
+		li {
+			margin: 0;
+			padding: 8px 12px 4px;
+			font-family: 'mainFont';
+			font-size: 18px;
+			font-weight: 300;
+			color: $contrastColorLight;
+			text-transform: uppercase;
+			border-bottom: 1px solid $mainColor;
+			&:last-child {
+				border-bottom: none !important;
+			}
+		}
+	}
+	button {
+		width: 100%;
+	}
+}
+
+// Blog
+
+#blogPosts {
+	h3 {
+		font-weight: 300;
+		color: $darkGray;
+	}
+	h5 {
+		font-weight: 300;
+		color: $mainColor;
+		text-transform: uppercase;
+	}
+}
+
+// Contact
+
+#contact {
+	.textBox {
+		min-height: 203px;
+	}
+	h3 {
+		font-weight: 300;
+		color: $mainColor;
+	}
+	p {
+		color: $darkGray;
+	}
+	input, textarea {
+		padding: 10px;
+		font-family: 'secondaryFont';
+		font-size: 16px;
+		font-weight: 300;
+		color: #FFF;
+		background-color: $fillColor;
+		@include transitionSlow(border);
+		&:hover, &:focus {
+			outline: none;
+			-webkit-appearance: none;
+		}
+	}
+	textarea {
+		min-height: 140px;
+	}
+}
+
+
+// Footer
