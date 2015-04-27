@@ -76,6 +76,12 @@ h1, h2, h3, h4, h5 {
 			font-weight: 300;
 			text-transform: uppercase;
 		}
+		.fr-font-select-main h2 {
+			font-family: 'mainFont';
+		}
+		.fr-font-select-secondary h2 {
+			font-family: 'secondaryFont';
+		}
 		li {
 			padding: 15px;
 			background-color: darken($fr-secondary, 5%);

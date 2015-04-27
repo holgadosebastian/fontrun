@@ -9594,57 +9594,65 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
 }
 /* line 79, ../sass/app/_fontrun.scss */
+#fr-menu .fr-font-select .fr-font-select-main h2 {
+  font-family: 'mainFont';
+}
+/* line 82, ../sass/app/_fontrun.scss */
+#fr-menu .fr-font-select .fr-font-select-secondary h2 {
+  font-family: 'secondaryFont';
+}
+/* line 85, ../sass/app/_fontrun.scss */
 #fr-menu .fr-font-select li {
   padding: 15px;
   background-color: #241a24;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-/* line 84, ../sass/app/_fontrun.scss */
+/* line 90, ../sass/app/_fontrun.scss */
 #fr-menu .fr-font-select li:hover {
   color: #db43bd;
 }
-/* line 87, ../sass/app/_fontrun.scss */
+/* line 93, ../sass/app/_fontrun.scss */
 #fr-menu .fr-font-select li:first-child {
   border-bottom: 2px solid #332532;
 }
-/* line 90, ../sass/app/_fontrun.scss */
+/* line 96, ../sass/app/_fontrun.scss */
 #fr-menu .fr-font-select li h2 {
   margin-bottom: 0;
 }
-/* line 93, ../sass/app/_fontrun.scss */
+/* line 99, ../sass/app/_fontrun.scss */
 #fr-menu .fr-font-select li h4 {
   margin-bottom: 3px;
 }
 
-/* line 102, ../sass/app/_fontrun.scss */
+/* line 108, ../sass/app/_fontrun.scss */
 #fr-menu .fr-color-select h1.fr-titles {
   padding-left: 15px;
   font-weight: 300;
   text-transform: uppercase;
 }
-/* line 107, ../sass/app/_fontrun.scss */
+/* line 113, ../sass/app/_fontrun.scss */
 #fr-menu .fr-color-select ul {
   padding-right: 15px;
   padding-left: 15px;
 }
-/* line 111, ../sass/app/_fontrun.scss */
+/* line 117, ../sass/app/_fontrun.scss */
 #fr-menu .fr-color-select li {
   margin-bottom: 10px;
   border: 1px solid #8c6589;
   border-radius: 5px;
   cursor: pointer;
 }
-/* line 118, ../sass/app/_fontrun.scss */
+/* line 124, ../sass/app/_fontrun.scss */
 #fr-menu .fr-color-select .fr-main-colors:before, #fr-menu .fr-color-select .fr-main-colors:after {
   display: table;
   content: "";
 }
-/* line 122, ../sass/app/_fontrun.scss */
+/* line 128, ../sass/app/_fontrun.scss */
 #fr-menu .fr-color-select .fr-main-colors:after {
   clear: both;
 }
-/* line 125, ../sass/app/_fontrun.scss */
+/* line 131, ../sass/app/_fontrun.scss */
 #fr-menu .fr-color-select .fr-main-colors div {
   overflow: hidden;
   *zoom: 1;
@@ -9652,16 +9660,16 @@ h1, h2, h3, h4, h5 {
   width: 33.33333%;
   height: 30px;
 }
-/* line 133, ../sass/app/_fontrun.scss */
+/* line 139, ../sass/app/_fontrun.scss */
 #fr-menu .fr-color-select .fr-gray-colors:before, #fr-menu .fr-color-select .fr-gray-colors:after {
   display: table;
   content: "";
 }
-/* line 137, ../sass/app/_fontrun.scss */
+/* line 143, ../sass/app/_fontrun.scss */
 #fr-menu .fr-color-select .fr-gray-colors:after {
   clear: both;
 }
-/* line 140, ../sass/app/_fontrun.scss */
+/* line 146, ../sass/app/_fontrun.scss */
 #fr-menu .fr-color-select .fr-gray-colors div {
   overflow: hidden;
   *zoom: 1;
