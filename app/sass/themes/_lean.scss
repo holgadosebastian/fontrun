@@ -1,272 +1,280 @@
-body {
+.site-wrapper {
 	background-color: $lightGray;
 }
 
 // Fonts
 
-h1 {
-	color: $mainColor;
-	font-weight: 700;
-}
-
-h2 {
-	position: relative;
-	margin: 10px 0;
-	padding: 25px 0;
-	font-size: 36px;
-	color: #FFF;
-	font-weight: 700;
-	text-align: center;
-	text-transform: uppercase;
-	&:before {
-		position: absolute;
-		content: "";
-		top: -1px;
-		left: 50%;
-		margin-left: -38px;
-		width: 76px;
-		height: 1px;
-		background-color: #FFF;
+.site-wrapper {
+	h1 {
+		color: $mainColor;
+		font-weight: 700;
 	}
-	&:after {
-		position: absolute;
-		content: "";
-		bottom: -1px;
-		left: 50%;
-		margin-left: -38px;
-		width: 76px;
-		height: 1px;
-		background-color: #FFF;
+
+	h2 {
+		position: relative;
+		margin: 10px 0;
+		padding: 25px 0;
+		font-size: 36px;
+		color: #FFF;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+		&:before {
+			position: absolute;
+			content: "";
+			top: -1px;
+			left: 50%;
+			margin-left: -38px;
+			width: 76px;
+			height: 1px;
+			background-color: #FFF;
+		}
+		&:after {
+			position: absolute;
+			content: "";
+			bottom: -1px;
+			left: 50%;
+			margin-left: -38px;
+			width: 76px;
+			height: 1px;
+			background-color: #FFF;
+		}
+	}
+
+	#history p {
+	  -webkit-column-count: 4;
+	  -moz-column-count: 4;
+	  column-count: 4;
 	}
 }
-
-#history p {
-  -webkit-column-count: 4;
-  -moz-column-count: 4;
-  column-count: 4;
-}
-
 // Layout
 
-.titleWrapper {
-	position: relative;
-	padding-top: 120px;
-	padding-bottom: 130px;
-	background: #1a1a1a url("http://lorempixel.com/g/1920/600/") no-repeat scroll center;
-	&:before {
-		position: absolute;
-		content: "";
-		margin-top: -120px;
-		width: 100%;
-		height: 100%;
-		background-color: rgba($darkGray, 0.4);
+.site-wrapper {
+	.titleWrapper {
+		position: relative;
+		padding-top: 120px;
+		padding-bottom: 130px;
+		background: #1a1a1a url("http://lorempixel.com/g/1920/600/") no-repeat scroll center;
+		&:before {
+			position: absolute;
+			content: "";
+			margin-top: -120px;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($darkGray, 0.4);
+		}
 	}
 }
-
 // fontVersus
 
-#fontsVersus {
-	text-transform: uppercase;
-	.vsTag {
-		margin-bottom: 20px;		
-	}
-	.vsTagInner {
-		padding: 5px 15px;
-		border: 2px solid black;
+.site-wrapper {
+	#fontsVersus {
+		text-transform: uppercase;
+		.vsTag {
+			margin-bottom: 20px;		
+		}
+		.vsTagInner {
+			padding: 5px 15px;
+			border: 2px solid black;
+		}
 	}
 }
-
 // Header
-
-#header {
-	background: #1a1a1a url("http://lorempixel.com/g/1920/600/nature/") no-repeat fixed center;
-	background-size: cover;
-	border-bottom: 10px solid $fillColor;
-	.headerTag {
-		.headerTagInner {
-			padding: 20px;
-			border: 3px solid $mainColor;
-			@include transitionSlow();
-			&:hover {
-				background-color: $mainColor;
-				h1, h3 {
-					color: #FFF;
+.site-wrapper {
+	#header {
+		background: #1a1a1a url("http://lorempixel.com/g/1920/600/nature/") no-repeat fixed center;
+		background-size: cover;
+		border-bottom: 10px solid $fillColor;
+		.headerTag {
+			.headerTagInner {
+				padding: 20px;
+				border: 3px solid $mainColor;
+				@include transitionSlow();
+				&:hover {
+					background-color: $mainColor;
+					h1, h3 {
+						color: #FFF;
+					}
+					h1 {
+						border-bottom: 1px solid #FFF;
+					}
 				}
-				h1 {
-					border-bottom: 1px solid #FFF;
-				}
+			}
+			h1 {
+				padding-bottom: 5px;
+				border-bottom: 1px solid $mainColor;
+				@include transitionSlow();
+			}
+			h3 {
+				color: $mainColor;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				@include transitionSlow();
 			}
 		}
 		h1 {
-			padding-bottom: 5px;
-			border-bottom: 1px solid $mainColor;
-			@include transitionSlow();
-		}
-		h3 {
-			color: $mainColor;
+			font-weight: 700;
 			text-transform: uppercase;
-			letter-spacing: 3px;
-			@include transitionSlow();
+		}
+		p {
+			margin-top: 20px;
+			margin-bottom: 15px;
+			max-width: 50%;
+			color: #FFF;
+		}
+		.headerOverlay {
+			background-color: rgba($fillColor, 0.3);
 		}
 	}
-	h1 {
+
+	button {
+		padding: 6px 20px;
+		font-family: 'secondaryFont';
+		font-size: 18px;
+		color: $secondaryColor;
 		font-weight: 700;
 		text-transform: uppercase;
-	}
-	p {
-		margin-top: 20px;
-		margin-bottom: 15px;
-		max-width: 50%;
-		color: #FFF;
-	}
-	.headerOverlay {
-		background-color: rgba($fillColor, 0.3);
-	}
-}
-
-button {
-	padding: 6px 20px;
-	font-family: 'secondaryFont';
-	font-size: 18px;
-	color: $secondaryColor;
-	font-weight: 700;
-	text-transform: uppercase;
-	background-color: transparent;
-	border: 2px solid $secondaryColor;
-	transition: all 0.4s ease-in-out;
-	&:hover {
-		color: #FFF;
-		background-color: $secondaryColor;
+		background-color: transparent;
+		border: 2px solid $secondaryColor;
+		transition: all 0.4s ease-in-out;
+		&:hover {
+			color: #FFF;
+			background-color: $secondaryColor;
+		}
 	}
 }
 
 // Skills
 
-#skills {
-	.col-sm-4 {
-		margin-top: 15px;
+.site-wrapper {
+	#skills {
+		.col-sm-4 {
+			margin-top: 15px;
+		}
 	}
-}
 
-.skillBox {
-	color: #FFF;
-	border-radius: 7px;
-	text-align: center;
-	h3 {
-		margin: 0;
-		padding: 50px 15px 15px;
-		color: $secondaryColor;
-	}
-	.bottomWrapper {
-		border-top: 1px solid $fillColor;
-		border-bottom: 1px solid $fillColor;	
-	}
-	p {
-		margin: 0;
-		padding: 15px;
-		position: relative;
-		color: $fillColor;
-	}
-	button {
-		margin-bottom: 10px;
-		padding: 0;
-		font-family: 'secondaryFont';
-		font-size: 18px;
-		color: $darkGray;
-		font-weight: 300;
-		text-transform: lowercase;
-		background-color: transparent;
-		border: none;
-		&:hover {
-			color: lighten($secondaryColor, 10%);
+	.skillBox {
+		color: #FFF;
+		border-radius: 7px;
+		text-align: center;
+		h3 {
+			margin: 0;
+			padding: 50px 15px 15px;
+			color: $secondaryColor;
+		}
+		.bottomWrapper {
+			border-top: 1px solid $fillColor;
+			border-bottom: 1px solid $fillColor;	
+		}
+		p {
+			margin: 0;
+			padding: 15px;
+			position: relative;
+			color: $fillColor;
+		}
+		button {
+			margin-bottom: 10px;
+			padding: 0;
+			font-family: 'secondaryFont';
+			font-size: 18px;
+			color: $darkGray;
+			font-weight: 300;
+			text-transform: lowercase;
+			background-color: transparent;
+			border: none;
+			&:hover {
+				color: lighten($secondaryColor, 10%);
+			}
 		}
 	}
 }
-
 
 // history
 
-#history {
-	margin-top: 15px;
-	margin-bottom: 15px;
-	.wrapper {
-	}
-	h2 {
-		display: block;
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-	p {
-		padding: 15px;
+.site-wrapper {
+	#history {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		h2 {
+			display: block;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		p {
+			padding: 15px;
+		}
 	}
 }
-
 
 // randomWords
 
-#randomWords {
-	margin-top: 15px;
-	margin-bottom: 15px;
-	.wrapper {
-		.row {
-			margin-left: 0;
-			margin-right: 0;
+.site-wrapper {
+	#randomWords {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		.wrapper {
+			.row {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+		h2 {
+			display: block;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		p {
+			padding: 15px;
 		}
 	}
-	h2 {
-		display: block;
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-	p {
-		padding: 15px;
-	}
 }
-
 
 // aboutUs
 
-#aboutUs {
-	margin-top: 15px;
-	padding-top: 20px;
-	padding-bottom: 30px;
-	background-color: $fillColor;
-	.aboutUsTag {
-		margin-top: 80px;
-	}
-	.aboutUsBig {
-		font-family: 'mainFont';
-		font-size: 76px;
-		font-weight: 700;
-		color: $mainColor;
-		line-height: 0.8;
-	}
-	h3 {
-		margin-top: 5px;
-		margin-bottom: 25px;
-		font-family: 'mainFont';
-		font-weight: 700;
-		color: $contrastColorLight;
-	}
-	h5 {
-		margin-bottom: 2px;
-		font-family: 'secondaryFont';		
-		font-weight: 300;
-		color: $contrastColorLight;
+.site-wrapper {
+	#aboutUs {
+		margin-top: 15px;
+		padding-top: 20px;
+		padding-bottom: 30px;
+		background-color: $fillColor;
+		.aboutUsTag {
+			margin-top: 80px;
+		}
+		.aboutUsBig {
+			font-family: 'mainFont';
+			font-size: 76px;
+			font-weight: 700;
+			color: $mainColor;
+			line-height: 0.8;
+		}
+		h3 {
+			margin-top: 5px;
+			margin-bottom: 25px;
+			font-family: 'mainFont';
+			font-weight: 700;
+			color: $contrastColorLight;
+		}
+		h5 {
+			margin-bottom: 2px;
+			font-family: 'secondaryFont';		
+			font-weight: 300;
+			color: $contrastColorLight;
+		}
 	}
 }
 
-
 // Footer
 
-footer {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: $mainColor;
-	p {
-		color: #FFF;
-	}
-	.copyRight {
-		text-align: right;
+.site-wrapper {
+	footer {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: $mainColor;
+		p {
+			color: #FFF;
+		}
+		.copyRight {
+			text-align: right;
+		}
 	}
 }

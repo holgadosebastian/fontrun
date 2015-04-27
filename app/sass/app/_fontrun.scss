@@ -1,0 +1,148 @@
+$fr-main: #db43bd;
+$fr-secondary: #332532;
+
+// ### Fonts ###
+
+@font-face {
+  font-family: 'aileron';
+  src: url(../fonts/Aileron-Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'aileron';
+  src: url(../fonts/Aileron-Light.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'aileron';
+  src: url(../fonts/Aileron-Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5 {
+	margin-top: 0;
+	font-family: 'aileron', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: inherit;
+}
+
+#fr-menu {
+	font-size: 12px;
+	color: #FFF;
+	h1 {
+		font-size: 2.2em;
+	}
+	h2 {
+		font-size: 1.9em;
+	}
+	h3 {
+		font-size: 1.5em;
+	}
+	h4 {
+		font-size: 1.3em;
+	}
+	p {
+		font-size: 1.1em;
+	}
+}
+
+#fr-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 360px;
+	min-height: 100vh;
+	background-color: $fr-secondary;
+	z-index: 100;
+	.fr-brand {
+		padding: 50px 20px 30px 20px;
+	}
+	ul  {
+		padding-left: 0;	
+		li {
+			list-style: none;
+		}
+	} 
+}
+
+#fr-menu {
+	.fr-font-select {
+		h1.fr-titles {
+			padding-left: 15px;
+			font-weight: 300;
+			text-transform: uppercase;
+		}
+		li {
+			padding: 15px;
+			background-color: darken($fr-secondary, 5%);
+			cursor: pointer;
+			transition: all 0.3s ease;
+			&:hover {
+				color: $fr-main;
+			}
+			&:first-child {
+				border-bottom: 2px solid $fr-secondary;
+			}
+			h2 {
+				margin-bottom: 0;
+			}
+			h4 {
+				margin-bottom: 3px;
+			}
+		}
+	}
+}
+
+#fr-menu {
+	.fr-color-select {
+		h1.fr-titles {
+			padding-left: 15px;
+			font-weight: 300;
+			text-transform: uppercase;
+		}
+		ul {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+		li {
+			margin-bottom: 10px;
+			border: 1px solid lighten($fr-secondary, 30%);
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.fr-main-colors {
+			&:before, &:after {
+				display: table;
+				content: "";
+			}
+			&:after {
+				clear: both;
+			}
+			div {
+				@include clearfix();
+				float: left;
+				width: 33.33333%;
+				height: 30px;
+			}
+		}
+		.fr-gray-colors {
+			&:before, &:after {
+				display: table;
+				content: "";
+			}
+			&:after {
+				clear: both;
+			}
+			div {
+				@include clearfix();
+				float: left;
+				width: 50%;
+				height: 30px;
+			}
+		}
+	}
+}
