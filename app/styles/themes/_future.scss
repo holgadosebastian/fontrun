@@ -2,6 +2,7 @@ body {
 	background-color: $contrastColorLight;
 }
 
+.site-wrapper {
 // Fonts
 
 h1 {
@@ -43,7 +44,7 @@ button {
 #fontsVersus {
 	text-transform: uppercase;
 	.vsTag {
-		margin-bottom: 20px;		
+		margin-bottom: 20px;
 	}
 	.vsTagInner {
 		padding: 5px 15px;
@@ -178,7 +179,7 @@ button {
 	}
 	h6 {
 		margin-bottom: 2px;
-		font-family: 'secondaryFont';		
+		font-family: 'secondaryFont';
 		font-weight: 300;
 		color: $mainColor;
 		text-transform: uppercase;
@@ -202,7 +203,7 @@ button {
 		font-weight: 700;
 		color: $mainColor;
 		text-transform: uppercase;
-	}	
+	}
 	.priceTag {
 		margin-bottom: 15px;
 		font-family: 'mainFont';
@@ -274,6 +275,8 @@ button {
 	textarea {
 		min-height: 140px;
 	}
+}
+
 }
 
 

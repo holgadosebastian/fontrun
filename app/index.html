@@ -1,12 +1,9 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html ng-app="fontRunApp">
 <head>
   <meta charset="utf-8">
-  <title>web</title>
-  <meta name="description" content="">
+  <title>fontRun</title>
+  <meta name="description" content="Test your color palette and fonts with this app">
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" href="/favicon.ico">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -18,485 +15,68 @@
   <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
-  <!-- build:js scripts/vendor/modernizr.js -->
-  <script src="bower_components/modernizr/modernizr.js"></script>
-  <!-- endbuild -->
 
+  <style>
+    h2 {
+      font-family: {{ fonts.primary }} !important;
+    }
+
+    h1,h4 {
+      color: #{{ colors.primary}} !important;
+    }
+
+    h2,h5 {
+      color: #{{ colors.secondary}} !important;
+    }
+
+    h3,h6 {
+      color: #{{ colors.tertiary}} !important;
+    }
+
+    p {
+      color: #{{ colors.primary}} !important;
+    }
+  </style>
 </head>
-<body>
-  
-  <nav id="fr-menu">
-    <div class="fr-brand">
-      <img src="fontrun-logo.png" alt="fontrun">
-    </div>
+<body ng-controller="MainCtrl">
 
-    <div class="fr-font-select">
-      <h1 class="fr-titles">Selected fonts</h1>
-      <ul>
-        <li class="fr-font-select-main">
-          <h4 class="fr-titles">MAIN FONT</h4>
-          <h2 class="fr-titles">Akzidenz Grotesk</h2>
-        </li>
-        <li class="fr-font-select-secondary">
-          <h4 class="fr-titles">SECONDARY FONT</h4>
-          <h2 class="fr-titles">Futura</h2>
-        </li>
-      </ul>
-    </div>
-    
-    <div class="fr-color-select">
-      <h1 class="fr-titles">Color pallette</h1>
-      <ul>
-        <li>
-          <div class="fr-main-colors">
-            <div class="fr-color-1"></div>
-            <div class="fr-color-2"></div>
-            <div class="fr-color-3"></div>
-          </div>
-          <div class="fr-gray-colors">
-            <div class="fr-gray-1"></div>
-            <div class="fr-gray-2"></div>
-          </div>
-        </li>
-        <li>
-          <div class="fr-main-colors">
-            <div class="fr-color-1"></div>
-            <div class="fr-color-2"></div>
-            <div class="fr-color-3"></div>
-          </div>
-          <div class="fr-gray-colors">
-            <div class="fr-gray-1"></div>
-            <div class="fr-gray-2"></div>
-          </div>
-        </li>
-        <li>
-          <div class="fr-main-colors">
-            <div class="fr-color-1"></div>
-            <div class="fr-color-2"></div>
-            <div class="fr-color-3"></div>
-          </div>
-          <div class="fr-gray-colors">
-            <div class="fr-gray-1"></div>
-            <div class="fr-gray-2"></div>
-          </div>
-        </li>
-        <li>
-          <div class="fr-main-colors">
-            <div class="fr-color-1"></div>
-            <div class="fr-color-2"></div>
-            <div class="fr-color-3"></div>
-          </div>
-          <div class="fr-gray-colors">
-            <div class="fr-gray-1"></div>
-            <div class="fr-gray-2"></div>
-          </div>
-        </li>
-        <li>
-          <div class="fr-main-colors">
-            <div class="fr-color-1"></div>
-            <div class="fr-color-2"></div>
-            <div class="fr-color-3"></div>
-          </div>
-          <div class="fr-gray-colors">
-            <div class="fr-gray-1"></div>
-            <div class="fr-gray-2"></div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <ng-include src="'partials/side-menu.html'"></ng-include>
 
-<div class="site-wrapper">
+<main class="site-wrapper">
 
-  <div id="fontsVersus">
-    <div class="wrapper">
-      <span class="vsBig1">Juliet</span>
-      <span class="vsTag"><span class="vsTagInner">vs</span></span>
-      <span class="vsBig2">Romeo</span>
-    </div>
-  </div>
-  
-  <nav id="homeNav" class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#homeNav">fontRun</a>
-      </div>
+  <ng-include src="'partials/font-versus.html'"></ng-include>
+  <ng-include src="'partials/home-nav.html'"></ng-include>
+  <ng-include src="'partials/home-header.html'"></ng-include>
+  <ng-include src="'partials/home-skill.html'"></ng-include>
+  <ng-include src="'partials/home-history.html'"></ng-include>
+  <ng-include src="'partials/home-words.html'"></ng-include>
+  <ng-include src="'partials/home-about.html'"></ng-include>
+  <ng-include src="'partials/home-prices.html'"></ng-include>
+  <ng-include src="'partials/home-blog.html'"></ng-include>
+  <ng-include src="'partials/home-contact.html'"></ng-include>
+  <ng-include src="'partials/home-footer.html'"></ng-include>
 
-      <ul class="pull-right">
-        <li class="activeNav"><a href="#header">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#history">History</a></li> 
-        <li><a href="#randomWords">Words</a></li>
-        <li><a href="#blogPosts">Blog</a></li> 
-        <li><a href="#contact">Contact</a></li>  
-      </ul>
-
-    </div>
-  </nav>
-
-  <div class="contentWrapper" id="header">
-    <div class="headerOverlay"></div>
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-12">
-          <div class="headerTag">
-            <div class="headerTagInner">
-              <h1>Our company</h1>
-              <h3>Bringing you the best</h3>
-            </div>
-          </div>
-          <h1 class="headerTitle">This is some text</h1>
-          <p class="headerP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, libero, unde, natus, facilis neque deserunt adipisci optio officiis iste quam eum nulla nihil consequuntur aut.</p>
-          <button class="headerButton">Go for it</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="skills" class="section">
-    <div class="titleWrapper">
-      <div class="container">
-        <div class="titleIcon"></div>
-        <h2 class="skillsTitle">Our skills</h2>
-      </div>
-    </div>
-    <div class="container">  
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="skillBox">
-            <h3 class="skillsSub">First skill</h3>
-            <div class="bottomWrapper">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur incidunt sapiente ipsum modi ex quod.</p>
-              <button class="skillsButton">View more</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="skillBox">
-            <h3 class="skillsSub">Second skill</h3>
-            <div class="bottomWrapper">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur incidunt sapiente ipsum modi ex quod.</p>
-              <button class="skillsButton">View more</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="skillBox">
-            <h3 class="skillsSub">Third skill</h3>
-            <div class="bottomWrapper">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur incidunt sapiente ipsum modi ex quod.</p>
-              <button class="skillsButton">View more</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div id="history" class="section">
-    <div class="titleWrapper">
-      <div class="container">
-        <div class="titleIcon"></div>
-        <h2 class="historyTitle">Our history</h2>
-      </div>
-    </div>
-    <div class="container">
-      <div class="wrapper">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, corporis, laboriosam doloremque magni qui ipsum omnis possimus obcaecati quisquam autem odio iste sint at porro fugiat tenetur architecto odit quasi sed fugit consequatur eum explicabo libero nihil labore voluptatibus pariatur ex molestiae vero ratione iusto illo asperiores mollitia neque alias quia tempore enim a adipisci illum. Ad, eveniet, autem nam vitae quos sunt maxime repudiandae molestiae enim itaque doloribus reprehenderit expedita error rem sequi accusamus accusantium fuga officiis veritatis quod tenetur quae asperiores facilis totam ex aliquid cumque! Neque, alias, ad, numquam expedita pariatur vel eaque aspernatur tenetur rem velit fugiat cumque suscipit delectus ducimus blanditiis reprehenderit ex molestias quo laboriosam consequatur quas facilis nemo id minima consectetur maiores ullam harum! Porro culpa voluptatibus pariatur placeat modi saepe numquam neque laudantium. Laudantium, dignissimos, molestiae, quam architecto soluta ipsam sequi ex quos aspernatur explicabo consequuntur fuga aliquam nisi. Officiis, id, tempora!</p>
-      </div>
-    </div>
-  </div>
-  
-  <div id="randomWords" class="section">
-    <div class="titleWrapper">
-      <div class="container">
-        <div class="titleIcon"></div>
-        <h2 class="wordsTitle">Some random words</h2>
-      </div>
-    </div>
-    <div class="container">
-      <div class="wrapper">
-        <div class="row">
-          <div class="col-md-2 randomWordsColumn1">
-            <h4>Phenomenon</h4>
-            <h4>Galaxy</h4>
-            <h4>Technique</h4>
-            <h4>History</h4>
-            <h4>Nomenclature</h4>
-          </div>
-          <div class="col-md-2 randomWordsColumn2">
-            <h4>Spectrographic</h4>
-            <h4>Western</h4>
-            <h4>Dark matter</h4>
-            <h4>Evolution</h4>
-            <h4>Speakers</h4>
-          </div>
-          <div class="col-md-2 randomWordsColumn3">
-            <h4>Classical</h4>
-            <h4>Thermonuclear</h4>
-            <h4>Random</h4>
-            <h4>Astronomy</h4>
-            <h4>Conglomerate</h4>
-          </div>
-          <div class="col-md-2 randomWordsColumn4">
-            <h4>Purpose</h4>
-            <h4>Breakthroughs</h4>
-            <h4>Fundamental</h4>
-            <h4>Tenuous</h4>
-            <h4>Immortal</h4>
-          </div>
-          <div class="col-md-2 randomWordsColumn5">
-            <h4>International</h4>
-            <h4>Intersects</h4>
-            <h4>Objects</h4>
-            <h4>Surrounded</h4>
-            <h4>Further</h4>
-          </div>
-          <div class="col-md-2 randomWordsColumn6">
-            <h4>Variations</h4>
-            <h4>Dramatically</h4>
-            <h4>Mathematical</h4>
-            <h4>Communities</h4>
-            <h4>Exhortations</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div id="aboutUs" class="section">
-    <div class="container">
-      <div class="wrapper">
-        <div class="row">
-          <div class="col-sm-5 aboutUsTag">
-            <span class="aboutUsBig">
-              This is who we are.
-            </span>
-            <h4>
-              A group of dedicated people doing what we know best.
-            </h4>
-          </div>
-          <div class="col-sm-offset-1 col-sm-6 aboutUsPeople">
-            <div class="aboutUsPerson">
-              <h6 class="aboutUsTitle">Screenwritter</h6>
-              <h3 class="aboutUsName">Johan Sebastián Bach</h3>
-            </div>
-            <div class="aboutUsPerson">
-              <h6 class="aboutUsTitle">Editing</h6>
-              <h3 class="aboutUsName">Arnold Schwarzenegger</h3>
-            </div>
-            <div class="aboutUsPerson">
-              <h6 class="aboutUsTitle">Director</h6>
-              <h3 class="aboutUsName">Ludwig van Beethoven</h3>
-            </div>
-            <div class="aboutUsPerson">
-              <h6 class="aboutUsTitle">Music</h6>
-              <h3 class="aboutUsName">Wolfgang Amadeus Mozart</h3>
-            </div>
-            <div class="aboutUsPerson">
-              <h6 class="aboutUsTitle">Photography</h6>
-              <h3 class="aboutUsName">Luke Skywalker</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="prices" class="section">
-    <div class="titleWrapper">
-      <div class="container">
-        <div class="titleIcon"></div>
-        <h2 class="pricesTitle">Our prices</h2>
-      </div>
-    </div>
-
-    <div class="container">  
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="pricesBox">
-            <h3 class="pricesSub">Simple <br>plan</h3>
-            <h4>Your name</h4>
-            <span class="priceTag">$120</span>
-            <div class="bottomWrapper">
-              <ul>
-                <li>First feature</li>
-                <li>Important stuff</li>
-                <li>Longer availability</li>
-                <li>Let's you be awesome</li>
-                <li>Infernal strategy</li>
-              </ul>
-              <button class="pricesButton">Purchase</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-3">
-          <div class="pricesBox">
-            <h3 class="pricesSub">Complex <br>plan</h3>
-            <h4>Your name</h4>
-            <span class="priceTag">$320</span>
-            <div class="bottomWrapper">
-              <ul>
-                <li>First feature</li>
-                <li>Important stuff</li>
-                <li>Longer availability</li>
-                <li>Let's you be awesome</li>
-                <li>Infernal strategy</li>
-              </ul>
-              <button class="pricesButton">Purchase</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-3">
-          <div class="pricesBox">
-            <h3 class="pricesSub">Expensive <br>plan</h3>
-            <h4>Your name</h4>
-            <span class="priceTag">$540</span>
-            <div class="bottomWrapper">
-              <ul>
-                <li>First feature</li>
-                <li>Important stuff</li>
-                <li>Longer availability</li>
-                <li>Let's you be awesome</li>
-                <li>Infernal strategy</li>
-              </ul>
-              <button class="pricesButton">Purchase</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-3">
-          <div class="pricesBox">
-            <h3 class="pricesSub">Oblivion <br>plan</h3>
-            <h4>Your name</h4>
-            <span class="priceTag">$666</span>
-            <div class="bottomWrapper">
-              <ul>
-                <li>First feature</li>
-                <li>Important stuff</li>
-                <li>Longer availability</li>
-                <li>Let's you be awesome</li>
-                <li>Infernal strategy</li>
-              </ul>
-              <button class="pricesButton">Purchase</button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div id="blogPosts" class="section">
-    <div class="titleWrapper">
-      <div class="container">
-        <div class="titleIcon"></div>
-        <h2 class="blogTitle">Some blog posts</h2>
-      </div>
-    </div>
-    <div class="container">
-      <div class="wrapper">
-        <div class="row">
-          <div class="col-sm-4">
-            <h3>Signing off</h3>
-            <h5>An essay on some stuff</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, iusto, placeat quas fuga sit impedit ipsum veniam architecto sed aliquid minima numquam praesentium eaque accusantium voluptates! Quam, porro, in vero nesciunt et atque tempora facere architecto sequi iure fugiat quisquam distinctio illo. Exercitationem, numquam assumenda quae nisi quam facilis esse?</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Kingston, South Australia</h3>
-            <h5>The northern rocky beach area</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas fugiat aperiam optio animi aliquid nam molestiae blanditiis a sequi placeat! A, tempore, ea deleniti repudiandae aliquam assumenda voluptatibus at. Impedit, nostrum, fugiat, itaque, magnam quo reprehenderit consequatur culpa sunt voluptatibus eum eaque eligendi voluptates inventore in nulla laborum sed quae.</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Kintetsu Shima Line</h3>
-            <h5>The line connects with the Kintetsu Toba Line</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, inventore, quae error nostrum dolore laborum voluptatum id. Dolore, optio, ipsum possimus asperiores deserunt reprehenderit alias dolorum error nesciunt voluptas praesentium dicta? Odit, maiores, quod, ea culpa placeat unde iste adipisci sequi perferendis totam quidem fuga assumenda neque possimus modi qui!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="contact" class="section">
-    <div class="titleWrapper">
-      <div class="container">
-        <div class="titleIcon"></div>
-        <h2 class="contactTitle">Contact us</h2>
-      </div>
-    </div>
-    <div class="container">
-      <div class="wrapper">
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="textBox">
-              <h3>Leave us a message</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veritatis repellat autem quam sapiente id eligendi provident possimus odio voluptatem.</p>
-            </div>
-          </div>
-          <div class="col-sm-8">
-            <form action="" class="row">
-              <div class="col-sm-6">
-                <input name="textinput" type="text" placeholder="Your name" class="">
-              </div>
-              <div class="col-sm-6">
-                <input name="textinput" type="mail" placeholder="Your email" class="">
-              </div>
-              <div class="col-sm-12">
-                <textarea name="" id="" placeholder="Your message"></textarea>
-              </div>
-              <div class="col-sm-12">
-               <button id="singlebutton" name="singlebutton" class="pull-right">Send</button>
-               <button id="singlebutton" name="singlebutton" class="pull-right">Reset</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 copyLeft">
-          <p>This site is copyrighted.</p>
-        </div>
-        <div class="col-md-6 copyRight">
-          <p>This was designed and developed by Sebastián Holgado</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-</div>
+</main>
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  <!-- build:js scripts/plugins.js -->
-  <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
-  <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
-  <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
-  <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
-  <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
-  <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
-  <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
-  <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
-  <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
-  <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
-  <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
-  <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
-  <!-- endbuild -->
+    ga('create', 'UA-89652060-2', 'auto');
+    ga('send', 'pageview');
+    </script>
 
   <!-- build:js({app,.tmp}) scripts/main.js -->
-  <script src="scripts/main.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/main-controller.js"></script>
   <!-- endbuild -->
 </body>
 </html>

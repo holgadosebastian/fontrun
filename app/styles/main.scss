@@ -12,15 +12,16 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 @import "base/layout";
 
 @import "app/fontrun";
+@import "app/side-menu";
 @import "app/colorTest";
 // Styles
 
-/*@import "themes/future";*/
-/*@import "themes/googly";*/
-/*@import "themes/hip";*/
-/*@import "themes/cupcake";*/
-/*@import "themes/cupcakeFlat";*/
-@import "themes/lean";
-/*@import "themes/retro";*/
-/*@import "themes/blizzard";*/
-/*@import "themes/agnostic";*/
+@import "themes/future";
+// @import "themes/googly";
+// @import "themes/hip";
+// @import "themes/cupcake";
+// @import "themes/cupcakeFlat";
+// @import "themes/lean";
+// @import "themes/retro";
+// @import "themes/blizzard";
+// @import "themes/agnostic";

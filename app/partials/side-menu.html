@@ -1,0 +1,51 @@
+<nav id="fr-side-menu">
+	<div class="side-menu__brand">
+		<img src="fontrun-logo.png" alt="fontrun">
+	</div>
+
+	<div class="side-menu__font-select">
+		<h1 class="side-menu__title">Selected fonts</h1>
+		<ul>
+			<li class="side-menu__font-select-main">
+				<h4 class="side-menu__title">MAIN FONT</h4>
+				<h2 class="side-menu__title">Akzidenz Grotesk</h2>
+			</li>
+			<li class="side-menu__font-select-secondary">
+				<h4 class="side-menu__title">SECONDARY FONT</h4>
+				<h2 class="side-menu__title">Futura</h2>
+			</li>
+		</ul>
+	</div>
+
+	<div>
+		<h1 class="side-menu__title">Color pallette</h1>
+		<ul class="side-menu__selected-colors">
+			<li>
+				<span ng-style="{ 'background-color': '#'+colors.primary }"></span>
+				<input type="text" ng-model="colors.primary">
+			</li>
+			<li>
+				<span ng-style="{ 'background-color': '#'+colors.secondary }"></span>
+				<input type="text" ng-model="colors.secondary">
+			</li>
+			<li>
+				<span ng-style="{ 'background-color': '#'+colors.tertiary }"></span>
+				<input type="text" ng-model="colors.tertiary">
+			</li>
+		</ul>
+
+		<ul class="side-menu__loaded-schemes">
+			<li>
+				<div class="side-menu__main-colors">
+					<div class="fr-color-1"></div>
+					<div class="fr-color-2"></div>
+					<div class="fr-color-3"></div>
+				</div>
+				<div class="side-menu__gray-colors">
+					<div class="fr-gray-1"></div>
+					<div class="fr-gray-2"></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</nav>

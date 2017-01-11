@@ -1,0 +1,31 @@
+$fr-main: #db43bd;
+$fr-secondary: #332532;
+
+// ### Fonts ###
+
+@font-face {
+  font-family: 'aileron';
+  src: url(../fonts/Aileron-Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'aileron';
+  src: url(../fonts/Aileron-Light.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'aileron';
+  src: url(../fonts/Aileron-Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5 {
+	margin-top: 0;
+	font-family: 'aileron', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: inherit;
+}
