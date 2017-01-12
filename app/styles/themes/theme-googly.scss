@@ -1,3 +1,7 @@
+@import "compass";
+@import "../variables/colorPalette";
+@import "../variables/mixins";
+
 body {
 	background-color: $lightGray;
 }
@@ -115,7 +119,7 @@ h2 {
 		padding: 50px 15px 15px;
 		color: $secondaryColor;
 		background: #cecece url("http://lorempixel.com/g/600/150/city/") no-repeat scroll center;
-		background-size: cover; 
+		background-size: cover;
 	}
 	.bottomWrapper {
 		margin: 0;
@@ -218,7 +222,7 @@ h2 {
 	}
 	h5 {
 		margin-bottom: 2px;
-		font-family: 'secondaryFont';		
+		font-family: 'secondaryFont';
 		font-weight: 300;
 		color: $secondaryColor;
 	}
@@ -231,7 +235,7 @@ h2 {
 	}
 	h4 {
 		color: $fillColor;
-	}	
+	}
 	.priceTag {
 		display: block;
 		margin-bottom: 15px;

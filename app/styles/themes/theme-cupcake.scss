@@ -1,3 +1,6 @@
+@import "compass";
+@import "../variables/colorPalette";
+
 body {
 	background-color: #FFF;
 }
@@ -11,6 +14,7 @@ h2 {
 	font-size: 32px;
 	font-weight: 700;
 	color: darken($fillColor,35%);
+	text-shadow: 0 1px 0 rgba(#FFF, 0.5), 0 -1px 0 rgba($darkGray, 0.7);
 }
 
 // Layout
@@ -18,7 +22,8 @@ h2 {
 .titleWrapper {
 	padding-top: 36px;
 	padding-bottom: 16px;
-	background: $fillColor;
+	background: linear-gradient(lighten($fillColor,10%) 1%, $fillColor 5%, darken($fillColor,20%));
+	box-shadow: 0 3px 3px $darkGray;
 }
 
 .section {
@@ -33,11 +38,11 @@ button {
 	font-family: 'secondaryFont';
 	font-size: 15px;
 	color: #FFF;
-	background: $secondaryColor;
+	background: linear-gradient(lighten($secondaryColor,20%) 1%, $secondaryColor 5%, darken($secondaryColor,10%));
 	border: none;
 	border-radius: 5px;
 	&:hover {
-		background: lighten($secondaryColor,10%);
+		background: linear-gradient(darken($secondaryColor,20%) 3%, $secondaryColor 50%, lighten($secondaryColor,10%) );
 	}
 }
 
@@ -48,12 +53,13 @@ button {
 	background-color: $fillColor;
 	.vsBig1, .vsBig2 {
 		font-weight: 700;
+		text-shadow: 0 2px 1px #FFF, 0 -2px 1px $darkGray;
 	}
 	.vsBig1 {
-		color: $mainColor;
+		color: rgba($mainColor, 0.8);
 	}
 	.vsBig2 {
-		color: $secondaryColor;
+		color: rgba($secondaryColor, 0.8);
 	}
 	.vsTagInner {
 		display: inline-block;
@@ -61,8 +67,10 @@ button {
 		width: 50px;
 		height: 50px;
 		color: #FFF;
+		text-shadow: 0 2px 1px $darkGray;
 		background-color: rgba($darkGray, 0.3);
 		border-radius: 50%;
+		box-shadow: 0 2px 1px #FFF, 0 -2px 1px $darkGray;
 	}
 }
 
@@ -70,20 +78,28 @@ button {
 // Navbar
 
 #homeNav {
-	background: $fillColor;
+	background: linear-gradient($fillColor, darken($fillColor,20%));
 	.navbar-brand {
 		color: $darkGray;
 	}
 	li {
 		color: $darkGray;
+		border-left: 1px solid transparent;
+		border-right: 1px solid transparent;
 	}
 	li:hover {
 		color: #FFF;
-		background: darken($fillColor,30%);
+		text-shadow: 0 2px 1px $darkGray;
+		border-left: 1px solid rgba($darkGray, 0.3);
+		border-right: 1px solid rgba($darkGray, 0.3);
+		background: linear-gradient(darken($fillColor,40%) 5%,darken($fillColor,30%) 25% , darken($fillColor,25%) 75% ,darken($fillColor,20%) 95%) !important;
 	}
 	li.activeNav {
 		color: #FFF;
-		background: darken($fillColor,30%);
+		text-shadow: 0 2px 1px $darkGray;
+		border-left: 1px solid rgba($darkGray, 0.3);
+		border-right: 1px solid rgba($darkGray, 0.3);
+		background: linear-gradient(darken($fillColor,40%) 5%,darken($fillColor,30%) 25% , darken($fillColor,25%) 75% ,darken($fillColor,20%) 95%) !important;
 	}
 }
 

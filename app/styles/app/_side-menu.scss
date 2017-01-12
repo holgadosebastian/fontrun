@@ -1,13 +1,35 @@
-#fr-side-menu {
+.fr-side-menu__open {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	width: 40px;
+	height: 40px;
+	color: #FFF;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+	background-color: $fr-secondary;
+	box-shadow: 4px 4px rgba(#000, 0.4);
+	z-index: 10;
+
+	&:hover {
+		background-color: darken($fr-secondary, 5%);
+	}
+}
+
+.fr-side-menu {
 	font-size: 12px;
 	color: #FFF;
 	position: fixed;
 	top: 0;
-	left: 0;
+	left: -360px;
 	width: 360px;
 	min-height: 100vh;
 	background-color: $fr-secondary;
 	z-index: 100;
+	transition: left 0.5s ease, box-shadow 0.5s ease;
+	box-shadow: 0 0 rgba(#000, 0.4);
 
 	h1 {
 		font-size: 2.2em;
@@ -27,6 +49,27 @@
 
 	p {
 		font-size: 1.1em;
+	}
+
+	&.side-menu--show {
+		left: 0;
+		box-shadow: 4px 0 rgba(#000, 0.4);
+	}
+
+	.side-menu__close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 40px;
+		height: 40px;
+		font-size: 20px;
+		line-height: 40px;
+		text-align: center;
+		cursor: pointer;
+
+		&:hover {
+			background-color: darken($fr-secondary, 5%);
+		}
 	}
 
 	.side-menu__brand {
@@ -161,6 +204,92 @@
 				float: left;
 				width: 50%;
 				height: 30px;
+			}
+		}
+	}
+}
+
+.fr-theme-select {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	width: 200px;
+	color: #FFF;
+	z-index: 10;
+
+	.fr-theme-select__title {
+		position: relative;
+		margin-bottom: 0;
+		padding: 0 15px;
+		font-size: 20px;
+		color: #FFF;
+		line-height: 40px;
+		background-color: $fr-secondary;
+		cursor: pointer;
+		box-shadow: 4px 4px rgba(#000, 0.4);
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 6px;
+	    bottom: 6px;
+	    right: 30px;
+			width: 1px;
+			background-color: #FFF;
+		}
+
+		i {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 30px;
+			line-height: 40px;
+			text-align: center;
+		}
+	}
+
+	ul {
+		position: absolute;
+		top: 40px;
+		left: 0;
+		right: 0;
+		background-color: $fr-secondary;
+		height: 200px;
+		overflow-y: auto;
+		box-shadow: 4px 4px rgba(#000, 0.4);
+
+		&::-webkit-scrollbar {
+			width: 4px;
+			background-color: transparent;
+		}
+		&::-webkit-scrollbar-button  {
+
+		}
+		&::-webkit-scrollbar-track {
+
+		}
+		&::-webkit-scrollbar-track-piece {
+
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: #FFF;
+		}
+		&::-webkit-scrollbar-corner {
+
+		}
+		&::-webkit-resizer {
+
+		}
+
+		li {
+			padding: 0 15px;
+			font-size: 16px;
+			line-height: 35px;
+			list-style: none;
+			cursor: pointer;
+
+			&:hover {
+				background-color: darken($fr-secondary, 10%);
 			}
 		}
 	}

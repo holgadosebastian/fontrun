@@ -1,3 +1,7 @@
+@import "compass";
+@import "../variables/colorPalette";
+@import "../variables/mixins";
+
 body {
 	background-color: $lightGray;
 }
@@ -98,7 +102,7 @@ button {
 	}
 	.bottomWrapper {
 		border-top: 1px solid $fillColor;
-		border-bottom: 1px solid $fillColor;	
+		border-bottom: 1px solid $fillColor;
 	}
 	p {
 		margin: 0;

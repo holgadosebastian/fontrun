@@ -1,3 +1,7 @@
+@import "compass";
+@import "../variables/colorPalette";
+@import "../variables/mixins";
+
 .site-wrapper {
 	background-color: $lightGray;
 }
@@ -71,7 +75,7 @@
 	#fontsVersus {
 		text-transform: uppercase;
 		.vsTag {
-			margin-bottom: 20px;		
+			margin-bottom: 20px;
 		}
 		.vsTagInner {
 			padding: 5px 15px;
@@ -164,7 +168,7 @@
 		}
 		.bottomWrapper {
 			border-top: 1px solid $fillColor;
-			border-bottom: 1px solid $fillColor;	
+			border-bottom: 1px solid $fillColor;
 		}
 		p {
 			margin: 0;
@@ -256,7 +260,7 @@
 		}
 		h5 {
 			margin-bottom: 2px;
-			font-family: 'secondaryFont';		
+			font-family: 'secondaryFont';
 			font-weight: 300;
 			color: $contrastColorLight;
 		}

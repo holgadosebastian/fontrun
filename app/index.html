@@ -8,7 +8,10 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css styles/vendor.css -->
+  <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
   <!-- bower:css -->
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <!-- endbower -->
   <!-- endbuild -->
@@ -16,26 +19,9 @@
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 
+  <link rel="stylesheet" ng-href="styles/themes/theme-{{ themes.current }}.css">
   <style>
-    h2 {
-      font-family: {{ fonts.primary }} !important;
-    }
 
-    h1,h4 {
-      color: #{{ colors.primary}} !important;
-    }
-
-    h2,h5 {
-      color: #{{ colors.secondary}} !important;
-    }
-
-    h3,h6 {
-      color: #{{ colors.tertiary}} !important;
-    }
-
-    p {
-      color: #{{ colors.primary}} !important;
-    }
   </style>
 </head>
 <body ng-controller="MainCtrl">
@@ -70,13 +56,14 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-89652060-2', 'auto');
+    ga('create', 'UA-89652060-4', 'auto');
     ga('send', 'pageview');
     </script>
 
   <!-- build:js({app,.tmp}) scripts/main.js -->
   <script src="scripts/app.js"></script>
   <script src="scripts/controllers/main-controller.js"></script>
+  <script src="scripts/controllers/menu-controller.js"></script>
   <!-- endbuild -->
 </body>
 </html>

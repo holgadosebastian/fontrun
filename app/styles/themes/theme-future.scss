@@ -1,3 +1,7 @@
+@import "compass";
+@import "../variables/colorPalette";
+@import "../variables/mixins";
+
 body {
 	background-color: $contrastColorLight;
 }
