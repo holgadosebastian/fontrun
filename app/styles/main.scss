@@ -8,9 +8,9 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 
 @import "variables/colorPalette";
 @import "variables/mixins";
-@import "base/fonts";
 @import "base/layout";
 
 @import "app/fontrun";
 @import "app/side-menu";
-@import "app/colorTest";
+@import "app/template";
+@import "app/color-test";

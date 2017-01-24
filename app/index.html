@@ -2,7 +2,7 @@
 <html ng-app="fontRunApp">
 <head>
   <meta charset="utf-8">
-  <title>fontRun</title>
+  <title>fontRun - Kickstart your design!</title>
   <meta name="description" content="Test your color palette and fonts with this app">
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" href="/favicon.ico">
@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
   <!-- bower:css -->
 
+  <link ng-href="https://fonts.googleapis.com/css?family={{ fonts.getGoogleFonts() }}" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <!-- endbower -->
@@ -21,6 +22,20 @@
 
   <link rel="stylesheet" ng-href="styles/themes/theme-{{ themes.current }}.css">
   <style>
+    .site-wrapper h1,
+    .site-wrapper	h2,
+    .site-wrapper	h4,
+    .site-wrapper	h5,
+    .site-wrapper .versus__primary {
+  		font-family: {{ fonts.primary | fontName }};
+  	}
+
+    .site-wrapper	h3,
+    .site-wrapper	h6,
+    .site-wrapper	p,
+    .site-wrapper .versus__secondary {
+  		font-family: {{ fonts.secondary | fontName }};
+  	}
 
   </style>
 </head>
@@ -28,25 +43,13 @@
 
   <ng-include src="'partials/side-menu.html'"></ng-include>
 
-<main class="site-wrapper">
+  <main ng-view class="site-wrapper"></main>
 
-  <ng-include src="'partials/font-versus.html'"></ng-include>
-  <ng-include src="'partials/home-nav.html'"></ng-include>
-  <ng-include src="'partials/home-header.html'"></ng-include>
-  <ng-include src="'partials/home-skill.html'"></ng-include>
-  <ng-include src="'partials/home-history.html'"></ng-include>
-  <ng-include src="'partials/home-words.html'"></ng-include>
-  <ng-include src="'partials/home-about.html'"></ng-include>
-  <ng-include src="'partials/home-prices.html'"></ng-include>
-  <ng-include src="'partials/home-blog.html'"></ng-include>
-  <ng-include src="'partials/home-contact.html'"></ng-include>
-  <ng-include src="'partials/home-footer.html'"></ng-include>
-
-</main>
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -58,12 +61,14 @@
 
     ga('create', 'UA-89652060-4', 'auto');
     ga('send', 'pageview');
-    </script>
+  </script>
 
   <!-- build:js({app,.tmp}) scripts/main.js -->
   <script src="scripts/app.js"></script>
   <script src="scripts/controllers/main-controller.js"></script>
   <script src="scripts/controllers/menu-controller.js"></script>
+
+  <script src="scripts/filters/font-name-filter.js"></script>
   <!-- endbuild -->
 </body>
 </html>

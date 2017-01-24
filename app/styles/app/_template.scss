@@ -1,0 +1,342 @@
+.site-wrapper {
+	h1 {
+		font-size: 37px;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	h5 {
+		font-size: 18px;
+	}
+
+	h6 {
+		font-size: 16px;
+	}
+
+	p {
+		font-size: 15px;
+	}
+
+
+	// Footer
+
+	footer {
+		padding-top: 10px;
+		background-color: $fillColor;
+
+		p {
+			color: #FFF;
+		}
+
+		.footer__author {
+			text-align: right;
+		}
+	}
+}
+
+
+// Fonts Versus
+
+#fonts-versus {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+
+	.versus__wrapper {
+		padding: 20px;
+	}
+
+	.versus__primary,
+	.versus__secondary,
+	.versus__tag {
+		display: block;
+		text-align: center;
+	}
+
+	.versus__primary,
+	.versus__secondary {
+		margin-top: 5px;
+		margin-bottom: 25px;
+		font-size: 15vh;
+		line-height: 1;
+	}
+
+	.versus__primary {
+		color: $mainColor;
+	}
+
+	.versus__secondary {
+		color: $secondaryColor;
+	}
+
+	.versus__tag {
+		span {
+			position: relative;
+			font-family: sans-serif;
+			font-weight: 700;
+			font-size: 20px;
+			color: $darkGray;
+		}
+	}
+}
+
+
+// Nav bar
+
+#home-nav {
+	margin-bottom: 0;
+	border-radius: 0;
+	border: none;
+
+	.nav__container {
+		display: flex;
+	}
+
+	.nav__logo {
+		flex-grow: 100;
+
+		a {
+			display: inline-block;
+			padding: 0 15px;
+			font-size: 24px;
+			color: #FFF;
+			line-height: 50px;
+		}
+	}
+
+	.nav__items {
+		margin-bottom: 0;
+	}
+
+	.nav__item {
+		float: left;
+		font-family: 'mainFont';
+		font-size: 18px;
+
+		a {
+			display: block;
+			padding: 0 15px;
+			line-height: 50px;
+		}
+	}
+}
+
+
+// Header
+
+#home-header {
+	position: relative;
+	padding-top: 250px;
+	padding-bottom: 100px;
+
+	.header__overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.header__tag {
+		text-align: center;
+	}
+
+	.header__tag-inner {
+		display: inline-block;
+
+		h1 {
+			font-size: 30px;
+		}
+
+		h3 {
+			margin-bottom: 0;
+			font-size: 18px;
+		}
+
+		h1,
+		h3 {
+			margin-top: 0;
+		}
+	}
+
+	.header__button {
+		cursor: pointer;
+	}
+}
+
+
+// History
+
+#home-history {
+	p {
+		-webkit-column-count: 4;
+		-moz-column-count: 4;
+		column-count: 4;
+	}
+}
+
+// Skills
+
+
+// Words
+
+#home-words {
+	.words__column {
+		&:nth-child(odd) {
+			font-family: 'mainFont';
+		}
+
+		&:nth-child(even) {
+			font-family: 'secondaryFont';
+		}
+
+		h4 {
+			&:nth-child(3n+1) {
+				font-weight: 300 !important;
+			}
+
+			&:nth-child(3n+2) {
+				font-weight: 400 !important;
+			}
+
+			&:nth-child(3n+3) {
+				font-weight: 700 !important;
+			}
+		}
+	}
+}
+
+.randomWordsColumn1 h4,
+.randomWordsColumn2 h4 {
+	color: $mainColor;
+}
+
+.randomWordsColumn3 h4,
+.randomWordsColumn4 h4 {
+	color: $secondaryColor;
+}
+
+.randomWordsColumn5 h4,
+.randomWordsColumn6 h4 {
+	color: $fillColor;
+}
+
+.randomWordsColumn4 h4,
+.randomWordsColumn5 h4,
+.randomWordsColumn6 h4 {
+	font-style: italic;
+}
+
+
+// Team
+
+#home-team {
+	.team__tag {
+		margin-top: 80px;
+
+		.h1 {
+			font-size: 76px;
+			line-height: 1.2;
+		}
+	}
+
+	h3 {
+		margin-top: 5px;
+	}
+}
+
+
+// Prices
+
+#home-prices {
+	.prices__option {
+		text-align: center;
+	}
+
+	h3 {
+		color: $mainColor;
+	}
+
+	.prices__tag {
+		margin-bottom: 15px;
+		font-size: 50px;
+		color: $secondaryColor;
+	}
+
+	ul {
+		padding-left: 0;
+
+		li {
+			margin-top: 5px;
+			margin-bottom: 10px;
+			list-style: none;
+			font-family: 'secondaryFont';
+			font-size: 18px;
+			color: $darkGray;
+		}
+	}
+}
+
+
+// Contact
+
+#home-contact {
+	h3 {
+		margin-top: 0;
+	}
+
+	.contact__icons {
+		display: flex;
+
+		li {
+			width: 40px;
+			height: 40px;
+			cursor: pointer;
+			text-align: center;
+			line-height: 40px;
+
+			& + li {
+				margin-left: 15px;
+			}
+		}
+	}
+
+	input,
+	textarea {
+		border: none;
+
+		&:focus,
+		&:hover {
+			outline: none;
+			-webkit-appearance: none;
+		}
+	}
+
+	input {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	textarea {
+		width: 100%;
+		min-height: 120px;
+		max-width: 100%;
+		margin-bottom: 15px;
+	}
+
+	button {
+		margin-bottom: 20px;
+		margin-left: 15px;
+	}
+}

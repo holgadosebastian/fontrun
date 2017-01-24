@@ -8,141 +8,179 @@ body {
 
 // Fonts
 
-h1 {
-	color: $mainColor;
-	font-weight: 700;
-}
+.site-wrapper {
+	h1 {
+		color: $mainColor;
+		font-weight: 700;
+	}
 
-h2 {
-	font-family: 'secondaryFont';
-	display: inline-block;
-	position: relative;
-	margin: 8px 0;
-	padding: 0;
-	font-size: 36px;
-	color: $darkGray;
-	font-weight: 700;
-}
+	h2 {
+		display: inline-block;
+		position: relative;
+		margin: 8px 0;
+		padding: 0;
+		font-size: 36px;
+		color: $darkGray;
+		font-weight: 700;
+	}
 
-p {
-	font-weight: 400;
-	color: $darkGray;
-}
+	p {
+		font-weight: 400;
+		color: $darkGray;
+	}
 
-#history p {
-  -webkit-column-count: 4;
-  -moz-column-count: 4;
-  column-count: 4;
-}
+	#history p {
+	  -webkit-column-count: 4;
+	  -moz-column-count: 4;
+	  column-count: 4;
+	}
 
-// Layout
+	// Layout
 
-.titleWrapper {
-	margin-top: 30px;
-	.container {
+	.section__header {
+		margin-top: 30px;
+	}
+
+	// Footer
+
+	footer {
+		padding-top: 10px;
+		background-color: $mainColor;
+
+		p {
+			color: #FFF;
+		}
+
+		.footer__author {
+			text-align: right;
+		}
 	}
 }
+
 
 // fontVersus
 
-#fontsVersus {
+#fonts-versus {
 	text-transform: uppercase;
-	.vsTag {
+
+	.versus__tag {
 		margin-bottom: 20px;
-	}
-	.vsTagInner {
-		padding: 5px 15px;
-		border: 2px solid black;
+
+		span {
+			padding: 5px 15px;
+			border: 2px solid black;
+		}
 	}
 }
 
-// Navbar
 
-#homeNav {
+// Nav bar
+
+#home-nav {
 	background: $darkGray url("../images/retroTile.png") repeat scroll center;
-	.navbar-brand {
-		color: #FFF;
-		background-color: $mainColor;
-		&:hover {
-			background-color: lighten($mainColor, 10%);
+
+	.nav__logo {
+
+		a {
+			color: #FFF;
+			background-color: $mainColor;
+
+			&:hover {
+				background-color: lighten($mainColor, 10%);
+			}
 		}
 	}
-	li a {
-		color: #FFF;
+
+	.nav__item {
+		a {
+			color: #FFF;
+
+			&:hover {
+				color: $mainColor;
+			}
+		}
 	}
 }
 
 // Header
 
-#header {
-	background: #1a1a1a url("http://lorempixel.com/g/1920/600/nature/") no-repeat fixed center;
+#home-header {
+	background: #1a1a1a url("https://unsplash.it/1920/600/?image=1082") no-repeat scroll center;
 	background-size: cover;
 	border-bottom: 10px solid $fillColor;
+
 	h1 {
 		font-weight: 700;
 		text-transform: uppercase;
 	}
+
 	p {
 		margin-top: 20px;
 		margin-bottom: 15px;
 		max-width: 50%;
 		color: #FFF;
 	}
-	.headerOverlay {
+
+	.header__overlay {
 		background-color: rgba($fillColor, 0.3);
+	}
+
+	.header__button {
+		padding: 6px 20px;
+		font-family: 'mainFont';
+		font-size: 18px;
+		color: $mainColor;
+		font-weight: 700;
+		text-transform: uppercase;
+		background-color: transparent;
+		border: 2px solid $mainColor;
+		transition: all 0.4s ease-in-out;
+		&:hover {
+			color: #FFF;
+			background-color: $mainColor;
+		}
 	}
 }
 
-button {
-	padding: 6px 20px;
-	font-family: 'mainFont';
-	font-size: 18px;
-	color: $mainColor;
-	font-weight: 700;
-	text-transform: uppercase;
-	background-color: transparent;
-	border: 2px solid $mainColor;
-	transition: all 0.4s ease-in-out;
-	&:hover {
-		color: #FFF;
-		background-color: $mainColor;
-	}
-}
 
 // Skills
 
-#skills {
+#home-skills {
 	.col-sm-4 {
 		margin-top: 15px;
 	}
-}
 
-.skillBox {
-	color: #FFF;
-	border: 5px solid $darkGray;
-	h3 {
-		text-align: center;
-		position: relative;
-		margin: 0;
-		padding: 50px 15px 15px;
-		color: $darkGray;
-		&:before {
-			position: absolute;
-			content: "";
-			margin-left: -15px;
-			width: 30px;
-			height: 4px;
-			left: 50%;
-			bottom: -4px;
-			background-color: $darkGray;
+	.skills__item {
+		color: #FFF;
+		border: 5px solid $darkGray;
+
+		h3 {
+			text-align: center;
+			position: relative;
+			margin: 0;
+			padding: 50px 15px 15px;
+			color: $darkGray;
+
+			&:before {
+				position: absolute;
+				content: "";
+				margin-left: -15px;
+				width: 30px;
+				height: 4px;
+				left: 50%;
+				bottom: -4px;
+				background-color: $darkGray;
+			}
+		}
+
+		p {
+			margin: 0;
+			padding: 15px;
+			color: $fillColor;
 		}
 	}
-	p {
-		margin: 0;
-		padding: 15px;
-		color: $fillColor;
-	}
-	button {
+
+	.skills__item-button {
 		margin-bottom: 10px;
 		padding: 0;
 		font-family: 'secondaryFont';
@@ -158,10 +196,9 @@ button {
 	}
 }
 
+// History
 
-// history
-
-#history {
+#home-history {
 	margin-top: 15px;
 	margin-bottom: 15px;
 	.titleIcon:before {
@@ -176,15 +213,12 @@ button {
 	}
 }
 
+// Random Words
 
-// randomWords
-
-#randomWords {
+#home-words {
 	margin-top: 15px;
 	margin-bottom: 15px;
-	.titleIcon:before {
-		content: "56";
-	}
+
 	.wrapper {
 		.row {
 			margin-left: 0;
@@ -192,89 +226,91 @@ button {
 			padding-top: 30px;
 		}
 	}
+
 	p {
 		padding: 15px;
 	}
 }
 
 
-// aboutUs
+// Team
 
-#aboutUs {
+#home-team {
 	margin-top: 15px;
 	margin-bottom: 15px;
 	background-color: $lightGray;
 	border-bottom: 5px solid $mainColor;
-	.container .wrapper{
+
+	.container .wrapper {
 		overflow: hidden;
 		padding: 15px;
 		border-radius: 7px;
 	}
-	.aboutUsTag {
+
+	.team__tag {
 		margin-top: 80px;
 	}
-	.aboutUsBig {
-		font-family: 'mainFont';
-		font-size: 76px;
+
+	.h1 {
 		font-weight: 700;
 		color: $mainColor;
-		line-height: 0.8;
 	}
+
+	li {
+		& + li {
+			margin-top: 25px;
+		}
+	}
+
 	h3 {
-		margin-top: 5px;
-		margin-bottom: 25px;
-		padding-bottom: 5px;
-		font-family: 'mainFont';
 		font-size: 28px;
 		font-weight: 700;
 		color: $darkGray;
 		text-transform: uppercase;
 		border-bottom: 4px solid $darkGray;
 	}
-	h4 {
+
+	h5 {
 		font-weight: 700;
-	}
-	h6 {
-		z-index: 10;
-		margin-bottom: 2px;
-		font-family: 'mainFont';
-		font-weight: 700;
-		color: $mainColor;
 	}
 }
 
-
 // Prices
 
-#prices {
+#home-prices {
 	margin-bottom: 100px;
-	.titleIcon:before {
-		content: "78";
-	}
+
 	.row {
 		margin-right: 0;
 		margin-left: 0;
 		padding-top: 20px;
 	}
+
 	h3 {
 		font-weight: 700;
 		color: $mainColor;
 	}
+
 	h4 {
 		font-size: 18px;
 		font-weight: 300;
 		color: $fillColor;
 		text-transform: uppercase;
 	}
-	.priceTag {
+
+	.prices__tag {
 		margin-bottom: 15px;
 		font-family: 'mainFont';
 		font-weight: 700;
 	}
-	ul {
-		text-align: left;
-		padding-left: 3%;
-		padding-right: 3%;
+
+	.prices__list {
+		ul {
+			text-align: left;
+			padding-left: 3%;
+			padding-right: 3%;
+		}
+
 		li {
 			font-family: 'mainFont';
 			font-size: 18px;
@@ -283,7 +319,9 @@ button {
 			border-bottom: 4px solid $darkGray;
 		}
 	}
-	button {
+
+	.prices__button {
+		display: inline-block;
 		margin-top: 20px;
 		margin-bottom: -40px;
 		padding: 0;
@@ -291,10 +329,12 @@ button {
 		height: 100px;
 		font-size: 14px;
 		color: #FFF;
-		border: 0;
+		line-height: 100px;
 		border-radius: 50%;
 		background-color: $mainColor;
 		@include box-shadow(0 4px darken($mainColor, 10%));
+		cursor: pointer;
+
 		&:hover {
 			background-color: lighten($mainColor, 10%);
 			@include box-shadow(0 4px $mainColor);
@@ -302,20 +342,21 @@ button {
 	}
 }
 
+
 // Blog
 
-#blogPosts {
-	.titleIcon:before {
-		content: "09";
-	}
+#home-blog {
+
 	.row {
 		margin-right: 0;
 		margin-left: 0;
 		padding-top: 15px;
 	}
+
 	h3 {
 		color: $darkGray;
 	}
+
 	h5 {
 		font-weight: 700;
 		color: $mainColor;
@@ -325,20 +366,20 @@ button {
 
 // Contact
 
-#contact {
+#home-contact {
 	margin-bottom: 30px;
-	.titleIcon:before {
-		content: "10";
-	}
+
 	.row {
 		margin-right: 0;
 		margin-left: 0;
 		padding-top: 20px;
 	}
+
 	.textBox {
 		min-height: 203px;
 		padding: 15px;
 	}
+
 	h3 {
 		font-weight: 300;
 		color: $mainColor;
@@ -346,6 +387,7 @@ button {
 	p {
 		color: $darkGray;
 	}
+
 	input, textarea {
 		padding: 12px;
 		font-family: 'secondaryFont';
@@ -360,20 +402,8 @@ button {
 			color: #FFF;
 		}
 	}
+
 	textarea {
 		min-height: 140px;
-	}
-}
-
-// Footer
-
-footer {
-	padding-top: 10px;
-	background-color: $mainColor;
-	p {
-		color: #FFF;
-	}
-	.copyRight {
-		text-align: right;
 	}
 }
