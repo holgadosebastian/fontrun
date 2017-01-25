@@ -31,19 +31,19 @@
 	transition: left 0.5s ease, box-shadow 0.5s ease;
 	box-shadow: 0 0 rgba(#000, 0.4);
 
-	h1 {
+	.-h1 {
 		font-size: 2.2em;
 	}
 
-	h2 {
+	.-h2 {
 		font-size: 1.9em;
 	}
 
-	h3 {
+	.-h3 {
 		font-size: 1.5em;
 	}
 
-	h4 {
+	.-h4 {
 		font-size: 1.3em;
 	}
 
@@ -73,12 +73,17 @@
 	}
 
 	header {
+		display: flex;
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100px;
 		padding: 0 20px;
+
+		.side-menu__logo {
+			width: 50px;
+		}
 	}
 
 	.side-menu__content {
@@ -87,18 +92,18 @@
 	}
 
 	.side-menu__font-select {
-		h1.side-menu__titles {
+		.-h1.side-menu__title {
 			padding-left: 15px;
 			font-weight: 300;
 			text-transform: uppercase;
 		}
 
-		.side-menu__font-select-main h2 {
-			font-family: 'mainFont';
-		}
-
-		.side-menu__font-select-secondary h2 {
-			font-family: 'secondaryFont';
+		ul {
+			&:hover {
+				.side-menu__font-switch {
+					display: block;
+				}
+			}
 		}
 
 		li {
@@ -121,6 +126,22 @@
 
 			h4 {
 				margin-bottom: 3px;
+			}
+
+			input {
+				display: none;
+				background-color: transparent;
+				border-bottom: 2px solid #FFF;
+			}
+
+			&.side-menu__font-select--edit {
+				.-h2 {
+					display: none;
+				}
+
+				input {
+					display: block;
+				}
 			}
 		}
 	}
@@ -210,6 +231,23 @@
 		}
 	}
 
+	.side-menu__font-switch {
+		display: none;
+		position: absolute;
+		left: 50%;
+		margin-left: -15px;
+		margin-top: -15px;
+		width: 30px;
+		font-size: 14px;
+		height: 30px;
+		text-align: center;
+		line-height: 30px;
+		background-color: #FFF;
+		border-radius: 50px;
+		color: $fr-secondary;
+		cursor: pointer;
+	}
+
 	footer {
 		position: absolute;
 		bottom: 0;
@@ -236,6 +274,7 @@
 		font-size: 20px;
 		color: #FFF;
 		line-height: 40px;
+		text-transform: capitalize;
 		background-color: $fr-secondary;
 		cursor: pointer;
 		box-shadow: 4px 4px rgba(#000, 0.4);
@@ -285,6 +324,7 @@
 			line-height: 35px;
 			list-style: none;
 			cursor: pointer;
+			text-transform: capitalize;
 
 			&:hover {
 				background-color: darken($fr-secondary, 10%);

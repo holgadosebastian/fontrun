@@ -27,7 +27,7 @@ angular
   .run( function( $rootScope, premadeThemes ) {
     $rootScope.fonts = {};
     $rootScope.fonts.primary = 'Abril+Fatface';
-    $rootScope.fonts.secondary = 'Open+Sans';
+    $rootScope.fonts.secondary = 'Raleway';
     $rootScope.fonts.getGoogleFonts = function () {
       var fonts = $rootScope.fonts.primary;
 
