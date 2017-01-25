@@ -22,7 +22,7 @@ module.exports = function (grunt) {
         config: {
             // Configurable paths
             app: 'app',
-            dist: 'dist'
+            dist: 'docs'
         },
 
         // Watches files for changes and runs tasks based on the changed files
@@ -357,6 +357,7 @@ module.exports = function (grunt) {
         }
     });
 
+    grunt.loadNpmTasks('grunt-rev');
 
     grunt.registerTask('serve', function (target) {
         if (target === 'dist') {
@@ -401,7 +402,6 @@ module.exports = function (grunt) {
         'cssmin',
         'uglify',
         'copy:dist',
-        'modernizr',
         'rev',
         'usemin',
         'htmlmin'
