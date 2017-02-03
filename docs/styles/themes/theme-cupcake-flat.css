@@ -1,0 +1,301 @@
+/*$mainColor: #33FFE6;
+$secondaryColor: #FF2789;
+$fillColor: #2B2E3A;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #037E8C;
+$secondaryColor: #F24C27;
+$fillColor: #024959;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #FF3D7F;
+$secondaryColor: #3FB8AF;
+$fillColor: #7FC7AF;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #D44F3D;
+$secondaryColor: #1C152E;
+$fillColor: #DCAB40;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #FF2EFF;
+$secondaryColor: #D4DC14;
+$fillColor: #4DDA9E;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #ef4b54;
+$secondaryColor: #268180;
+$fillColor: #f8e1b2;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;
+*/
+/*$mainColor: #CC4452;
+$secondaryColor: #723147;
+$fillColor: #E6B098;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #FEB41C;
+$secondaryColor: #363F45;
+$fillColor: #5E7C88;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #FC4349;
+$secondaryColor: #6DBCDB;
+$fillColor: #2C3E50;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #D96666;
+$secondaryColor: #F2E5A2;
+$fillColor: #81AC8B;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;
+*/
+/*$mainColor: #588C8C;
+$secondaryColor: #D9042B;
+$fillColor: #011C26;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #45B29D;
+$secondaryColor: #DF5A49;
+$fillColor: #334D5C;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #E27A3F;
+$secondaryColor: #DF5A49;
+$fillColor: #45B29D;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #DF5A49;
+$secondaryColor: #45B29D;
+$fillColor: #334D5C;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #B296BC;
+$secondaryColor: #00BACF;
+$fillColor: #8F8A8C;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/* $mainColor: #56D9CD;
+$secondaryColor: #4588D8;
+$fillColor: #4588D8;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E; */
+/*$mainColor: #4588D8;
+$secondaryColor: #5dffea;
+$fillColor: #4588D8;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #56D9CD;
+$secondaryColor: #4588D8;
+$accentColor: #F2385A;
+// $fillColor: #0c4d8d;
+$fillColor: #002635;
+
+$lightGray: #f1f1f1;
+$mediumGray: #636363;
+$darkGray: #323232;*/
+/* line 4, ../../../app/styles/themes/theme-cupcake-flat.scss */
+body {
+  background-color: #FFF;
+}
+
+/* line 11, ../../../app/styles/themes/theme-cupcake-flat.scss */
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+}
+
+/* line 21, ../../../app/styles/themes/theme-cupcake-flat.scss */
+.titleWrapper {
+  padding-top: 36px;
+  padding-bottom: 16px;
+  background: #3F585F;
+}
+
+/* line 27, ../../../app/styles/themes/theme-cupcake-flat.scss */
+.section {
+  padding-bottom: 20px;
+}
+/* line 29, ../../../app/styles/themes/theme-cupcake-flat.scss */
+.section .wrapper {
+  padding-top: 15px;
+}
+
+/* line 34, ../../../app/styles/themes/theme-cupcake-flat.scss */
+button {
+  padding: 5px 10px;
+  font-family: 'secondaryFont';
+  font-size: 15px;
+  color: #FFF;
+  background: #47384D;
+  border: none;
+  border-radius: 5px;
+}
+/* line 42, ../../../app/styles/themes/theme-cupcake-flat.scss */
+button:hover {
+  background: #624d6b;
+}
+
+/* line 50, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#fontsVersus {
+  background-color: #3F585F;
+}
+/* line 52, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#fontsVersus .vsBig1, #fontsVersus .vsBig2 {
+  font-weight: 700;
+}
+/* line 55, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#fontsVersus .vsBig1 {
+  color: #F53357;
+}
+/* line 58, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#fontsVersus .vsBig2 {
+  color: #47384D;
+}
+/* line 61, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#fontsVersus .vsTagInner {
+  display: inline-block;
+  padding-top: 9px;
+  width: 50px;
+  height: 50px;
+  color: #FFF;
+  background-color: rgba(30, 30, 30, 0.3);
+  border-radius: 50%;
+}
+
+/* line 75, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#homeNav {
+  background: #3F585F;
+}
+/* line 77, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#homeNav .navbar-brand {
+  color: #1E1E1E;
+}
+/* line 80, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#homeNav li {
+  color: #1E1E1E;
+}
+/* line 83, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#homeNav li:hover {
+  color: #FFF;
+  background: #020303;
+}
+/* line 87, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#homeNav li.activeNav {
+  color: #FFF;
+  background: #020303;
+}
+
+/* line 95, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#header {
+  background-image: url("http://lorempixel.com/1920/800/food/");
+}
+/* line 97, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#header h1 {
+  color: #F53357;
+}
+/* line 100, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#header p {
+  max-width: 50%;
+}
+
+/* line 109, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#skills h3 {
+  color: #F53357;
+}
+
+/* line 117, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#aboutUs {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background-color: #F53357;
+}
+/* line 121, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#aboutUs .aboutUsBig {
+  color: #FFF;
+}
+/* line 124, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#aboutUs h4 {
+  color: #88071f;
+}
+/* line 127, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#aboutUs h3 {
+  color: #FFF;
+}
+/* line 130, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#aboutUs h6 {
+  margin-bottom: 2px;
+}
+
+/* line 138, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#blogPosts h5 {
+  color: #F53357;
+}
+
+/* line 147, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#contact h3 {
+  color: #F53357;
+}
+/* line 150, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#contact input, #contact textarea {
+  padding-left: 10px;
+  font-size: 18px;
+  background-color: #3F585F;
+  border: none;
+}
+/* line 155, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#contact input:focus, #contact textarea:focus {
+  outline: none;
+}
+/* line 159, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#contact input {
+  height: 40px;
+}
+/* line 162, ../../../app/styles/themes/theme-cupcake-flat.scss */
+#contact textarea {
+  padding-top: 10px;
+}
+
+/* line 169, ../../../app/styles/themes/theme-cupcake-flat.scss */
+footer {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: #3F585F;
+}

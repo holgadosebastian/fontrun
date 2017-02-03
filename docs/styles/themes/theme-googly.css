@@ -1,0 +1,499 @@
+/*$mainColor: #33FFE6;
+$secondaryColor: #FF2789;
+$fillColor: #2B2E3A;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #037E8C;
+$secondaryColor: #F24C27;
+$fillColor: #024959;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #FF3D7F;
+$secondaryColor: #3FB8AF;
+$fillColor: #7FC7AF;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #D44F3D;
+$secondaryColor: #1C152E;
+$fillColor: #DCAB40;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #FF2EFF;
+$secondaryColor: #D4DC14;
+$fillColor: #4DDA9E;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #ef4b54;
+$secondaryColor: #268180;
+$fillColor: #f8e1b2;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;
+*/
+/*$mainColor: #CC4452;
+$secondaryColor: #723147;
+$fillColor: #E6B098;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #FEB41C;
+$secondaryColor: #363F45;
+$fillColor: #5E7C88;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #FC4349;
+$secondaryColor: #6DBCDB;
+$fillColor: #2C3E50;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #D96666;
+$secondaryColor: #F2E5A2;
+$fillColor: #81AC8B;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;
+*/
+/*$mainColor: #588C8C;
+$secondaryColor: #D9042B;
+$fillColor: #011C26;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #45B29D;
+$secondaryColor: #DF5A49;
+$fillColor: #334D5C;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #E27A3F;
+$secondaryColor: #DF5A49;
+$fillColor: #45B29D;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #DF5A49;
+$secondaryColor: #45B29D;
+$fillColor: #334D5C;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #B296BC;
+$secondaryColor: #00BACF;
+$fillColor: #8F8A8C;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/* $mainColor: #56D9CD;
+$secondaryColor: #4588D8;
+$fillColor: #4588D8;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E; */
+/*$mainColor: #4588D8;
+$secondaryColor: #5dffea;
+$fillColor: #4588D8;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #56D9CD;
+$secondaryColor: #4588D8;
+$accentColor: #F2385A;
+// $fillColor: #0c4d8d;
+$fillColor: #002635;
+
+$lightGray: #f1f1f1;
+$mediumGray: #636363;
+$darkGray: #323232;*/
+/* line 5, ../../../app/styles/themes/theme-googly.scss */
+body {
+  background-color: #E8E8E8;
+}
+
+/* line 11, ../../../app/styles/themes/theme-googly.scss */
+h1 {
+  color: #F53357;
+  font-weight: 700;
+}
+
+/* line 16, ../../../app/styles/themes/theme-googly.scss */
+h2 {
+  padding: 10px 15px 5px;
+  color: #FFF;
+  font-weight: 700;
+  background-color: #3F585F;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+/* line 24, ../../../app/styles/themes/theme-googly.scss */
+#history p {
+  -moz-column-count: 4;
+  column-count: 4;
+}
+
+/* line 34, ../../../app/styles/themes/theme-googly.scss */
+#fontsVersus .vsTagInner:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  background-color: #1E1E1E;
+  top: 50%;
+  left: -35px;
+}
+/* line 43, ../../../app/styles/themes/theme-googly.scss */
+#fontsVersus .vsTagInner:after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  background-color: #1E1E1E;
+  top: 50%;
+  right: -35px;
+}
+
+/* line 55, ../../../app/styles/themes/theme-googly.scss */
+#header {
+  background: #1a1a1a url("../images/small_steps.png") repeat fixed center;
+}
+/* line 57, ../../../app/styles/themes/theme-googly.scss */
+#header p {
+  max-width: 50%;
+  color: #1E1E1E;
+}
+/* line 61, ../../../app/styles/themes/theme-googly.scss */
+#header .headerTag {
+  text-align: center;
+}
+/* line 63, ../../../app/styles/themes/theme-googly.scss */
+#header .headerTag .headerTagInner {
+  padding: 20px;
+  display: inline-block;
+  transition-property: "all";
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+/* line 68, ../../../app/styles/themes/theme-googly.scss */
+#header .headerTag h1 {
+  margin-bottom: 0;
+  padding: 10px 30px 10px 30px;
+  font-size: 30px;
+  color: #FFF;
+  background-color: #3F585F;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  transition-property: "all";
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+/* line 77, ../../../app/styles/themes/theme-googly.scss */
+#header .headerTag h3 {
+  margin-bottom: 0;
+  padding: 15px 30px 10px 30px;
+  font-size: 18px;
+  color: #F53357;
+  background-color: #FFF;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  transition-property: "all";
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+/* line 86, ../../../app/styles/themes/theme-googly.scss */
+#header .headerTag h1, #header .headerTag h3 {
+  margin-top: 0;
+}
+
+/* line 92, ../../../app/styles/themes/theme-googly.scss */
+.headerButton {
+  padding: 6px 20px;
+  font-family: 'secondaryFont';
+  font-size: 18px;
+  color: #FFF;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: #47384D;
+  border: none;
+  border-radius: 5px;
+}
+/* line 102, ../../../app/styles/themes/theme-googly.scss */
+.headerButton:hover {
+  background-color: #624d6b;
+}
+
+/* line 108, ../../../app/styles/themes/theme-googly.scss */
+#skills .col-sm-4 {
+  margin-top: 15px;
+}
+
+/* line 113, ../../../app/styles/themes/theme-googly.scss */
+.skillBox {
+  color: #FFF;
+  border-radius: 7px;
+  overflow: hidden;
+}
+/* line 117, ../../../app/styles/themes/theme-googly.scss */
+.skillBox h3 {
+  margin: 0;
+  padding: 50px 15px 15px;
+  color: #47384D;
+  background: #cecece url("http://lorempixel.com/g/600/150/city/") no-repeat scroll center;
+  background-size: cover;
+}
+/* line 124, ../../../app/styles/themes/theme-googly.scss */
+.skillBox .bottomWrapper {
+  margin: 0;
+  padding: 15px;
+  background-color: #3F585F;
+  position: relative;
+}
+/* line 129, ../../../app/styles/themes/theme-googly.scss */
+.skillBox .bottomWrapper:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 15px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #3F585F;
+}
+
+/* line 141, ../../../app/styles/themes/theme-googly.scss */
+.skillsButton {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 6px 20px;
+  font-family: 'secondaryFont';
+  font-size: 18px;
+  color: #FFF;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: #47384D;
+  border: none;
+  border-radius: 5px;
+}
+/* line 154, ../../../app/styles/themes/theme-googly.scss */
+.skillsButton:hover {
+  background-color: #624d6b;
+}
+
+/* line 159, ../../../app/styles/themes/theme-googly.scss */
+#history {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* line 162, ../../../app/styles/themes/theme-googly.scss */
+#history .wrapper {
+  background-color: #FFF;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+/* line 166, ../../../app/styles/themes/theme-googly.scss */
+#history h2 {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 171, ../../../app/styles/themes/theme-googly.scss */
+#history p {
+  padding: 15px;
+}
+
+/* line 176, ../../../app/styles/themes/theme-googly.scss */
+#randomWords {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* line 179, ../../../app/styles/themes/theme-googly.scss */
+#randomWords .wrapper {
+  background-color: #FFF;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+/* line 182, ../../../app/styles/themes/theme-googly.scss */
+#randomWords .wrapper .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 187, ../../../app/styles/themes/theme-googly.scss */
+#randomWords h2 {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 192, ../../../app/styles/themes/theme-googly.scss */
+#randomWords p {
+  padding: 15px;
+}
+
+/* line 197, ../../../app/styles/themes/theme-googly.scss */
+#aboutUs {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* line 200, ../../../app/styles/themes/theme-googly.scss */
+#aboutUs .container .wrapper {
+  overflow: hidden;
+  padding: 15px;
+  background-color: #FFF;
+  border-radius: 7px;
+}
+/* line 206, ../../../app/styles/themes/theme-googly.scss */
+#aboutUs .aboutUsTag {
+  margin-top: 80px;
+}
+/* line 209, ../../../app/styles/themes/theme-googly.scss */
+#aboutUs .aboutUsBig {
+  font-family: 'mainFont';
+  font-size: 76px;
+  font-weight: 700;
+  color: #F53357;
+  line-height: 0.8;
+}
+/* line 216, ../../../app/styles/themes/theme-googly.scss */
+#aboutUs h3 {
+  margin-top: 5px;
+  margin-bottom: 25px;
+  font-family: 'mainFont';
+  font-weight: 700;
+  color: #1E1E1E;
+}
+/* line 223, ../../../app/styles/themes/theme-googly.scss */
+#aboutUs h5 {
+  margin-bottom: 2px;
+  font-family: 'secondaryFont';
+  font-weight: 300;
+  color: #47384D;
+}
+
+/* line 231, ../../../app/styles/themes/theme-googly.scss */
+#prices {
+  text-align: center;
+}
+/* line 233, ../../../app/styles/themes/theme-googly.scss */
+#prices h3 {
+  color: #F53357;
+}
+/* line 236, ../../../app/styles/themes/theme-googly.scss */
+#prices h4 {
+  color: #3F585F;
+}
+/* line 239, ../../../app/styles/themes/theme-googly.scss */
+#prices .priceTag {
+  display: block;
+  margin-bottom: 15px;
+  font-family: 'secondaryFont';
+  font-size: 36px;
+  font-weight: 700;
+  color: #47384D;
+}
+/* line 247, ../../../app/styles/themes/theme-googly.scss */
+#prices ul {
+  text-align: left;
+}
+/* line 249, ../../../app/styles/themes/theme-googly.scss */
+#prices ul li {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 8px;
+  list-style: none;
+  font-family: 'secondaryFont';
+  font-size: 18px;
+  font-weight: 300;
+  color: #1E1E1E;
+  border-bottom: 1px solid #767676;
+}
+/* line 263, ../../../app/styles/themes/theme-googly.scss */
+#prices .pricesButton {
+  display: block;
+  margin: 15px auto 25px;
+  padding: 6px 20px;
+  font-family: 'secondaryFont';
+  font-size: 18px;
+  color: #FFF;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: #47384D;
+  border: none;
+  border-radius: 5px;
+}
+/* line 275, ../../../app/styles/themes/theme-googly.scss */
+#prices .pricesButton:hover {
+  background-color: #624d6b;
+}
+
+/* line 281, ../../../app/styles/themes/theme-googly.scss */
+#blogPosts {
+  margin-bottom: 15px;
+}
+/* line 283, ../../../app/styles/themes/theme-googly.scss */
+#blogPosts .wrapper {
+  overflow: hidden;
+  background-color: #FFF;
+  border-radius: 7px;
+}
+/* line 287, ../../../app/styles/themes/theme-googly.scss */
+#blogPosts .wrapper .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 292, ../../../app/styles/themes/theme-googly.scss */
+#blogPosts h2 {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 297, ../../../app/styles/themes/theme-googly.scss */
+#blogPosts h3 {
+  margin-bottom: 0;
+  font-weight: 300;
+}
+/* line 301, ../../../app/styles/themes/theme-googly.scss */
+#blogPosts h5 {
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #767676;
+}
+
+/* line 309, ../../../app/styles/themes/theme-googly.scss */
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #F53357;
+}
+/* line 313, ../../../app/styles/themes/theme-googly.scss */
+footer p {
+  color: #FFF;
+}
+/* line 316, ../../../app/styles/themes/theme-googly.scss */
+footer .copyRight {
+  text-align: right;
+}

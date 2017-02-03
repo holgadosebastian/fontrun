@@ -13,7 +13,7 @@ module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt);
 
     // Time how long tasks take. Can help when optimizing build times
-    require('time-grunt')(grunt);
+    // require('time-grunt')(grunt);
 
     // Define the configuration for all the tasks
     grunt.initConfig({
@@ -196,19 +196,19 @@ module.exports = function (grunt) {
         },
 
         // Renames files for browser caching purposes
-        rev: {
-            dist: {
-                files: {
-                    src: [
-                        '<%= config.dist %>/scripts/{,*/}*.js',
-                        '<%= config.dist %>/styles/{,*/}*.css',
-                        '<%= config.dist %>/images/{,*/}*.*',
-                        '<%= config.dist %>/styles/fonts/{,*/}*.*',
-                        '<%= config.dist %>/*.{ico,png}'
-                    ]
-                }
-            }
-        },
+        // rev: {
+        //     dist: {
+        //         files: {
+        //             src: [
+        //                 '<%= config.dist %>/scripts/{,*/}*.js',
+        //                 '<%= config.dist %>/styles/{,*/}*.css',
+        //                 '<%= config.dist %>/images/{,*/}*.*',
+        //                 '<%= config.dist %>/styles/fonts/{,*/}*.*',
+        //                 '<%= config.dist %>/*.{ico,png}'
+        //             ]
+        //         }
+        //     }
+        // },
 
         // Reads HTML for usemin blocks to enable smart builds that automatically
         // concat, minify and revision files. Creates configurations in memory so
@@ -317,6 +317,13 @@ module.exports = function (grunt) {
                     ]
                 }]
             },
+            themes: {
+              expand: true,
+              dot: true,
+              cwd: '.tmp/styles/themes',
+              dest: '<%= config.dist %>/styles/themes/',
+              src: '{,*/}*.css'
+            },
             styles: {
                 expand: true,
                 dot: true,
@@ -357,7 +364,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-rev');
+    // grunt.loadNpmTasks('grunt-rev');
 
     grunt.registerTask('serve', function (target) {
         if (target === 'dist') {
@@ -402,7 +409,8 @@ module.exports = function (grunt) {
         'cssmin',
         'uglify',
         'copy:dist',
-        'rev',
+        'copy:themes',
+        // 'rev',
         'usemin',
         'htmlmin'
     ]);

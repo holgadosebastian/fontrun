@@ -1,0 +1,416 @@
+/*$mainColor: #33FFE6;
+$secondaryColor: #FF2789;
+$fillColor: #2B2E3A;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #037E8C;
+$secondaryColor: #F24C27;
+$fillColor: #024959;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #FF3D7F;
+$secondaryColor: #3FB8AF;
+$fillColor: #7FC7AF;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #D44F3D;
+$secondaryColor: #1C152E;
+$fillColor: #DCAB40;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #FF2EFF;
+$secondaryColor: #D4DC14;
+$fillColor: #4DDA9E;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #ef4b54;
+$secondaryColor: #268180;
+$fillColor: #f8e1b2;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;
+*/
+/*$mainColor: #CC4452;
+$secondaryColor: #723147;
+$fillColor: #E6B098;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #FEB41C;
+$secondaryColor: #363F45;
+$fillColor: #5E7C88;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #FC4349;
+$secondaryColor: #6DBCDB;
+$fillColor: #2C3E50;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #D96666;
+$secondaryColor: #F2E5A2;
+$fillColor: #81AC8B;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;
+*/
+/*$mainColor: #588C8C;
+$secondaryColor: #D9042B;
+$fillColor: #011C26;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #45B29D;
+$secondaryColor: #DF5A49;
+$fillColor: #334D5C;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #E27A3F;
+$secondaryColor: #DF5A49;
+$fillColor: #45B29D;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #DF5A49;
+$secondaryColor: #45B29D;
+$fillColor: #334D5C;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #B296BC;
+$secondaryColor: #00BACF;
+$fillColor: #8F8A8C;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/* $mainColor: #56D9CD;
+$secondaryColor: #4588D8;
+$fillColor: #4588D8;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E; */
+/*$mainColor: #4588D8;
+$secondaryColor: #5dffea;
+$fillColor: #4588D8;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #56D9CD;
+$secondaryColor: #4588D8;
+$accentColor: #F2385A;
+// $fillColor: #0c4d8d;
+$fillColor: #002635;
+
+$lightGray: #f1f1f1;
+$mediumGray: #636363;
+$darkGray: #323232;*/
+/* line 5, ../../../app/styles/themes/theme-future.scss */
+body {
+  background-color: #FFF;
+}
+
+/* line 12, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper h1 {
+  color: #F53357;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+/* line 18, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper h2 {
+  display: inline-block;
+  margin: 40px 0 10px;
+  padding: 6px 15px 4px;
+  color: #FFF;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background-color: #3F585F;
+  border-left: 6px solid #F53357;
+}
+/* line 32, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper button {
+  padding: 6px 20px;
+  font-family: 'secondaryFont';
+  font-size: 18px;
+  color: #FFF;
+  font-weight: 300;
+  text-transform: capitalize;
+  background-color: #47384D;
+  border: none;
+}
+/* line 41, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper button:hover {
+  background-color: #624d6b;
+}
+/* line 48, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #fontsVersus {
+  text-transform: uppercase;
+}
+/* line 50, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #fontsVersus .vsTag {
+  margin-bottom: 20px;
+}
+/* line 53, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #fontsVersus .vsTagInner {
+  padding: 5px 15px;
+  color: #FFF;
+  background-color: #3F585F;
+}
+/* line 58, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #fontsVersus .vsBig1, .site-wrapper #fontsVersus .vsBig2 {
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #FFF;
+  font-weight: 300;
+}
+/* line 64, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #fontsVersus .vsBig1 {
+  background-color: #F53357;
+  border-left: 15px solid #3F585F;
+}
+/* line 68, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #fontsVersus .vsBig2 {
+  background-color: #47384D;
+  border-left: 15px solid #3F585F;
+}
+/* line 76, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #homeNav {
+  background-color: #3F585F;
+}
+/* line 78, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #homeNav .navbar-brand {
+  font-family: 'mainFont';
+  font-size: 24px;
+  font-weight: 300;
+  color: #FFF;
+}
+/* line 86, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #homeNav ul li a {
+  font-weight: 300;
+  color: #FFF;
+  text-transform: uppercase;
+  transition-property: "all";
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+/* line 91, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #homeNav ul li a:hover {
+  padding-bottom: 10px;
+  border-bottom: 5px solid #F53357;
+}
+/* line 102, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #header {
+  background: #1a1a1a url("../images/escheresque_ste.png") repeat fixed center;
+}
+/* line 105, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #header .headerTag .headerTagInner {
+  padding: 15px;
+  background-color: #47384D;
+  border-left: 8px solid #F53357;
+}
+/* line 110, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #header .headerTag h1, .site-wrapper #header .headerTag h3 {
+  color: #FFF;
+  text-align: left;
+}
+/* line 114, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #header .headerTag h1 {
+  margin-bottom: 10px;
+  color: #FFF;
+}
+/* line 118, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #header .headerTag h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+/* line 123, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #header p {
+  color: #FFF;
+}
+/* line 130, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper .skillBox {
+  background-color: #3F585F;
+  color: #FFF;
+}
+/* line 133, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper .skillBox h3 {
+  margin-right: 15px;
+  margin-left: 15px;
+  padding: 30px 0 10px;
+  border-bottom: 1px solid #F53357;
+}
+/* line 139, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper .skillBox p {
+  padding: 5px 15px;
+}
+/* line 142, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper .skillBox button {
+  width: 100%;
+}
+/* line 149, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #aboutUs {
+  margin-bottom: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #1E1E1E;
+}
+/* line 154, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #aboutUs .aboutUsTag {
+  margin-top: 80px;
+}
+/* line 157, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #aboutUs .aboutUsBig {
+  font-family: 'mainFont';
+  font-size: 76px;
+  font-weight: 300;
+  color: #F53357;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+/* line 165, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #aboutUs .aboutUsPerson {
+  margin-bottom: 12px;
+  padding: 5px 10px;
+  background-color: #E8E8E8;
+  border-left: 5px solid #F53357;
+}
+/* line 171, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #aboutUs h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: 'mainFont';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1E1E1E;
+}
+/* line 179, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #aboutUs h4 {
+  color: #FFF;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+/* line 184, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #aboutUs h6 {
+  margin-bottom: 2px;
+  font-family: 'secondaryFont';
+  font-weight: 300;
+  color: #F53357;
+  text-transform: uppercase;
+}
+/* line 197, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #prices .pricesBox {
+  padding-top: 5px;
+  background-color: #3F585F;
+}
+/* line 201, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #prices h3 {
+  font-weight: 300;
+  color: #E8E8E8;
+  text-transform: uppercase;
+}
+/* line 206, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #prices h4 {
+  font-weight: 700;
+  color: #F53357;
+  text-transform: uppercase;
+}
+/* line 211, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #prices .priceTag {
+  margin-bottom: 15px;
+  font-family: 'mainFont';
+  font-weight: 700;
+}
+/* line 216, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #prices ul {
+  margin-bottom: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* line 220, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #prices ul li {
+  margin: 0;
+  padding: 8px 12px 4px;
+  font-family: 'mainFont';
+  font-size: 18px;
+  font-weight: 300;
+  color: #FFF;
+  text-transform: uppercase;
+  border-bottom: 1px solid #F53357;
+}
+/* line 229, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #prices ul li:last-child {
+  border-bottom: none !important;
+}
+/* line 234, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #prices button {
+  width: 100%;
+}
+/* line 242, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #blogPosts h3 {
+  font-weight: 300;
+  color: #1E1E1E;
+}
+/* line 246, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #blogPosts h5 {
+  font-weight: 300;
+  color: #F53357;
+  text-transform: uppercase;
+}
+/* line 256, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #contact .textBox {
+  min-height: 203px;
+}
+/* line 259, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #contact h3 {
+  font-weight: 300;
+  color: #F53357;
+}
+/* line 263, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #contact p {
+  color: #1E1E1E;
+}
+/* line 266, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #contact input, .site-wrapper #contact textarea {
+  padding: 10px;
+  font-family: 'secondaryFont';
+  font-size: 16px;
+  font-weight: 300;
+  color: #FFF;
+  background-color: #3F585F;
+  transition-property: border;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+/* line 274, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #contact input:hover, .site-wrapper #contact input:focus, .site-wrapper #contact textarea:hover, .site-wrapper #contact textarea:focus {
+  outline: none;
+  -webkit-appearance: none;
+}
+/* line 279, ../../../app/styles/themes/theme-future.scss */
+.site-wrapper #contact textarea {
+  min-height: 140px;
+}
