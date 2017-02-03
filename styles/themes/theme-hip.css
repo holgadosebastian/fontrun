@@ -1,0 +1,308 @@
+/*$mainColor: #33FFE6;
+$secondaryColor: #FF2789;
+$fillColor: #2B2E3A;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #037E8C;
+$secondaryColor: #F24C27;
+$fillColor: #024959;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #FF3D7F;
+$secondaryColor: #3FB8AF;
+$fillColor: #7FC7AF;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #D44F3D;
+$secondaryColor: #1C152E;
+$fillColor: #DCAB40;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #FF2EFF;
+$secondaryColor: #D4DC14;
+$fillColor: #4DDA9E;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #ef4b54;
+$secondaryColor: #268180;
+$fillColor: #f8e1b2;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;
+*/
+/*$mainColor: #CC4452;
+$secondaryColor: #723147;
+$fillColor: #E6B098;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #FEB41C;
+$secondaryColor: #363F45;
+$fillColor: #5E7C88;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #FC4349;
+$secondaryColor: #6DBCDB;
+$fillColor: #2C3E50;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #D96666;
+$secondaryColor: #F2E5A2;
+$fillColor: #81AC8B;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;
+*/
+/*$mainColor: #588C8C;
+$secondaryColor: #D9042B;
+$fillColor: #011C26;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #45B29D;
+$secondaryColor: #DF5A49;
+$fillColor: #334D5C;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #E27A3F;
+$secondaryColor: #DF5A49;
+$fillColor: #45B29D;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #DF5A49;
+$secondaryColor: #45B29D;
+$fillColor: #334D5C;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #B296BC;
+$secondaryColor: #00BACF;
+$fillColor: #8F8A8C;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/* $mainColor: #56D9CD;
+$secondaryColor: #4588D8;
+$fillColor: #4588D8;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E; */
+/*$mainColor: #4588D8;
+$secondaryColor: #5dffea;
+$fillColor: #4588D8;
+
+$lightGray: #E8E8E8;
+$mediumGray: #767676;
+$darkGray: #1E1E1E;*/
+/*$mainColor: #56D9CD;
+$secondaryColor: #4588D8;
+$accentColor: #F2385A;
+// $fillColor: #0c4d8d;
+$fillColor: #002635;
+
+$lightGray: #f1f1f1;
+$mediumGray: #636363;
+$darkGray: #323232;*/
+/* line 5, ../../../app/styles/themes/theme-hip.scss */
+body {
+  background-color: #E8E8E8;
+}
+
+/* line 11, ../../../app/styles/themes/theme-hip.scss */
+h1 {
+  color: #F53357;
+  font-weight: 700;
+}
+
+/* line 16, ../../../app/styles/themes/theme-hip.scss */
+h2 {
+  margin: 10px 0;
+  padding: 6px 15px;
+  color: #1E1E1E;
+  font-weight: 700;
+  border-top: 1px solid #1E1E1E;
+  border-bottom: 1px solid #1E1E1E;
+}
+
+/* line 25, ../../../app/styles/themes/theme-hip.scss */
+#history p {
+  -moz-column-count: 4;
+  column-count: 4;
+}
+
+/* line 35, ../../../app/styles/themes/theme-hip.scss */
+#fontsVersus .wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
+  border-top: 1px solid #1E1E1E;
+  border-bottom: 1px solid #1E1E1E;
+}
+
+/* line 45, ../../../app/styles/themes/theme-hip.scss */
+#header {
+  text-align: center;
+  background: #1a1a1a url("http://lorempixel.com/g/1920/600/nature/") no-repeat fixed center;
+  background-size: cover;
+}
+/* line 49, ../../../app/styles/themes/theme-hip.scss */
+#header h1 {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+}
+/* line 61, ../../../app/styles/themes/theme-hip.scss */
+#header p {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 500px;
+  color: #FFF;
+  text-align: center;
+}
+
+/* line 72, ../../../app/styles/themes/theme-hip.scss */
+button {
+  padding: 6px 20px;
+  font-family: 'secondaryFont';
+  font-size: 18px;
+  color: #FFF;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: #47384D;
+  border: none;
+}
+/* line 81, ../../../app/styles/themes/theme-hip.scss */
+button:hover {
+  background-color: #624d6b;
+}
+
+/* line 89, ../../../app/styles/themes/theme-hip.scss */
+#skills .col-sm-4 {
+  margin-top: 15px;
+}
+
+/* line 94, ../../../app/styles/themes/theme-hip.scss */
+.skillBox {
+  color: #FFF;
+  border-radius: 7px;
+  text-align: center;
+}
+/* line 98, ../../../app/styles/themes/theme-hip.scss */
+.skillBox h3 {
+  margin: 0;
+  padding: 50px 15px 15px;
+  color: #47384D;
+}
+/* line 103, ../../../app/styles/themes/theme-hip.scss */
+.skillBox .bottomWrapper {
+  border-top: 1px solid #3F585F;
+  border-bottom: 1px solid #3F585F;
+}
+/* line 107, ../../../app/styles/themes/theme-hip.scss */
+.skillBox p {
+  margin: 0;
+  padding: 15px;
+  position: relative;
+  color: #3F585F;
+}
+/* line 113, ../../../app/styles/themes/theme-hip.scss */
+.skillBox button {
+  margin-bottom: 10px;
+  padding: 0;
+  font-family: 'secondaryFont';
+  font-size: 18px;
+  color: #1E1E1E;
+  font-weight: 300;
+  text-transform: lowercase;
+  background-color: transparent;
+  border: none;
+}
+/* line 123, ../../../app/styles/themes/theme-hip.scss */
+.skillBox button:hover {
+  color: #624d6b;
+}
+
+/* line 132, ../../../app/styles/themes/theme-hip.scss */
+#history {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* line 137, ../../../app/styles/themes/theme-hip.scss */
+#history h2 {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 142, ../../../app/styles/themes/theme-hip.scss */
+#history p {
+  padding: 15px;
+}
+
+/* line 150, ../../../app/styles/themes/theme-hip.scss */
+#randomWords {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* line 154, ../../../app/styles/themes/theme-hip.scss */
+#randomWords .wrapper .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 159, ../../../app/styles/themes/theme-hip.scss */
+#randomWords h2 {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 164, ../../../app/styles/themes/theme-hip.scss */
+#randomWords p {
+  padding: 15px;
+}
+
+/* line 172, ../../../app/styles/themes/theme-hip.scss */
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #F53357;
+}
+/* line 176, ../../../app/styles/themes/theme-hip.scss */
+footer p {
+  color: #FFF;
+}
+/* line 179, ../../../app/styles/themes/theme-hip.scss */
+footer .copyRight {
+  text-align: right;
+}
