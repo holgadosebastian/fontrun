@@ -6,7 +6,8 @@
     "jquery": "~1.11.0",
     "angular": "1.6.1",
     "normalize-css": "normalize.css#^5.0.0",
-    "angular-route": "^1.6.1"
+    "angular-route": "^1.6.1",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {}
 }

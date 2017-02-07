@@ -1,4 +1,10 @@
-.site-wrapper {
+.site__wrapper {
+	transition: padding-left 0.5s ease;
+
+	&.site__wrapper--menu {
+		padding-left: 360px;
+	}
+
 	h1 {
 		font-size: 37px;
 	}
@@ -192,6 +198,15 @@
 // Words
 
 #home-words {
+	.words__list {
+		display: flex;
+		flex-wrap: wrap;
+
+		li {
+			flex-basis: 16.66666%;
+		}
+	}
+
 	.words__column {
 		&:nth-child(odd) {
 			font-family: 'mainFont';

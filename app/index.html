@@ -28,34 +28,34 @@
 
   <link rel="stylesheet" ng-href="styles/themes/theme-{{ themes.current }}.css">
   <style>
-    .site-wrapper h1,
-    .site-wrapper	h2,
-    .site-wrapper	h4,
-    .site-wrapper	h5,
-    .site-wrapper .versus__primary {
+    .site__wrapper h1,
+    .site__wrapper	h2,
+    .site__wrapper	h4,
+    .site__wrapper	h5,
+    .site__wrapper .font__primary {
   		font-family: {{ fonts.primary | fontName }};
   	}
 
-    .site-wrapper	h3,
-    .site-wrapper	h6,
-    .site-wrapper	p,
-    .site-wrapper .versus__secondary {
+    .site__wrapper	h3,
+    .site__wrapper	h6,
+    .site__wrapper	p,
+    .site__wrapper .font__secondary {
   		font-family: {{ fonts.secondary | fontName }};
   	}
-
   </style>
 </head>
-<body ng-controller="MainCtrl">
+<body ng-controller="MainCtrl as main">
 
   <ng-include src="'partials/side-menu.html'"></ng-include>
 
-  <main ng-view class="site-wrapper"></main>
+  <main ng-view class="site__wrapper" ng-class="{ 'site__wrapper--menu' : controls.showSideMenu }"></main>
 
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="bower_components/underscore/underscore-min.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -74,7 +74,10 @@
   <script src="scripts/controllers/main-controller.js"></script>
   <script src="scripts/controllers/menu-controller.js"></script>
 
+  <script src="scripts/services/random-word-service.js"></script>
+
   <script src="scripts/filters/font-name-filter.js"></script>
   <!-- endbuild -->
+
 </body>
 </html>

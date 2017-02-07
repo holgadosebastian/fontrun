@@ -1,0 +1,41 @@
+.test__cards {
+	margin-top: 45px;
+	display: flex;
+	flex-wrap: wrap;
+
+	.test__card {
+		flex-basis: 33.33333%;
+		padding: 25px;
+
+		&.card--dark-bg {
+			background-color: #000;
+		}
+
+		&.card--dark-text {
+			color: #000;
+			border-bottom-color: #000;
+		}
+
+		&.card--light-text {
+			color: #FFF;
+			border-bottom-color: #FFF;
+		}
+
+		 p {
+			 color: inherit;
+		 }
+	}
+
+	.card__title {
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		font-size: 30px;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+	}
+
+	.card__description {
+		font-size: 16px;
+		line-height: 1.3;
+	}
+}

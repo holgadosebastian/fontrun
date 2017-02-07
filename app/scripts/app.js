@@ -19,11 +19,14 @@ angular
     '$routeProvider',
     function ($routeProvider) {
       $routeProvider
-        .when('/home', {
-          templateUrl: 'views/home.html'
+        .when('/', {
+          templateUrl: 'views/home-view.html'
+        })
+        .when('/test', {
+          templateUrl: 'views/test-view.html'
         })
         .otherwise( {
-          redirectTo: '/home'
+          redirectTo: '/'
         });
       }
   ])
@@ -31,6 +34,9 @@ angular
     '$rootScope',
     'premadeThemes',
     function( $rootScope, premadeThemes ) {
+      $rootScope.controls = {};
+      $rootScope.controls.showSideMenu = false;
+
       $rootScope.fonts = {};
       $rootScope.fonts.primary = 'Abril+Fatface';
       $rootScope.fonts.secondary = 'Raleway';

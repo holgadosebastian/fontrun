@@ -1,6 +1,6 @@
 <div ng-controller="MenuCtrl as menu">
 	<span class="fr-side-menu__open"
-		ng-click="menu.showSideMenu = true">
+		ng-click="controls.showSideMenu = true">
 		<i class="fa fa-cogs"></i>
 	</span>
 
@@ -12,13 +12,13 @@
 	</div>
 
 	<nav class="fr-side-menu"
-		ng-class="{ 'side-menu--show' : menu.showSideMenu }">
+		ng-class="{ 'side-menu--show' : controls.showSideMenu }">
 
 		<header>
 			<img class="side-menu__logo" src="images/fontrun-logo-white.svg" alt="fontRun logo white">
 
 			<span class="side-menu__close"
-				ng-click="menu.showSideMenu = false">
+				ng-click="controls.showSideMenu = false">
 				<i class="fa fa-close"></i>
 			</span>
 		</header>
@@ -28,20 +28,20 @@
 				<p class="side-menu__title -h1">Selected fonts</p>
 				<ul>
 					<li ng-class="{ 'side-menu__font-select--edit' : menu.editPrimaryFont }"
-							ng-click="menu.editPrimaryFont = !menu.editPrimaryFont">
+							ng-click="menu.editPrimaryFont = true">
 						<p class="side-menu__title -h4">MAIN FONT</p>
 						<p class="side-menu__title -h2">{{ fonts.primary | fontName }}</p>
-						<input class="-h2" type="text" ng-model="fonts.primary">
+						<input class="side-menu__input side-menu__input--font -h2" type="text" ng-model="fonts.primary">
 					</li>
 					<span class="side-menu__font-switch"
 						ng-click="menu.switchFonts()">
 						<span class="fa fa-exchange fa-rotate-90"></span>
 					</span>
 					<li ng-class="{ 'side-menu__font-select--edit' : menu.editSecondaryFont }"
-							ng-click="menu.editSecondaryFont = !menu.editSecondaryFont">
+							ng-click="menu.editSecondaryFont = true">
 						<p class="side-menu__title -h4">SECONDARY FONT</p>
 						<p class="side-menu__title -h2">{{ fonts.secondary | fontName }}</p>
-						<input class="-h2" type="text" ng-model="fonts.secondary">
+						<input class="side-menu__input side-menu__input--font -h2" type="text" ng-model="fonts.secondary">
 					</li>
 				</ul>
 			</div>
@@ -51,15 +51,15 @@
 				<ul class="side-menu__selected-colors">
 					<li>
 						<span ng-style="{ 'background-color': '#'+colors.primary }"></span>
-						<input type="text" ng-model="colors.primary">
+						<input class="side-menu__input side-menu__input--color" type="text" ng-model="colors.primary">
 					</li>
 					<li>
 						<span ng-style="{ 'background-color': '#'+colors.secondary }"></span>
-						<input type="text" ng-model="colors.secondary">
+						<input class="side-menu__input side-menu__input--color" type="text" ng-model="colors.secondary">
 					</li>
 					<li>
 						<span ng-style="{ 'background-color': '#'+colors.tertiary }"></span>
-						<input type="text" ng-model="colors.tertiary">
+						<input class="side-menu__input side-menu__input--color" type="text" ng-model="colors.tertiary">
 					</li>
 				</ul>
 

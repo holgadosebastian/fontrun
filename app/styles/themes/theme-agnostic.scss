@@ -8,7 +8,7 @@ body {
 
 // Fonts
 
-.site-wrapper {
+.site__wrapper {
 	h1 {
 		color: $mainColor;
 		font-weight: 700;
@@ -75,7 +75,6 @@ body {
 
 
 // Nav bar
-
 #home-nav {
 	background: $darkGray url("../images/retroTile.png") repeat scroll center;
 
@@ -127,7 +126,6 @@ body {
 
 	.header__button {
 		padding: 6px 20px;
-		font-family: 'mainFont';
 		font-size: 18px;
 		color: $mainColor;
 		font-weight: 700;
@@ -300,7 +298,6 @@ body {
 
 	.prices__tag {
 		margin-bottom: 15px;
-		font-family: 'mainFont';
 		font-weight: 700;
 	}
 
@@ -312,7 +309,6 @@ body {
 		}
 
 		li {
-			font-family: 'mainFont';
 			font-size: 18px;
 			font-weight: 700;
 			color: $darkGray;
