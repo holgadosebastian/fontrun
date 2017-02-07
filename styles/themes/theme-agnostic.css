@@ -134,12 +134,12 @@ body {
 }
 
 /* line 12, ../../../app/styles/themes/theme-agnostic.scss */
-.site-wrapper h1 {
+.site__wrapper h1 {
   color: #F53357;
   font-weight: 700;
 }
 /* line 17, ../../../app/styles/themes/theme-agnostic.scss */
-.site-wrapper h2 {
+.site__wrapper h2 {
   display: inline-block;
   position: relative;
   margin: 8px 0;
@@ -149,30 +149,30 @@ body {
   font-weight: 700;
 }
 /* line 27, ../../../app/styles/themes/theme-agnostic.scss */
-.site-wrapper p {
+.site__wrapper p {
   font-weight: 400;
   color: #1E1E1E;
 }
 /* line 32, ../../../app/styles/themes/theme-agnostic.scss */
-.site-wrapper #history p {
+.site__wrapper #history p {
   -moz-column-count: 4;
   column-count: 4;
 }
 /* line 40, ../../../app/styles/themes/theme-agnostic.scss */
-.site-wrapper .section__header {
+.site__wrapper .section__header {
   margin-top: 30px;
 }
 /* line 46, ../../../app/styles/themes/theme-agnostic.scss */
-.site-wrapper footer {
+.site__wrapper footer {
   padding-top: 10px;
   background-color: #F53357;
 }
 /* line 50, ../../../app/styles/themes/theme-agnostic.scss */
-.site-wrapper footer p {
+.site__wrapper footer p {
   color: #FFF;
 }
 /* line 54, ../../../app/styles/themes/theme-agnostic.scss */
-.site-wrapper footer .footer__author {
+.site__wrapper footer .footer__author {
   text-align: right;
 }
 
@@ -190,54 +190,53 @@ body {
   border: 2px solid black;
 }
 
-/* line 79, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 78, ../../../app/styles/themes/theme-agnostic.scss */
 #home-nav {
   background: #1E1E1E url("../images/retroTile.png") repeat scroll center;
 }
-/* line 84, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 83, ../../../app/styles/themes/theme-agnostic.scss */
 #home-nav .nav__logo a {
   color: #FFF;
   background-color: #F53357;
 }
-/* line 88, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 87, ../../../app/styles/themes/theme-agnostic.scss */
 #home-nav .nav__logo a:hover {
   background-color: #f7647f;
 }
-/* line 95, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 94, ../../../app/styles/themes/theme-agnostic.scss */
 #home-nav .nav__item a {
   color: #FFF;
 }
-/* line 98, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 97, ../../../app/styles/themes/theme-agnostic.scss */
 #home-nav .nav__item a:hover {
   color: #F53357;
 }
 
-/* line 107, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 106, ../../../app/styles/themes/theme-agnostic.scss */
 #home-header {
   background: #1a1a1a url("https://unsplash.it/1920/600/?image=1082") no-repeat scroll center;
   background-size: cover;
   border-bottom: 10px solid #3F585F;
 }
-/* line 112, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 111, ../../../app/styles/themes/theme-agnostic.scss */
 #home-header h1 {
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 117, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 116, ../../../app/styles/themes/theme-agnostic.scss */
 #home-header p {
   margin-top: 20px;
   margin-bottom: 15px;
   max-width: 50%;
   color: #FFF;
 }
-/* line 124, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 123, ../../../app/styles/themes/theme-agnostic.scss */
 #home-header .header__overlay {
   background-color: rgba(63, 88, 95, 0.3);
 }
-/* line 128, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 127, ../../../app/styles/themes/theme-agnostic.scss */
 #home-header .header__button {
   padding: 6px 20px;
-  font-family: 'mainFont';
   font-size: 18px;
   color: #F53357;
   font-weight: 700;
@@ -246,22 +245,22 @@ body {
   border: 2px solid #F53357;
   transition: all 0.4s ease-in-out;
 }
-/* line 138, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 136, ../../../app/styles/themes/theme-agnostic.scss */
 #home-header .header__button:hover {
   color: #FFF;
   background-color: #F53357;
 }
 
-/* line 149, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 147, ../../../app/styles/themes/theme-agnostic.scss */
 #home-skills .col-sm-4 {
   margin-top: 15px;
 }
-/* line 153, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 151, ../../../app/styles/themes/theme-agnostic.scss */
 #home-skills .skills__item {
   color: #FFF;
   border: 5px solid #1E1E1E;
 }
-/* line 157, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 155, ../../../app/styles/themes/theme-agnostic.scss */
 #home-skills .skills__item h3 {
   text-align: center;
   position: relative;
@@ -269,7 +268,7 @@ body {
   padding: 50px 15px 15px;
   color: #1E1E1E;
 }
-/* line 164, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 162, ../../../app/styles/themes/theme-agnostic.scss */
 #home-skills .skills__item h3:before {
   position: absolute;
   content: "";
@@ -280,13 +279,13 @@ body {
   bottom: -4px;
   background-color: #1E1E1E;
 }
-/* line 176, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 174, ../../../app/styles/themes/theme-agnostic.scss */
 #home-skills .skills__item p {
   margin: 0;
   padding: 15px;
   color: #3F585F;
 }
-/* line 183, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 181, ../../../app/styles/themes/theme-agnostic.scss */
 #home-skills .skills__item-button {
   margin-bottom: 10px;
   padding: 0;
@@ -298,73 +297,73 @@ body {
   background-color: transparent;
   border: none;
 }
-/* line 193, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 191, ../../../app/styles/themes/theme-agnostic.scss */
 #home-skills .skills__item-button:hover {
   color: #624d6b;
 }
 
-/* line 201, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 199, ../../../app/styles/themes/theme-agnostic.scss */
 #home-history {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* line 204, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 202, ../../../app/styles/themes/theme-agnostic.scss */
 #home-history .titleIcon:before {
   content: "34";
 }
-/* line 207, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 205, ../../../app/styles/themes/theme-agnostic.scss */
 #home-history .wrapper {
   padding-top: 20px;
   background-color: #E8E8E8;
 }
-/* line 211, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 209, ../../../app/styles/themes/theme-agnostic.scss */
 #home-history p {
   padding: 15px;
 }
 
-/* line 218, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 216, ../../../app/styles/themes/theme-agnostic.scss */
 #home-words {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* line 223, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 221, ../../../app/styles/themes/theme-agnostic.scss */
 #home-words .wrapper .row {
   margin-left: 0;
   margin-right: 0;
   padding-top: 30px;
 }
-/* line 230, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 228, ../../../app/styles/themes/theme-agnostic.scss */
 #home-words p {
   padding: 15px;
 }
 
-/* line 238, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 236, ../../../app/styles/themes/theme-agnostic.scss */
 #home-team {
   margin-top: 15px;
   margin-bottom: 15px;
   background-color: #E8E8E8;
   border-bottom: 5px solid #F53357;
 }
-/* line 244, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 242, ../../../app/styles/themes/theme-agnostic.scss */
 #home-team .container .wrapper {
   overflow: hidden;
   padding: 15px;
   border-radius: 7px;
 }
-/* line 250, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 248, ../../../app/styles/themes/theme-agnostic.scss */
 #home-team .team__tag {
   margin-top: 80px;
 }
-/* line 254, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 252, ../../../app/styles/themes/theme-agnostic.scss */
 #home-team .h1 {
   font-weight: 700;
   color: #F53357;
 }
-/* line 260, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 258, ../../../app/styles/themes/theme-agnostic.scss */
 #home-team li + li {
   margin-top: 25px;
 }
-/* line 265, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 263, ../../../app/styles/themes/theme-agnostic.scss */
 #home-team h3 {
   font-size: 28px;
   font-weight: 700;
@@ -372,54 +371,52 @@ body {
   text-transform: uppercase;
   border-bottom: 4px solid #1E1E1E;
 }
-/* line 273, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 271, ../../../app/styles/themes/theme-agnostic.scss */
 #home-team h5 {
   font-weight: 700;
 }
 
-/* line 280, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 278, ../../../app/styles/themes/theme-agnostic.scss */
 #home-prices {
   margin-bottom: 100px;
 }
-/* line 283, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 281, ../../../app/styles/themes/theme-agnostic.scss */
 #home-prices .row {
   margin-right: 0;
   margin-left: 0;
   padding-top: 20px;
 }
-/* line 289, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 287, ../../../app/styles/themes/theme-agnostic.scss */
 #home-prices h3 {
   font-weight: 700;
   color: #F53357;
 }
-/* line 294, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 292, ../../../app/styles/themes/theme-agnostic.scss */
 #home-prices h4 {
   font-size: 18px;
   font-weight: 300;
   color: #3F585F;
   text-transform: uppercase;
 }
-/* line 301, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 299, ../../../app/styles/themes/theme-agnostic.scss */
 #home-prices .prices__tag {
   margin-bottom: 15px;
-  font-family: 'mainFont';
   font-weight: 700;
 }
-/* line 308, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 305, ../../../app/styles/themes/theme-agnostic.scss */
 #home-prices .prices__list ul {
   text-align: left;
   padding-left: 3%;
   padding-right: 3%;
 }
-/* line 314, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 311, ../../../app/styles/themes/theme-agnostic.scss */
 #home-prices .prices__list li {
-  font-family: 'mainFont';
   font-size: 18px;
   font-weight: 700;
   color: #1E1E1E;
   border-bottom: 4px solid #1E1E1E;
 }
-/* line 323, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 319, ../../../app/styles/themes/theme-agnostic.scss */
 #home-prices .prices__button {
   display: inline-block;
   margin-top: 20px;
@@ -435,53 +432,53 @@ body {
   box-shadow: 0 4px #ea0b35;
   cursor: pointer;
 }
-/* line 338, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 334, ../../../app/styles/themes/theme-agnostic.scss */
 #home-prices .prices__button:hover {
   background-color: #f7647f;
   box-shadow: 0 4px #F53357;
 }
 
-/* line 350, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 346, ../../../app/styles/themes/theme-agnostic.scss */
 #home-blog .row {
   margin-right: 0;
   margin-left: 0;
   padding-top: 15px;
 }
-/* line 356, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 352, ../../../app/styles/themes/theme-agnostic.scss */
 #home-blog h3 {
   color: #1E1E1E;
 }
-/* line 360, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 356, ../../../app/styles/themes/theme-agnostic.scss */
 #home-blog h5 {
   font-weight: 700;
   color: #F53357;
 }
 
-/* line 369, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 365, ../../../app/styles/themes/theme-agnostic.scss */
 #home-contact {
   margin-bottom: 30px;
 }
-/* line 372, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 368, ../../../app/styles/themes/theme-agnostic.scss */
 #home-contact .row {
   margin-right: 0;
   margin-left: 0;
   padding-top: 20px;
 }
-/* line 378, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 374, ../../../app/styles/themes/theme-agnostic.scss */
 #home-contact .textBox {
   min-height: 203px;
   padding: 15px;
 }
-/* line 383, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 379, ../../../app/styles/themes/theme-agnostic.scss */
 #home-contact h3 {
   font-weight: 300;
   color: #F53357;
 }
-/* line 387, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 383, ../../../app/styles/themes/theme-agnostic.scss */
 #home-contact p {
   color: #1E1E1E;
 }
-/* line 391, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 387, ../../../app/styles/themes/theme-agnostic.scss */
 #home-contact input, #home-contact textarea {
   padding: 12px;
   font-family: 'secondaryFont';
@@ -494,12 +491,12 @@ body {
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
-/* line 400, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 396, ../../../app/styles/themes/theme-agnostic.scss */
 #home-contact input:hover, #home-contact input:focus, #home-contact textarea:hover, #home-contact textarea:focus {
   background-color: #47384D;
   color: #FFF;
 }
-/* line 406, ../../../app/styles/themes/theme-agnostic.scss */
+/* line 402, ../../../app/styles/themes/theme-agnostic.scss */
 #home-contact textarea {
   min-height: 140px;
 }

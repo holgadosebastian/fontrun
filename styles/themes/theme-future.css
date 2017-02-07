@@ -134,13 +134,13 @@ body {
 }
 
 /* line 12, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper h1 {
+.site__wrapper h1 {
   color: #F53357;
   font-weight: 300;
   text-transform: uppercase;
 }
 /* line 18, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper h2 {
+.site__wrapper h2 {
   display: inline-block;
   margin: 40px 0 10px;
   padding: 6px 15px 4px;
@@ -152,7 +152,7 @@ body {
   border-left: 6px solid #F53357;
 }
 /* line 32, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper button {
+.site__wrapper button {
   padding: 6px 20px;
   font-family: 'secondaryFont';
   font-size: 18px;
@@ -163,53 +163,53 @@ body {
   border: none;
 }
 /* line 41, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper button:hover {
+.site__wrapper button:hover {
   background-color: #624d6b;
 }
 /* line 48, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #fontsVersus {
+.site__wrapper #fontsVersus {
   text-transform: uppercase;
 }
 /* line 50, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #fontsVersus .vsTag {
+.site__wrapper #fontsVersus .vsTag {
   margin-bottom: 20px;
 }
 /* line 53, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #fontsVersus .vsTagInner {
+.site__wrapper #fontsVersus .vsTagInner {
   padding: 5px 15px;
   color: #FFF;
   background-color: #3F585F;
 }
 /* line 58, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #fontsVersus .vsBig1, .site-wrapper #fontsVersus .vsBig2 {
+.site__wrapper #fontsVersus .vsBig1, .site__wrapper #fontsVersus .vsBig2 {
   padding-right: 20px;
   padding-left: 20px;
   color: #FFF;
   font-weight: 300;
 }
 /* line 64, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #fontsVersus .vsBig1 {
+.site__wrapper #fontsVersus .vsBig1 {
   background-color: #F53357;
   border-left: 15px solid #3F585F;
 }
 /* line 68, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #fontsVersus .vsBig2 {
+.site__wrapper #fontsVersus .vsBig2 {
   background-color: #47384D;
   border-left: 15px solid #3F585F;
 }
 /* line 76, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #homeNav {
+.site__wrapper #homeNav {
   background-color: #3F585F;
 }
 /* line 78, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #homeNav .navbar-brand {
+.site__wrapper #homeNav .navbar-brand {
   font-family: 'mainFont';
   font-size: 24px;
   font-weight: 300;
   color: #FFF;
 }
 /* line 86, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #homeNav ul li a {
+.site__wrapper #homeNav ul li a {
   font-weight: 300;
   color: #FFF;
   text-transform: uppercase;
@@ -218,72 +218,72 @@ body {
   transition-timing-function: ease-in-out;
 }
 /* line 91, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #homeNav ul li a:hover {
+.site__wrapper #homeNav ul li a:hover {
   padding-bottom: 10px;
   border-bottom: 5px solid #F53357;
 }
 /* line 102, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #header {
+.site__wrapper #header {
   background: #1a1a1a url("../images/escheresque_ste.png") repeat fixed center;
 }
 /* line 105, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #header .headerTag .headerTagInner {
+.site__wrapper #header .headerTag .headerTagInner {
   padding: 15px;
   background-color: #47384D;
   border-left: 8px solid #F53357;
 }
 /* line 110, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #header .headerTag h1, .site-wrapper #header .headerTag h3 {
+.site__wrapper #header .headerTag h1, .site__wrapper #header .headerTag h3 {
   color: #FFF;
   text-align: left;
 }
 /* line 114, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #header .headerTag h1 {
+.site__wrapper #header .headerTag h1 {
   margin-bottom: 10px;
   color: #FFF;
 }
 /* line 118, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #header .headerTag h3 {
+.site__wrapper #header .headerTag h3 {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
 /* line 123, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #header p {
+.site__wrapper #header p {
   color: #FFF;
 }
 /* line 130, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper .skillBox {
+.site__wrapper .skillBox {
   background-color: #3F585F;
   color: #FFF;
 }
 /* line 133, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper .skillBox h3 {
+.site__wrapper .skillBox h3 {
   margin-right: 15px;
   margin-left: 15px;
   padding: 30px 0 10px;
   border-bottom: 1px solid #F53357;
 }
 /* line 139, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper .skillBox p {
+.site__wrapper .skillBox p {
   padding: 5px 15px;
 }
 /* line 142, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper .skillBox button {
+.site__wrapper .skillBox button {
   width: 100%;
 }
 /* line 149, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #aboutUs {
+.site__wrapper #aboutUs {
   margin-bottom: 15px;
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: #1E1E1E;
 }
 /* line 154, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #aboutUs .aboutUsTag {
+.site__wrapper #aboutUs .aboutUsTag {
   margin-top: 80px;
 }
 /* line 157, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #aboutUs .aboutUsBig {
+.site__wrapper #aboutUs .aboutUsBig {
   font-family: 'mainFont';
   font-size: 76px;
   font-weight: 300;
@@ -292,14 +292,14 @@ body {
   text-transform: uppercase;
 }
 /* line 165, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #aboutUs .aboutUsPerson {
+.site__wrapper #aboutUs .aboutUsPerson {
   margin-bottom: 12px;
   padding: 5px 10px;
   background-color: #E8E8E8;
   border-left: 5px solid #F53357;
 }
 /* line 171, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #aboutUs h3 {
+.site__wrapper #aboutUs h3 {
   margin-top: 5px;
   margin-bottom: 5px;
   font-family: 'mainFont';
@@ -308,13 +308,13 @@ body {
   color: #1E1E1E;
 }
 /* line 179, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #aboutUs h4 {
+.site__wrapper #aboutUs h4 {
   color: #FFF;
   font-weight: 400;
   text-transform: uppercase;
 }
 /* line 184, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #aboutUs h6 {
+.site__wrapper #aboutUs h6 {
   margin-bottom: 2px;
   font-family: 'secondaryFont';
   font-weight: 300;
@@ -322,36 +322,36 @@ body {
   text-transform: uppercase;
 }
 /* line 197, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #prices .pricesBox {
+.site__wrapper #prices .pricesBox {
   padding-top: 5px;
   background-color: #3F585F;
 }
 /* line 201, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #prices h3 {
+.site__wrapper #prices h3 {
   font-weight: 300;
   color: #E8E8E8;
   text-transform: uppercase;
 }
 /* line 206, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #prices h4 {
+.site__wrapper #prices h4 {
   font-weight: 700;
   color: #F53357;
   text-transform: uppercase;
 }
 /* line 211, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #prices .priceTag {
+.site__wrapper #prices .priceTag {
   margin-bottom: 15px;
   font-family: 'mainFont';
   font-weight: 700;
 }
 /* line 216, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #prices ul {
+.site__wrapper #prices ul {
   margin-bottom: 20px;
   padding-right: 15px;
   padding-left: 15px;
 }
 /* line 220, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #prices ul li {
+.site__wrapper #prices ul li {
   margin: 0;
   padding: 8px 12px 4px;
   font-family: 'mainFont';
@@ -362,39 +362,39 @@ body {
   border-bottom: 1px solid #F53357;
 }
 /* line 229, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #prices ul li:last-child {
+.site__wrapper #prices ul li:last-child {
   border-bottom: none !important;
 }
 /* line 234, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #prices button {
+.site__wrapper #prices button {
   width: 100%;
 }
 /* line 242, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #blogPosts h3 {
+.site__wrapper #blogPosts h3 {
   font-weight: 300;
   color: #1E1E1E;
 }
 /* line 246, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #blogPosts h5 {
+.site__wrapper #blogPosts h5 {
   font-weight: 300;
   color: #F53357;
   text-transform: uppercase;
 }
 /* line 256, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #contact .textBox {
+.site__wrapper #contact .textBox {
   min-height: 203px;
 }
 /* line 259, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #contact h3 {
+.site__wrapper #contact h3 {
   font-weight: 300;
   color: #F53357;
 }
 /* line 263, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #contact p {
+.site__wrapper #contact p {
   color: #1E1E1E;
 }
 /* line 266, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #contact input, .site-wrapper #contact textarea {
+.site__wrapper #contact input, .site__wrapper #contact textarea {
   padding: 10px;
   font-family: 'secondaryFont';
   font-size: 16px;
@@ -406,11 +406,11 @@ body {
   transition-timing-function: ease-in-out;
 }
 /* line 274, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #contact input:hover, .site-wrapper #contact input:focus, .site-wrapper #contact textarea:hover, .site-wrapper #contact textarea:focus {
+.site__wrapper #contact input:hover, .site__wrapper #contact input:focus, .site__wrapper #contact textarea:hover, .site__wrapper #contact textarea:focus {
   outline: none;
   -webkit-appearance: none;
 }
 /* line 279, ../../../app/styles/themes/theme-future.scss */
-.site-wrapper #contact textarea {
+.site__wrapper #contact textarea {
   min-height: 140px;
 }

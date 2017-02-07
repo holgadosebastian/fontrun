@@ -129,17 +129,17 @@ $lightGray: #f1f1f1;
 $mediumGray: #636363;
 $darkGray: #323232;*/
 /* line 5, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper {
+.site__wrapper {
   background-color: #E8E8E8;
 }
 
 /* line 12, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper h1 {
+.site__wrapper h1 {
   color: #F53357;
   font-weight: 700;
 }
 /* line 17, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper h2 {
+.site__wrapper h2 {
   position: relative;
   margin: 10px 0;
   padding: 25px 0;
@@ -150,7 +150,7 @@ $darkGray: #323232;*/
   text-transform: uppercase;
 }
 /* line 26, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper h2:before {
+.site__wrapper h2:before {
   position: absolute;
   content: "";
   top: -1px;
@@ -161,7 +161,7 @@ $darkGray: #323232;*/
   background-color: #FFF;
 }
 /* line 36, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper h2:after {
+.site__wrapper h2:after {
   position: absolute;
   content: "";
   bottom: -1px;
@@ -172,20 +172,20 @@ $darkGray: #323232;*/
   background-color: #FFF;
 }
 /* line 48, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #history p {
+.site__wrapper #history p {
   -moz-column-count: 4;
   column-count: 4;
 }
 
 /* line 57, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper .titleWrapper {
+.site__wrapper .titleWrapper {
   position: relative;
   padding-top: 120px;
   padding-bottom: 130px;
   background: #1a1a1a url("http://lorempixel.com/g/1920/600/") no-repeat scroll center;
 }
 /* line 62, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper .titleWrapper:before {
+.site__wrapper .titleWrapper:before {
   position: absolute;
   content: "";
   margin-top: -120px;
@@ -195,27 +195,27 @@ $darkGray: #323232;*/
 }
 
 /* line 75, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #fontsVersus {
+.site__wrapper #fontsVersus {
   text-transform: uppercase;
 }
 /* line 77, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #fontsVersus .vsTag {
+.site__wrapper #fontsVersus .vsTag {
   margin-bottom: 20px;
 }
 /* line 80, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #fontsVersus .vsTagInner {
+.site__wrapper #fontsVersus .vsTagInner {
   padding: 5px 15px;
   border: 2px solid black;
 }
 
 /* line 88, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #header {
+.site__wrapper #header {
   background: #1a1a1a url("http://lorempixel.com/g/1920/600/nature/") no-repeat fixed center;
   background-size: cover;
   border-bottom: 10px solid #3F585F;
 }
 /* line 93, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #header .headerTag .headerTagInner {
+.site__wrapper #header .headerTag .headerTagInner {
   padding: 20px;
   border: 3px solid #F53357;
   transition-property: "all";
@@ -223,19 +223,19 @@ $darkGray: #323232;*/
   transition-timing-function: ease-in-out;
 }
 /* line 97, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #header .headerTag .headerTagInner:hover {
+.site__wrapper #header .headerTag .headerTagInner:hover {
   background-color: #F53357;
 }
 /* line 99, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #header .headerTag .headerTagInner:hover h1, .site-wrapper #header .headerTag .headerTagInner:hover h3 {
+.site__wrapper #header .headerTag .headerTagInner:hover h1, .site__wrapper #header .headerTag .headerTagInner:hover h3 {
   color: #FFF;
 }
 /* line 102, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #header .headerTag .headerTagInner:hover h1 {
+.site__wrapper #header .headerTag .headerTagInner:hover h1 {
   border-bottom: 1px solid #FFF;
 }
 /* line 107, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #header .headerTag h1 {
+.site__wrapper #header .headerTag h1 {
   padding-bottom: 5px;
   border-bottom: 1px solid #F53357;
   transition-property: "all";
@@ -243,7 +243,7 @@ $darkGray: #323232;*/
   transition-timing-function: ease-in-out;
 }
 /* line 112, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #header .headerTag h3 {
+.site__wrapper #header .headerTag h3 {
   color: #F53357;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -252,23 +252,23 @@ $darkGray: #323232;*/
   transition-timing-function: ease-in-out;
 }
 /* line 119, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #header h1 {
+.site__wrapper #header h1 {
   font-weight: 700;
   text-transform: uppercase;
 }
 /* line 123, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #header p {
+.site__wrapper #header p {
   margin-top: 20px;
   margin-bottom: 15px;
   max-width: 50%;
   color: #FFF;
 }
 /* line 129, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #header .headerOverlay {
+.site__wrapper #header .headerOverlay {
   background-color: rgba(63, 88, 95, 0.3);
 }
 /* line 134, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper button {
+.site__wrapper button {
   padding: 6px 20px;
   font-family: 'secondaryFont';
   font-size: 18px;
@@ -280,41 +280,41 @@ $darkGray: #323232;*/
   transition: all 0.4s ease-in-out;
 }
 /* line 144, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper button:hover {
+.site__wrapper button:hover {
   color: #FFF;
   background-color: #47384D;
 }
 
 /* line 155, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #skills .col-sm-4 {
+.site__wrapper #skills .col-sm-4 {
   margin-top: 15px;
 }
 /* line 160, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper .skillBox {
+.site__wrapper .skillBox {
   color: #FFF;
   border-radius: 7px;
   text-align: center;
 }
 /* line 164, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper .skillBox h3 {
+.site__wrapper .skillBox h3 {
   margin: 0;
   padding: 50px 15px 15px;
   color: #47384D;
 }
 /* line 169, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper .skillBox .bottomWrapper {
+.site__wrapper .skillBox .bottomWrapper {
   border-top: 1px solid #3F585F;
   border-bottom: 1px solid #3F585F;
 }
 /* line 173, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper .skillBox p {
+.site__wrapper .skillBox p {
   margin: 0;
   padding: 15px;
   position: relative;
   color: #3F585F;
 }
 /* line 179, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper .skillBox button {
+.site__wrapper .skillBox button {
   margin-bottom: 10px;
   padding: 0;
   font-family: 'secondaryFont';
@@ -326,60 +326,60 @@ $darkGray: #323232;*/
   border: none;
 }
 /* line 189, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper .skillBox button:hover {
+.site__wrapper .skillBox button:hover {
   color: #624d6b;
 }
 
 /* line 199, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #history {
+.site__wrapper #history {
   margin-top: 15px;
   margin-bottom: 15px;
 }
 /* line 202, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #history h2 {
+.site__wrapper #history h2 {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
 }
 /* line 207, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #history p {
+.site__wrapper #history p {
   padding: 15px;
 }
 
 /* line 216, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #randomWords {
+.site__wrapper #randomWords {
   margin-top: 15px;
   margin-bottom: 15px;
 }
 /* line 220, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #randomWords .wrapper .row {
+.site__wrapper #randomWords .wrapper .row {
   margin-left: 0;
   margin-right: 0;
 }
 /* line 225, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #randomWords h2 {
+.site__wrapper #randomWords h2 {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
 }
 /* line 230, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #randomWords p {
+.site__wrapper #randomWords p {
   padding: 15px;
 }
 
 /* line 239, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #aboutUs {
+.site__wrapper #aboutUs {
   margin-top: 15px;
   padding-top: 20px;
   padding-bottom: 30px;
   background-color: #3F585F;
 }
 /* line 244, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #aboutUs .aboutUsTag {
+.site__wrapper #aboutUs .aboutUsTag {
   margin-top: 80px;
 }
 /* line 247, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #aboutUs .aboutUsBig {
+.site__wrapper #aboutUs .aboutUsBig {
   font-family: 'mainFont';
   font-size: 76px;
   font-weight: 700;
@@ -387,7 +387,7 @@ $darkGray: #323232;*/
   line-height: 0.8;
 }
 /* line 254, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #aboutUs h3 {
+.site__wrapper #aboutUs h3 {
   margin-top: 5px;
   margin-bottom: 25px;
   font-family: 'mainFont';
@@ -395,7 +395,7 @@ $darkGray: #323232;*/
   color: #FFF;
 }
 /* line 261, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper #aboutUs h5 {
+.site__wrapper #aboutUs h5 {
   margin-bottom: 2px;
   font-family: 'secondaryFont';
   font-weight: 300;
@@ -403,16 +403,16 @@ $darkGray: #323232;*/
 }
 
 /* line 273, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper footer {
+.site__wrapper footer {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #F53357;
 }
 /* line 277, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper footer p {
+.site__wrapper footer p {
   color: #FFF;
 }
 /* line 280, ../../../app/styles/themes/theme-lean.scss */
-.site-wrapper footer .copyRight {
+.site__wrapper footer .copyRight {
   text-align: right;
 }
