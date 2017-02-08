@@ -5,5 +5,9 @@ angular.module('fontRunApp')
     'RandomWordSrv',
   	function ( RandomWordSrv ) {
       this.randomWords = RandomWordSrv.getRandomWords(30);
+
+      this.loadRandomWords = function() {
+        this.randomWords = RandomWordSrv.getRandomWords(30);
+      };
   	}
   ]);

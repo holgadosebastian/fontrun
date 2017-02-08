@@ -15,7 +15,6 @@ body {
 	}
 
 	h2 {
-		display: inline-block;
 		position: relative;
 		margin: 8px 0;
 		padding: 0;
@@ -27,12 +26,6 @@ body {
 	p {
 		font-weight: 400;
 		color: $darkGray;
-	}
-
-	#history p {
-	  -webkit-column-count: 4;
-	  -moz-column-count: 4;
-	  column-count: 4;
 	}
 
 	// Layout
@@ -82,7 +75,7 @@ body {
 
 		a {
 			color: #FFF;
-			background-color: $mainColor;
+			background-color: 'mainColor';
 
 			&:hover {
 				background-color: lighten($mainColor, 10%);

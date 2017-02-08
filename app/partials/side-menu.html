@@ -62,18 +62,27 @@
 						<input class="side-menu__input side-menu__input--color" type="text" ng-model="colors.tertiary">
 					</li>
 				</ul>
+			</div>
 
+			<div>
+				<p class="side-menu__title -h1">Schemes</p>
 				<ul class="side-menu__loaded-schemes">
-					<li>
-						<div class="side-menu__main-colors">
-							<div class="fr-color-1"></div>
-							<div class="fr-color-2"></div>
-							<div class="fr-color-3"></div>
-						</div>
-						<div class="side-menu__gray-colors">
-							<div class="fr-gray-1"></div>
-							<div class="fr-gray-2"></div>
-						</div>
+					<li class="side-menu__loaded-scheme"
+						ng-click="menu.setScheme( scheme )"
+						ng-repeat="scheme in menu.schemes">
+						<p class="loaded-scheme__font">{{ scheme.primaryFont }}</p>
+						<p class="loaded-scheme__font">{{ scheme.secondaryFont }}</p>
+						<ul class="loaded-scheme__colors">
+							<li ng-style="{ 'background-color' : '#' + scheme.primaryColor}"></li>
+							<li ng-style="{ 'background-color' : '#' + scheme.secondaryColor}"></li>
+							<li ng-style="{ 'background-color' : '#' + scheme.tertiaryColor}"></li>
+						</ul>
+						<span class="loaded-scheme__delete" ng-click="menu.deleteScheme( $index )"><i class="fa fa-close"></i></span>
+					</li>
+
+					<li class="side-menu__loaded-scheme"
+						ng-click="menu.saveCurrentScheme()">
+						<span class="loaded-scheme__add"><i class="fa fa-plus"></i></span>
 					</li>
 				</ul>
 			</div>
