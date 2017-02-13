@@ -9,12 +9,12 @@
 	line-height: 40px;
 	text-align: center;
 	cursor: pointer;
-	background-color: $fr-secondary;
+	background-color: $fr-color-secondary;
 	box-shadow: 4px 4px rgba(#000, 0.4);
 	z-index: 10;
 
 	&:hover {
-		background-color: darken($fr-secondary, 5%);
+		background-color: darken($fr-color-secondary, 5%);
 	}
 }
 
@@ -26,12 +26,13 @@
 	left: -360px;
 	width: 360px;
 	min-height: 100vh;
-	background-color: $fr-secondary;
+	background-color: $fr-color-secondary;
 	z-index: 100;
 	transition: left 0.5s ease, box-shadow 0.5s ease;
 	box-shadow: 0 0 rgba(#000, 0.4);
 
 	.-h1 {
+		font-weight: 300;
 		font-size: 2.2em;
 	}
 
@@ -45,6 +46,10 @@
 
 	.-h4 {
 		font-size: 1.3em;
+	}
+
+	.-h1, .-h2, .-h3, .-h4, .-h5, .-h6, p {
+		font-family: $fr-font-primary;
 	}
 
 	p {
@@ -68,7 +73,7 @@
 		cursor: pointer;
 
 		&:hover {
-			background-color: darken($fr-secondary, 5%);
+			background-color: darken($fr-color-secondary, 5%);
 		}
 	}
 
@@ -103,19 +108,9 @@
 		&.side-menu__input--font {
 			border-bottom: 2px solid #FFF;
 		}
-
-		&.side-menu__input--color {
-			border: 1px solid #FFF;
-			border-radius: 4px;
-		}
 	}
 
 	.side-menu__font-select {
-		.-h1.side-menu__title {
-			padding-left: 15px;
-			font-weight: 300;
-			text-transform: uppercase;
-		}
 
 		ul {
 			&:hover {
@@ -127,16 +122,16 @@
 
 		li {
 			padding: 15px;
-			background-color: darken($fr-secondary, 5%);
+			background-color: darken($fr-color-secondary, 5%);
 			cursor: pointer;
 			transition: all 0.3s ease;
 
 			&:hover {
-				color: $fr-main;
+				color: $fr-color-main;
 			}
 
 			&:first-child {
-				border-bottom: 2px solid $fr-secondary;
+				border-bottom: 2px solid $fr-color-secondary;
 			}
 
 			h2 {
@@ -164,33 +159,31 @@
 		}
 	}
 
-	h1.side-menu__title {
-		padding-left: 15px;
-		font-weight: 300;
-		text-transform: uppercase;
-	}
-
 	.side-menu__selected-colors {
 		li {
 			display: flex;
 			flex-direction: row;
+			align-items: center;
 			height: 35px;
+			background-color: darken($fr-color-secondary, 5%);
 
-			& + li {
+			&:not(:first-child) {
 				margin-top: 10px;
+			}
+
+			i {
+				margin-left: 20px;
+				font-size: 18px;
 			}
 
 			span {
 				flex-basis: 35px;
+				height: 100%;
 			}
 
 			.side-menu__input {
 				flex-grow: 10;
-				margin-left: 15px;
-				padding: 0 15px;
 				font-size: 18px;
-				border: 1px solid #FFF;
-				border-radius: 3px;
 				background-color: transparent;
 			}
 		}
@@ -201,12 +194,18 @@
 	}
 
 	.side-menu__loaded-scheme {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		position: relative;
+    padding: 0 115px 0 15px;
 		min-height: 50px;
-		margin-bottom: 10px;
-		border: 1px solid lighten($fr-secondary, 30%);
-		border-radius: 5px;
+		background-color: darken($fr-color-secondary, 5%);
 		cursor: pointer;
+
+		&:not(:first-child) {
+			margin-top: 10px;
+		}
 
 		.loaded-scheme__colors {
 			display: flex;
@@ -228,7 +227,7 @@
 			width: 18px;
 			height: 18px;
 			font-size: 14px;
-			color: $fr-secondary;
+			color: $fr-color-secondary;
 			line-height: 18px;
 			text-align: center;
 			background-color: #FFF;
@@ -273,7 +272,7 @@
 		line-height: 30px;
 		background-color: #FFF;
 		border-radius: 50px;
-		color: $fr-secondary;
+		color: $fr-color-secondary;
 		cursor: pointer;
 	}
 
@@ -304,7 +303,8 @@
 		color: #FFF;
 		line-height: 40px;
 		text-transform: capitalize;
-		background-color: $fr-secondary;
+		font-family: $fr-font-primary;
+		background-color: $fr-color-secondary;
 		cursor: pointer;
 		box-shadow: 4px 4px rgba(#000, 0.4);
 
@@ -333,7 +333,7 @@
 		top: 40px;
 		left: 0;
 		right: 0;
-		background-color: $fr-secondary;
+		background-color: $fr-color-secondary;
 		height: 200px;
 		overflow-y: auto;
 		box-shadow: 4px 4px rgba(#000, 0.4);
@@ -356,7 +356,7 @@
 			text-transform: capitalize;
 
 			&:hover {
-				background-color: darken($fr-secondary, 10%);
+				background-color: darken($fr-color-secondary, 10%);
 			}
 		}
 	}
