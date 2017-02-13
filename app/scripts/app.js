@@ -34,6 +34,8 @@ angular
     '$rootScope',
     'premadeThemes',
     function( $rootScope, premadeThemes ) {
+      var body = document.body;
+
       $rootScope.controls = {};
       $rootScope.controls.showSideMenu = false;
 
@@ -57,5 +59,24 @@ angular
 
       $rootScope.themes = {};
       $rootScope.themes.current = premadeThemes[0].name;
+
+      $rootScope.$watch('colors.primary', function(newColor, oldColor) {
+        if (newColor !== oldColor ) {
+          body.style.setProperty('--primary-color', '#' + newColor);
+        }
+      });
+
+      $rootScope.$watch('colors.secondary', function(newColor, oldColor) {
+        if (newColor !== oldColor ) {
+          body.style.setProperty('--secondary-color', '#' + newColor);
+        }
+      });
+
+      $rootScope.$watch('colors.tertiary', function(newColor, oldColor) {
+        if (newColor !== oldColor ) {
+          body.style.setProperty('--tertiary-color', '#' + newColor);
+        }
+      });
+
     }
   ]);

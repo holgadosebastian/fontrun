@@ -79,11 +79,11 @@
 	}
 
 	.versus__primary {
-		color: $mainColor;
+		color: var(--primary-color);
 	}
 
 	.versus__secondary {
-		color: $secondaryColor;
+		color: var(--secondary-color);
 	}
 
 	.versus__tag {
@@ -127,7 +127,6 @@
 
 	.nav__item {
 		float: left;
-		font-family: 'mainFont';
 		font-size: 18px;
 
 		a {
@@ -208,13 +207,6 @@
 	}
 
 	.words__column {
-		&:nth-child(odd) {
-			font-family: 'mainFont';
-		}
-
-		&:nth-child(even) {
-			font-family: 'secondaryFont';
-		}
 
 		h4 {
 			&:nth-child(3n+1) {
@@ -296,7 +288,6 @@
 			margin-top: 5px;
 			margin-bottom: 10px;
 			list-style: none;
-			font-family: 'secondaryFont';
 			font-size: 18px;
 			color: $darkGray;
 		}

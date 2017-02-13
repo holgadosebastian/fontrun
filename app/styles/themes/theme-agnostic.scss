@@ -10,7 +10,7 @@ body {
 
 .site__wrapper {
 	h1 {
-		color: $mainColor;
+		color: var(--primary-color);
 		font-weight: 700;
 	}
 
@@ -38,7 +38,7 @@ body {
 
 	footer {
 		padding-top: 10px;
-		background-color: $mainColor;
+		background-color: var(--primary-color);
 
 		p {
 			color: #FFF;
@@ -75,10 +75,10 @@ body {
 
 		a {
 			color: #FFF;
-			background-color: 'mainColor';
+			background-color: var(--primary-color);
 
 			&:hover {
-				background-color: lighten($mainColor, 10%);
+				background-color: var(--primary-color); // lighten
 			}
 		}
 	}
@@ -88,7 +88,7 @@ body {
 			color: #FFF;
 
 			&:hover {
-				color: $mainColor;
+				color: var(--primary-color);
 			}
 		}
 	}
@@ -99,7 +99,7 @@ body {
 #home-header {
 	background: #1a1a1a url("https://unsplash.it/1920/600/?image=1082") no-repeat scroll center;
 	background-size: cover;
-	border-bottom: 10px solid $fillColor;
+	border-bottom: 10px solid var(--secondary-color);
 
 	h1 {
 		font-weight: 700;
@@ -114,21 +114,22 @@ body {
 	}
 
 	.header__overlay {
-		background-color: rgba($fillColor, 0.3);
+		background-color: var(--secondary-color);
+		opacity: 0.3;
 	}
 
 	.header__button {
 		padding: 6px 20px;
 		font-size: 18px;
-		color: $mainColor;
+		color: var(--primary-color);
 		font-weight: 700;
 		text-transform: uppercase;
 		background-color: transparent;
-		border: 2px solid $mainColor;
+		border: 2px solid var(--primary-color);
 		transition: all 0.4s ease-in-out;
 		&:hover {
 			color: #FFF;
-			background-color: $mainColor;
+			background-color: var(--primary-color);
 		}
 	}
 }
@@ -167,22 +168,22 @@ body {
 		p {
 			margin: 0;
 			padding: 15px;
-			color: $fillColor;
+			color: var(--secondary-color);
 		}
 	}
 
 	.skills__item-button {
 		margin-bottom: 10px;
 		padding: 0;
-		font-family: 'secondaryFont';
 		font-size: 18px;
 		color: $darkGray;
 		font-weight: 300;
 		text-transform: lowercase;
 		background-color: transparent;
 		border: none;
+
 		&:hover {
-			color: lighten($secondaryColor, 10%);
+			color: var(--secondary-color); //lighten
 		}
 	}
 }
@@ -192,9 +193,7 @@ body {
 #home-history {
 	margin-top: 15px;
 	margin-bottom: 15px;
-	.titleIcon:before {
-		content: "34";
-	}
+
 	.wrapper {
 		padding-top: 20px;
 		background-color: $lightGray;
@@ -230,7 +229,7 @@ body {
 	margin-top: 15px;
 	margin-bottom: 15px;
 	background-color: $lightGray;
-	border-bottom: 5px solid $mainColor;
+	border-bottom: 5px solid var(--primary-color);
 
 	.container .wrapper {
 		overflow: hidden;
@@ -244,7 +243,7 @@ body {
 
 	.h1 {
 		font-weight: 700;
-		color: $mainColor;
+		color: var(--primary-color);
 	}
 
 	li {
@@ -279,13 +278,13 @@ body {
 
 	h3 {
 		font-weight: 700;
-		color: $mainColor;
+		color: var(--primary-color);
 	}
 
 	h4 {
 		font-size: 18px;
 		font-weight: 300;
-		color: $fillColor;
+		color: var(--secondary-color);
 		text-transform: uppercase;
 	}
 
@@ -320,13 +319,13 @@ body {
 		color: #FFF;
 		line-height: 100px;
 		border-radius: 50%;
-		background-color: $mainColor;
-		@include box-shadow(0 4px darken($mainColor, 10%));
+		background-color: var(--primary-color);
+		@include box-shadow(0 4px var(--primary-color)); //darken
 		cursor: pointer;
 
 		&:hover {
-			background-color: lighten($mainColor, 10%);
-			@include box-shadow(0 4px $mainColor);
+			background-color: var(--primary-color); //lighten
+			@include box-shadow(0 4px var(--primary-color));
 		}
 	}
 }
@@ -348,7 +347,7 @@ body {
 
 	h5 {
 		font-weight: 700;
-		color: $mainColor;
+		color: var(--primary-color);
 	}
 }
 
@@ -371,7 +370,7 @@ body {
 
 	h3 {
 		font-weight: 300;
-		color: $mainColor;
+		color: var(--primary-color);
 	}
 	p {
 		color: $darkGray;
@@ -379,15 +378,15 @@ body {
 
 	input, textarea {
 		padding: 12px;
-		font-family: 'secondaryFont';
 		font-size: 16px;
 		font-weight: 700;
-		color: $secondaryColor;
+		color: var(--secondary-color);
 		background-color: transparent;
-		border-bottom: 4px solid $secondaryColor;
+		border-bottom: 4px solid var(--secondary-color);
 		@include transitionNormal(all);
+
 		&:hover, &:focus {
-			background-color: $secondaryColor;
+			background-color: var(--secondary-color);
 			color: #FFF;
 		}
 	}
