@@ -2,95 +2,88 @@
 @import "../variables/colorPalette";
 @import "../variables/mixins";
 
+$theme-gray-light: #EEE;
+
 body {
-	background-color: $contrastColorLight;
+	background-color: $theme-gray-light;
 }
 
 .site__wrapper {
-// Fonts
+	h1 {
+		color: var(--primary-color);
+		font-weight: 300;
+		text-transform: uppercase;
+	}
 
-h1 {
-	color: $mainColor;
-	font-weight: 300;
-	text-transform: uppercase;
-}
-
-h2 {
-	display: inline-block;
-	margin: 40px 0 10px;
-	padding: 6px 15px 4px;
-	color: #FFF;
-	font-weight: 300;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	background-color: $fillColor;
-	border-left: 6px solid $mainColor;
-}
-
-// Layout
-
-button {
-	padding: 6px 20px;
-	font-family: 'secondaryFont';
-	font-size: 18px;
-	color: $contrastColorLight;
-	font-weight: 300;
-	text-transform: capitalize;
-	background-color: $secondaryColor;
-	border: none;
-	&:hover {
-		background-color: lighten($secondaryColor, 10%);
+	h2 {
+		display: inline-block;
+		margin: 40px 0 10px;
+		padding: 6px 15px 4px;
+		color: #FFF;
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		background-color: var(--tertiary-color);
+		border-left: 6px solid var(--primary-color);
 	}
 }
 
 // fontVersus
 
-#fontsVersus {
-	text-transform: uppercase;
-	.vsTag {
+#fonts-versus {
+
+	.versus__tag {
 		margin-bottom: 20px;
+
+		span {
+			padding: 5px 15px;
+			color: $theme-gray-light;
+			background-color: var(--tertiary-color);
+		}
 	}
-	.vsTagInner {
-		padding: 5px 15px;
-		color: $contrastColorLight;
-		background-color: $fillColor;
-	}
-	.vsBig1, .vsBig2 {
+
+	.versus__primary,
+	.versus__secondary {
 		padding-right: 20px;
 		padding-left: 20px;
-		color: $contrastColorLight;
+		color: $theme-gray-light;
 		font-weight: 300;
+		text-transform: uppercase;
 	}
-	.vsBig1 {
-		background-color: $mainColor;
-		border-left: 15px solid $fillColor;
+
+	.versus__primary {
+		background-color: var(--primary-color);
+		border-left: 15px solid  var(--tertiary-color);
 	}
-	.vsBig2 {
-		background-color: $secondaryColor;
-		border-left: 15px solid $fillColor;
+
+	.versus__secondary {
+		background-color: var(--secondary-color);
+		border-left: 15px solid  var(--tertiary-color);
 	}
 }
 
 // Nav
 
-#homeNav {
-	background-color: $fillColor;
-	.navbar-brand {
-		font-family: 'mainFont';
+#home-nav {
+	background-color: var(--tertiary-color);
+
+	.nav__logo {
 		font-size: 24px;
 		font-weight: 300;
-		color: $contrastColorLight;
+		color: $theme-gray-light;
 	}
+
 	ul {
 		li {
 			a {
 				font-weight: 300;
-				color: $contrastColorLight;
+				color: $theme-gray-light;
 				text-transform: uppercase;
 				@include transitionNormal();
+
 				&:hover {
 					padding-bottom: 10px;
-					border-bottom: 5px solid $mainColor;
+					border-bottom: 5px solid var(--primary-color);
 				}
 			}
 		}
@@ -99,46 +92,70 @@ button {
 
 // Header
 
-#header {
+#home-header {
 	background: #1a1a1a url("../images/escheresque_ste.png") repeat fixed center;
-	.headerTag {
-		.headerTagInner {
-			padding: 15px;
-			background-color: $secondaryColor;
-			border-left: 8px solid $mainColor;
-		}
+
+	.header__tag-inner {
+		padding: 15px;
+		background-color: var(--secondary-color);
+		border-left: 8px solid var(--primary-color);
+
 		h1, h3 {
-			color: $contrastColorLight;
+			color: $theme-gray-light;
 			text-align: left;
 		}
+
 		h1 {
 			margin-bottom: 10px;
 			color: #FFF;
 		}
+
 		h3 {
 			text-transform: uppercase;
 			letter-spacing: 3px;
 		}
 	}
+
 	p {
-		color: $contrastColorLight;
+		color: $theme-gray-light;
+	}
+
+	.header__button {
+		padding: 6px 20px;
+		font-size: 18px;
+		color: $theme-gray-light;
+		font-weight: 300;
+		text-transform: capitalize;
+		background-color: var(--secondary-color);
+		border: none;
+
+		&:hover {
+			background-color: var(--secondary-color); //Lighten
+		}
 	}
 }
 
 // Skills
 
-.skillBox {
-	background-color: $fillColor;
-	color: $contrastColorLight;
+#home-skills {
+
+	.skills__item {
+		background-color: var(--tertiary-color);
+	}
+
 	h3 {
 		margin-right: 15px;
 		margin-left: 15px;
 		padding: 30px 0 10px;
-		border-bottom: 1px solid $mainColor;
+		color: $theme-gray-light;
+		border-bottom: 1px solid var(--primary-color);
 	}
+
 	p {
 		padding: 5px 15px;
+		color: $theme-gray-light;
 	}
+
 	button {
 		width: 100%;
 	}
@@ -146,46 +163,52 @@ button {
 
 // About Us
 
-#aboutUs {
+#home-team {
 	margin-bottom: 15px;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	background-color: $darkGray;
-	.aboutUsTag {
+
+	.team__tag {
 		margin-top: 80px;
+
+		h1 {
+			font-size: 76px;
+			font-weight: 300;
+			color: var(--primary-color);
+			line-height: 0.9;
+			text-transform: uppercase;
+		}
+
+		h4 {
+			color: $theme-gray-light;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
 	}
-	.aboutUsBig {
-		font-family: 'mainFont';
-		font-size: 76px;
-		font-weight: 300;
-		color: $mainColor;
-		line-height: 0.9;
-		text-transform: uppercase;
-	}
-	.aboutUsPerson {
-		margin-bottom: 12px;
+
+	li {
 		padding: 5px 10px;
 		background-color: $lightGray;
-		border-left: 5px solid $mainColor;
+		border-left: 5px solid var(--primary-color);
+
+		& + li {
+			margin-top: 12px;
+		}
 	}
+
 	h3 {
 		margin-top: 5px;
 		margin-bottom: 5px;
-		font-family: 'mainFont';
 		font-weight: 700;
 		text-transform: uppercase;
 		color: $darkGray;
 	}
-	h4 {
-		color: $contrastColorLight;
-		font-weight: 400;
-		text-transform: uppercase;
-	}
-	h6 {
+
+	h5 {
 		margin-bottom: 2px;
-		font-family: 'secondaryFont';
 		font-weight: 300;
-		color: $mainColor;
+		color: var(--primary-color);
 		text-transform: uppercase;
 	}
 }
@@ -193,44 +216,52 @@ button {
 
 // Prices
 
-#prices {
-	.pricesBox {
+#home-prices {
+
+	.prices__option {
 		padding-top: 5px;
-		background-color: $fillColor;
+		background-color: var(--tertiary-color);
 	}
+
 	h3 {
 		font-weight: 300;
 		color: $lightGray;
 		text-transform: uppercase;
 	}
+
 	h4 {
 		font-weight: 700;
-		color: $mainColor;
+		color: var(--primary-color);
 		text-transform: uppercase;
 	}
-	.priceTag {
+
+	.prices__tag {
 		margin-bottom: 15px;
 		font-family: 'mainFont';
 		font-weight: 700;
 	}
+
 	ul {
 		margin-bottom: 20px;
 		padding-right: 15px;
 		padding-left: 15px;
+
 		li {
 			margin: 0;
 			padding: 8px 12px 4px;
 			font-family: 'mainFont';
 			font-size: 18px;
 			font-weight: 300;
-			color: $contrastColorLight;
+			color: $theme-gray-light;
 			text-transform: uppercase;
-			border-bottom: 1px solid $mainColor;
+			border-bottom: 1px solid var(--primary-color);
+
 			&:last-child {
 				border-bottom: none !important;
 			}
 		}
 	}
+
 	button {
 		width: 100%;
 	}
@@ -238,50 +269,56 @@ button {
 
 // Blog
 
-#blogPosts {
+#home-blog {
+
 	h3 {
 		font-weight: 300;
 		color: $darkGray;
 	}
+
 	h5 {
 		font-weight: 300;
-		color: $mainColor;
+		color: var(--primary-color);
 		text-transform: uppercase;
 	}
 }
 
 // Contact
 
-#contact {
+#home-contact {
+
 	.textBox {
 		min-height: 203px;
 	}
+
 	h3 {
 		font-weight: 300;
-		color: $mainColor;
+		color: var(--primary-color);
 	}
+
 	p {
 		color: $darkGray;
 	}
-	input, textarea {
+
+	input,
+	textarea {
 		padding: 10px;
 		font-family: 'secondaryFont';
 		font-size: 16px;
 		font-weight: 300;
 		color: #FFF;
-		background-color: $fillColor;
+		background-color: var(--tertiary-color);
 		@include transitionSlow(border);
+
 		&:hover, &:focus {
 			outline: none;
 			-webkit-appearance: none;
 		}
 	}
+
 	textarea {
 		min-height: 140px;
 	}
 }
-
-}
-
 
 // Footer

@@ -5,11 +5,11 @@ angular
     'ngRoute'
   ])
   .constant( 'premadeThemes', [
+    { name: 'future' },
     { name: 'agnostic' },
     { name: 'blizzard' },
     { name: 'cupcake' },
     { name: 'cupcake-flat' },
-    { name: 'future' },
     { name: 'googly' },
     { name: 'hip' },
     { name: 'lean' },
@@ -37,7 +37,7 @@ angular
       var body = document.body;
 
       $rootScope.controls = {};
-      $rootScope.controls.showSideMenu = false;
+      $rootScope.controls.showSideMenu = true;
 
       $rootScope.fonts = {};
       $rootScope.fonts.primary = 'Abril+Fatface';

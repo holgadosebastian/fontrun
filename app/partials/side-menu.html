@@ -17,6 +17,11 @@
 		<header>
 			<img class="side-menu__logo" src="images/fontrun-logo-white.svg" alt="fontRun logo white">
 
+			<div class="side-menu__view">
+				<p>Current view</p>
+				<p>Scheme</p>
+			</div>
+
 			<span class="side-menu__close"
 				ng-click="controls.showSideMenu = false">
 				<i class="fa fa-close"></i>
@@ -25,8 +30,8 @@
 
 		<div class="side-menu__content">
 			<div class="side-menu__font-select">
-				<p class="side-menu__title -h1">Selected fonts</p>
-				<ul>
+				<p class="side-menu__title side-menu__title--collapsable" ng-click="menu.hideSelectedFonts = !menu.hideSelectedFonts">Selected fonts <span><i class="fa" ng-class="'fa-chevron-' + (menu.hideSelectedFonts ? 'down' : 'up')"></i></span></p>
+				<ul ng-hide="menu.hideSelectedFonts">
 					<li ng-class="{ 'side-menu__font-select--edit' : menu.editPrimaryFont }"
 							ng-click="menu.editPrimaryFont = true">
 						<p class="side-menu__title -h4">MAIN FONT</p>
@@ -47,8 +52,9 @@
 			</div>
 
 			<div>
-				<p class="side-menu__title -h1">Color pallette</p>
-				<ul class="side-menu__selected-colors">
+				<p class="side-menu__title side-menu__title--collapsable" ng-click="menu.hideColorPallete = !menu.hideColorPallete">Color pallette <span><i class="fa" ng-class="'fa-chevron-' + (menu.hideColorPallete ? 'down' : 'up')"></i></span></p>
+				<ul class="side-menu__selected-colors"
+					ng-hide="menu.hideColorPallete">
 					<li>
 						<span ng-style="{ 'background-color': '#'+colors.primary }"></span>
 						<i>#</i>
@@ -68,8 +74,9 @@
 			</div>
 
 			<div>
-				<p class="side-menu__title -h1">Schemes</p>
-				<ul class="side-menu__loaded-schemes">
+				<p class="side-menu__title side-menu__title--collapsable" ng-click="menu.hideSchemes = !menu.hideSchemes">Schemes <span><i class="fa" ng-class="'fa-chevron-' + (menu.hideSchemes ? 'down' : 'up')"></i></span></p>
+				<ul class="side-menu__loaded-schemes"
+					ng-hide="menu.hideSchemes">
 					<li class="side-menu__loaded-scheme"
 						ng-click="menu.setScheme( scheme )"
 						ng-repeat="scheme in menu.schemes">
@@ -92,7 +99,7 @@
 		</div>
 
 		<footer>
-			<span>Developed by <a href="#">Sebastian Holgado</a></span>
+			<span>Developed by <a href="http://ohsebastian.com" target="_blank">Sebastián Holgado</a></span>
 		</footer>
 	</nav>
 </div>

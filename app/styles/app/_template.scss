@@ -1,6 +1,12 @@
 .site__wrapper {
 	transition: padding-left 0.5s ease;
 
+	// TODO: Delete this when not using bootstrap
+	// Bootstrap container
+	.container {
+		max-width: 100%;
+	}
+
 	&.site__wrapper--menu {
 		padding-left: 360px;
 	}
