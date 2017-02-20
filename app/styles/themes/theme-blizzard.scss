@@ -4,9 +4,9 @@
 
 // Mixins
 
-$borderColor: rgba( 255, 255, 255, 0.2);
-$transparentBg: rgba( 255, 255, 255, 0.1);
-$darkBackground: rgba($darkGray, 0.9);
+$theme-color-border: rgba( 255, 255, 255, 0.2);
+$theme-transparent-bg: rgba( 255, 255, 255, 0.1);
+$theme-dark-bg: rgba($darkGray, 0.9);
 
 @mixin boxShadowSite() {
 	@include box-shadow(0 0 0 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 0 8px 1px rgba(0, 0, 0, 0.5));
@@ -17,102 +17,93 @@ $darkBackground: rgba($darkGray, 0.9);
 }
 
 @mixin glassBg (){
-	background-color: $transparentBg;
-	border: 1px solid $borderColor;
+	background-color: $theme-transparent-bg;
+	border: 1px solid $theme-color-border;
 	@include box-shadow(0 0 4px 1px rgba(0, 0, 0, 0.3));
 }
 
-
-
 body {
-	background-color: $fillColor;
+	background-color: var(--tertiary-color);
 }
 
-// Fonts
+.site__wrapper {
 
-h1 {
-	color: $mainColor;
-	font-weight: 700;
-	@include textShadowSite();
+	// Fonts
+
+	h1 {
+		color: var(--primary-color);
+		font-weight: 700;
+		@include textShadowSite();
+	}
+
+	h2 {
+		position: relative;
+		margin: 8px 0;
+		padding: 8px 0 12px;
+		font-size: 28px;
+		color: #FFF;
+		font-weight: 300;
+		text-align: center;
+		text-align: center;
+		background-color: $theme-dark-bg;
+		@include boxShadowSite();
+	}
+
+	// Layout
+
 }
+// fontVersus
 
-h2 {
-	font-family: 'secondaryFont';
-	position: relative;
-	margin: 8px 0;
-	padding: 8px 0 12px;
-	font-size: 28px;
-	color: #FFF;
-	font-weight: 300;
-	text-align: center;
-	text-align: center;
-	background-color: $darkBackground;
-	@include boxShadowSite();
-}
+#fonts-versus {
+	text-transform: uppercase;
 
-#history p {
-  -webkit-column-count: 4;
-  -moz-column-count: 4;
-  column-count: 4;
-}
+	.versus__wrapper {
+		padding: 5px 15px 0;
+		border: 1px solid $theme-color-border;
+		border-radius: 5px;
+		background-color: rgba(0,0,0,0.2);
+	}
 
-// Layout
+	.versus__tag {
+		margin-bottom: 20px;
 
-.titleWrapper {
-	margin-top: 30px;
-	.container {
-		.titleIcon {
-			display: none;
+		span {
+			color: #FFF;
 		}
 	}
 }
 
-// fontVersus
 
-#fontsVersus {
-	text-transform: uppercase;
-	.wrapper {
-		padding: 5px 15px 0;
-		border: 1px solid $borderColor;
-		border-radius: 5px;
-		background-color: rgba(0,0,0,0.2);
-	}
-	.vsTag {
-		margin-bottom: 20px;
-	}
-	.vsTagInner {
-		color: #FFF;
-	}
-}
+// Nav bar
 
-// Nav
-
-#homeNav {
+#home-nav {
 	position: absolute;
 	width: 100%;
-	background-color: $transparentBg;
-	z-index: 10;
-	border-top: 1px solid $borderColor;
-	border-bottom: 1px solid $borderColor;
-	.navbar-brand {
-		font-family: 'mainFont';
+	background-color: $theme-transparent-bg;
+	z-index: 1;
+	border-top: 1px solid $theme-color-border;
+	border-bottom: 1px solid $theme-color-border;
+
+	.nav__logo {
 		font-size: 24px;
 		font-weight: 300;
 		color: #FFF;
 	}
-	ul {
-		li {
-			border-left: 1px solid $borderColor;
-			a {
-				font-weight: 300;
-				color: #FFF;
-				@include transitionNormal();
-				&:hover {
-					background-color: rgba($mainColor, 0.8);
-				}
-			}
-			&:last-child {
-				border-right: 1px solid $borderColor;
+
+	.nav__item {
+		border-left: 1px solid $theme-color-border;
+
+		&:last-child {
+			border-right: 1px solid $theme-color-border;
+		}
+
+		a {
+			font-weight: 300;
+			color: #FFF;
+			@include transitionNormal();
+
+			&:hover {
+				// background-color: rgba(var(--primary-color), 0.8);
 			}
 		}
 	}
@@ -120,22 +111,26 @@ h2 {
 
 // Header
 
-#header {
+#home-header {
 	background: #1a1a1a url("http://lorempixel.com/g/1920/600/nature/") no-repeat fixed center;
 	background-size: cover;
-	border-bottom: 1px solid $borderColor;
+	border-bottom: 1px solid $theme-color-border;
+
 	h1 {
 		font-weight: 700;
 		text-transform: uppercase;
 	}
+
 	p {
 		margin-top: 20px;
 		margin-bottom: 15px;
 		max-width: 50%;
 		color: #FFF;
 	}
-	.headerOverlay {
-		background-color: rgba($fillColor, 0.3);
+
+	.header__overlay {
+		background-color: var(--tertiary-color);
+		opacity: 0.3;
 	}
 }
 
@@ -149,58 +144,60 @@ button {
 	background-color: transparent;
 	border-radius: 5px;
 	border: none;
-	@include background-image(linear-gradient($secondaryColor, lighten($secondaryColor, 5%)));
+	// @include background-image(linear-gradient(var(--secondary-color), lighten(var(--secondary-color), 5%)));
 	@include boxShadowSite();
 	@include transitionSlow();
 	&:hover {
 		color: #FFF;
-		@include background-image(linear-gradient(lighten($secondaryColor, 5%), lighten($secondaryColor, 15%)));
+		// @include background-image(linear-gradient(lighten(var(--secondary-color), 5%), lighten(var(--secondary-color), 15%)));
 	}
 }
 
 // Skills
 
-#skills {
-	.col-sm-4 {
-		margin-top: 15px;
-	}
-}
+#home-skills {
+	.skills__item {
+		// background-color: rgba(var(--tertiary-color), 0.85); // Darken
+		@include boxShadowSite();
+		z-index: 10;
 
-.skillBox {
-	background-color: rgba(darken($fillColor, 15%), 0.85);
-	@include boxShadowSite();
-	z-index: 10;
-	h3 {
-		margin: 0;
-		padding: 80px 15px 25px;
-		font-weight: 300;
-		color: #FFF;
-		text-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
-		background-image: url('http://lorempixel.com/400/200/')
-	}
-	.bottomWrapper {
-		padding-bottom: 20px;
-	}
-	p {
-		margin: 0;
-		padding: 15px;
-		color: #FFF;
-	}
-	button {
-		display: block;
-		margin: 0 auto;
+		h3 {
+			margin: 0;
+			padding: 80px 15px 25px;
+			font-weight: 300;
+			color: #FFF;
+			text-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+			background-image: url('http://lorempixel.com/400/200/')
+		}
+
+		.skills__item-description {
+			padding-bottom: 20px;
+		}
+
+		p {
+			margin: 0;
+			padding: 15px;
+			color: #FFF;
+		}
+
+		button {
+			display: block;
+			margin: 0 auto;
+		}
 	}
 }
 
 
 // history
 
-#history {
+#home-history {
 	margin-top: 15px;
 	margin-bottom: 15px;
+
 	.wrapper {
 		@include glassBg();
 	}
+
 	p {
 		padding: 15px;
 		color: #FFF;
@@ -208,131 +205,132 @@ button {
 }
 
 
-// randomWords
+// Words
 
-#randomWords {
+#home-words  {
 	margin-top: 15px;
 	margin-bottom: 15px;
-	.wrapper {
-		.row {
-			margin-left: 0;
-			margin-right: 0;
-			@include glassBg();
-		}
-	}
-	p {
+
+	.words__list {
 		padding: 15px;
+		@include glassBg();
 	}
 }
 
 
 // aboutUs
 
-#aboutUs {
+#home-team  {
 	margin-top: 15px;
 	margin-bottom: 15px;
-	background-color: $transparentBg;
-	border-top: 1px solid $borderColor;
-	border-bottom: 1px solid $borderColor;
-	.container .wrapper{
-		overflow: hidden;
-		padding: 15px;
-		border-radius: 7px;
-	}
-	.aboutUsTag {
+	padding: 20px 0;
+	background-color: $theme-transparent-bg;
+	border-top: 1px solid $theme-color-border;
+	border-bottom: 1px solid $theme-color-border;
+
+	.team__tag {
 		margin-top: 80px;
+
+		h1 {
+			font-size: 76px;
+			font-weight: 700;
+			color: #FFF;
+			line-height: 0.8;
+			text-transform: uppercase;
+		}
 	}
-	.aboutUsBig {
-		font-family: 'mainFont';
-		font-size: 76px;
-		font-weight: 700;
-		color: #FFF;
-		line-height: 0.8;
-		text-transform: uppercase;
+
+	.team__people {
+		li {
+			padding: 10px;
+			background-color: $theme-dark-bg;
+			@include boxShadowSite();
+
+			&:not(:first-child) {
+				margin-top: 15px;
+			}
+		}
 	}
-	.aboutUsPerson {
-		margin-bottom: 10px;
-		padding: 1px 8px;
-		background-color: $darkBackground;
-		border-radius: 7px;
-		@include boxShadowSite();
-	}
+
 	h3 {
 		margin-top: 5px;
-		margin-bottom: 5px;
-		padding-bottom: 5px;
-		font-family: 'mainFont';
 		font-size: 28px;
 		font-weight: 700;
 		color: #FFF;
 	}
-	h4 {
+
+	h5 {
 		font-weight: 300;
-		color: $secondaryColor;
-	}
-	h6 {
-		margin-bottom: 2px;
-		font-family: 'mainFont';
-		font-weight: 300;
-		color: $secondaryColor;
+		color: var(--secondary-color);
 	}
 }
 
 
 // Prices
 
-#prices {
+#home-prices {
 	h3 {
 		color: #FFF;
 	}
+
 	h4 {
-		color: $mainColor;
+		color: var(--primary-color);
 	}
-	.priceTag {
+
+	.prices__tag {
 		margin-bottom: 15px;
 		font-family: 'mainFont';
 		font-weight: 700;
 	}
-	ul {
-		margin-bottom: 20px;
-		text-align: left;
-		background-color: $transparentBg;
-		border: 1px solid $borderColor;
+
+	.prices__list {
+
+		ul {
+			margin-bottom: 20px;
+			text-align: left;
+			background-color: $theme-transparent-bg;
+			border: 1px solid $theme-color-border;
+		}
+
 		li {
 			margin: 0;
 			padding: 8px 12px 4px;
-			font-family: 'mainFont';
 			font-size: 18px;
 			font-weight: 300;
 			color: #FFF;
-			border-bottom: 1px solid $borderColor;
+			border-bottom: 1px solid $theme-color-border;
+
 			&:hover {
 				color: #FFF;
-				background-color: $mainColor;
+				background-color: var(--primary-color);
 			}
+
 			&:last-child {
 				border-bottom: none !important;
 			}
 		}
-
 	}
 }
 
 
 // Blog
 
-#blogPosts {
+#home-blog {
 	.row {
 		margin-right: 0;
 		margin-left: 0;
+		padding: 15px 0;
 		@include glassBg();
+
 		h3 {
-			color: $mainColor;
+			color: var(--primary-color);
 			font-weight: 300;
 		}
+
 		h5 {
-			color: $secondaryColor;
+			color: var(--secondary-color);
 		}
+
 		p {
 			color: #FFF;
 		}
@@ -342,34 +340,56 @@ button {
 
 // Contact
 
-#contact {
+#home-contact {
+
+	.contact__message {
+		padding: 15px;
+		@include glassBg();
+	}
+
+	.contact__icons {
+		li {
+			border-radius: 50%;
+			background-color: var(--secondary-color);
+			@include boxShadowSite();
+
+			span {
+				color: #FFF;
+			}
+		}
+	}
+
 	.textBox {
 		min-height: 203px;
 		padding: 15px;
 		@include glassBg();
 	}
+
 	h3 {
 		font-weight: 300;
-		color: $mainColor;
+		color: var(--primary-color);
 	}
+
 	p {
 		color: #FFF;
 	}
+
 	input, textarea {
 		padding: 12px;
 		font-family: 'secondaryFont';
 		font-size: 16px;
 		color: #FFF;
-		background-color: $darkBackground;
-		border: 1px solid $borderColor;
+		background-color: $theme-dark-bg;
+		border: 1px solid $theme-color-border;
 		border-radius: 2px;
 		@include transitionSlow(border);
 		&:hover, &:focus {
-			border: 1px solid lighten($secondaryColor, 5%);
+			// border: 1px solid lighten(var(--secondary-color), 5%);
 			outline: none;
 			-webkit-appearance: none;
 		}
 	}
+
 	textarea {
 		min-height: 140px;
 	}
@@ -380,7 +400,7 @@ button {
 
 footer {
 	padding-top: 10px;
-	background-color: $mainColor;
+	background-color: var(--primary-color);
 	p {
 		color: #FFF;
 	}

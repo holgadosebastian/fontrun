@@ -1,6 +1,6 @@
 <div ng-controller="MenuCtrl as menu">
 	<span class="fr-side-menu__open"
-		ng-click="controls.showSideMenu = true">
+		ng-click="menu.showSideMenu = true">
 		<i class="fa fa-cogs"></i>
 	</span>
 
@@ -12,7 +12,7 @@
 	</div>
 
 	<nav class="fr-side-menu"
-		ng-class="{ 'side-menu--show' : controls.showSideMenu }">
+		ng-class="{ 'side-menu--show' : menu.showSideMenu }">
 
 		<header>
 			<img class="side-menu__logo" src="images/fontrun-logo-white.svg" alt="fontRun logo white">
@@ -23,7 +23,7 @@
 			</div>
 
 			<span class="side-menu__close"
-				ng-click="controls.showSideMenu = false">
+				ng-click="menu.showSideMenu = false">
 				<i class="fa fa-close"></i>
 			</span>
 		</header>

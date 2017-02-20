@@ -2,12 +2,32 @@
 
 angular.module('fontRunApp')
   .controller('MainCtrl', [
-    'RandomWordSrv',
-  	function ( RandomWordSrv ) {
-      this.randomWords = RandomWordSrv.getRandomWords(30);
+    'RandomContentSrv',
+  	function ( RandomContentSrv ) {
+      var self = this;
 
-      this.loadRandomWords = function() {
-        this.randomWords = RandomWordSrv.getRandomWords(30);
+      self.setRandomWords = function() {
+        self.randomWords = RandomContentSrv.getRandomWords(30);
       };
+
+      self.setBlogPosts = function() {
+        var blogPosts = [];
+
+        for (var i = 0; i < 3; i++) {
+          blogPosts.push(
+            {
+              title: RandomContentSrv.getRandomTitle(),
+              subtitle: RandomContentSrv.getRandomTitle(),
+              description: RandomContentSrv.getRandomDescription()
+            }
+          );
+        }
+
+        self.blogPosts = blogPosts;
+      };
+
+      // Init page random words
+      self.setRandomWords();
+      self.setBlogPosts();
   	}
   ]);

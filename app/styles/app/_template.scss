@@ -36,7 +36,26 @@
 	}
 
 	p {
-		font-size: 15px;
+		font-size: 18px;
+	}
+
+	.section__header {
+		.container {
+			position: relative;
+		}
+	}
+
+	.section__reload {
+		position: absolute;
+		top: 50%;
+		right: 15px;
+		margin-top: -20px;
+		width: 40px;
+		height: 40px;
+		font-size: 20px;
+		line-height: 40px;
+		text-align: center;
+		cursor: pointer;
 	}
 
 
@@ -44,7 +63,7 @@
 
 	footer {
 		padding-top: 10px;
-		background-color: $fillColor;
+		padding-bottom: 10px;
 
 		p {
 			color: #FFF;
@@ -187,6 +206,9 @@
 }
 
 
+// Skills
+
+
 // History
 
 #home-history {
@@ -197,60 +219,22 @@
 	}
 }
 
-// Skills
-
 
 // Words
 
 #home-words {
 	.words__list {
+		display: -webkit-flex;
 		display: flex;
+		-webkit-flex-wrap: wrap;
 		flex-wrap: wrap;
 
 		li {
 			flex-basis: 16.66666%;
-		}
-	}
-
-	.words__column {
-
-		h4 {
-			&:nth-child(3n+1) {
-				font-weight: 300 !important;
-			}
-
-			&:nth-child(3n+2) {
-				font-weight: 400 !important;
-			}
-
-			&:nth-child(3n+3) {
-				font-weight: 700 !important;
-			}
+			font-size: 20px;
 		}
 	}
 }
-
-.randomWordsColumn1 h4,
-.randomWordsColumn2 h4 {
-	color: $mainColor;
-}
-
-.randomWordsColumn3 h4,
-.randomWordsColumn4 h4 {
-	color: $secondaryColor;
-}
-
-.randomWordsColumn5 h4,
-.randomWordsColumn6 h4 {
-	color: $fillColor;
-}
-
-.randomWordsColumn4 h4,
-.randomWordsColumn5 h4,
-.randomWordsColumn6 h4 {
-	font-style: italic;
-}
-
 
 // Team
 
@@ -300,6 +284,13 @@
 	}
 }
 
+// Blog
+
+#home-blog {
+	p {
+		margin-top: 15px;
+	}
+}
 
 // Contact
 
@@ -309,6 +300,8 @@
 	}
 
 	.contact__icons {
+		margin-top: 10px;
+		display: -webkit-flex;
 		display: flex;
 
 		li {

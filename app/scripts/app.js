@@ -5,15 +5,15 @@ angular
     'ngRoute'
   ])
   .constant( 'premadeThemes', [
-    { name: 'future' },
     { name: 'agnostic' },
+    { name: 'retro' },
     { name: 'blizzard' },
-    { name: 'cupcake' },
-    { name: 'cupcake-flat' },
-    { name: 'googly' },
-    { name: 'hip' },
-    { name: 'lean' },
-    { name: 'retro' }
+    { name: 'future' }
+    // { name: 'cupcake' },
+    // { name: 'cupcake-flat' },
+    // { name: 'googly' },
+    // { name: 'hip' },
+    // { name: 'lean' },
   ])
   .config([
     '$routeProvider',
@@ -35,9 +35,6 @@ angular
     'premadeThemes',
     function( $rootScope, premadeThemes ) {
       var body = document.body;
-
-      $rootScope.controls = {};
-      $rootScope.controls.showSideMenu = true;
 
       $rootScope.fonts = {};
       $rootScope.fonts.primary = 'Abril+Fatface';

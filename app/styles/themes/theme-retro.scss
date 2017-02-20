@@ -6,167 +6,191 @@ body {
 	background-color: #FFF;
 }
 
-// Fonts
+.site__wrapper {
 
-h1 {
-	color: $mainColor;
-	font-weight: 700;
-}
+	// Fonts
 
-h2 {
-	font-family: 'secondaryFont';
-	display: inline-block;
-	position: relative;
-	margin: 8px 0;
-	padding: 0;
-	font-size: 28px;
-	color: #FFF;
-	font-weight: 700;
-	text-align: center;
-	&:before {
-		position: absolute;
-		content: "";
-		top: 50%;
-		left: -40px;
-		width: 25px;
-		height: 1px;
-		background-color: #FFF;
+	h1 {
+		color: var(--primary-color);
+		font-weight: 700;
 	}
-	&:after {
-		position: absolute;
-		content: "";
-		top: 50%;
-		right: -40px;
-		width: 25px;
-		height: 1px;
-		background-color: #FFF;
-	}
-}
 
-p {
-	font-weight: 400;
-	color: $darkGray;
-}
-
-#history p {
-  -webkit-column-count: 4;
-  -moz-column-count: 4;
-  column-count: 4;
-}
-
-// Layout
-
-.titleWrapper {
-	margin-top: 30px;
-	.container {
+	h2 {
+		display: inline-block;
 		position: relative;
+		margin: 8px 0;
+		padding: 0;
+		font-size: 28px;
+		color: #FFF;
+		font-weight: 700;
 		text-align: center;
-		background: $darkGray url("../images/retroTile.png") repeat scroll center;
-		@include box-shadow(0 4px 4px -3px $darkGray);
-		.titleIcon {
-			position: absolute;
-			margin-top: -40px;
-			margin-left: 25px;
-			width: 80px;
-			height: 80px;
-			top: 50%;
-			font-family: 'secondaryFont';
-			font-size: 30px;
-			font-weight: 700;
-			color: #FFF;
-			line-height: 0.8;
-			background-color: $secondaryColor;
-			border-radius: 50%;
-			@include box-shadow(0 0 4px rgba(0,0,0,0.8));
-			&:before {
-				display: inline-block;
-				margin-top: 20px;
-				margin-bottom: 10px;
-				padding-top: 5px;
-				padding-bottom: 5px;
-				border-top: 1px solid #FFF;
-				border-bottom: 1px solid #FFF;
-				-ms-transform: skew(0,-8deg); /* IE 9 */
-		    -webkit-transform: skew(0,-8deg); /* Chrome, Safari, Opera */
-		    transform: skew(0,-8deg);
-			}
-		}
+
 		&:before {
 			position: absolute;
 			content: "";
-			margin-top: -25px;
-			left: 0;
 			top: 50%;
-			border-left: 16px solid #FFF;
-			border-top: 25px solid transparent;
-			border-bottom: 25px solid transparent;
+			left: -40px;
+			width: 25px;
+			height: 1px;
+			background-color: #FFF;
 		}
+
 		&:after {
 			position: absolute;
 			content: "";
-			margin-top: -25px;
-			right: 0;
 			top: 50%;
-			border-right: 16px solid #FFF;
-			border-top: 25px solid transparent;
-			border-bottom: 25px solid transparent;
+			right: -40px;
+			width: 25px;
+			height: 1px;
+			background-color: #FFF;
 		}
 	}
-}
 
-.section > .container .row{
-	background-color: $lightGray;
+	p {
+		font-weight: 400;
+		color: $darkGray;
+	}
+
+	// Layout
+
+	.section__header {
+		margin-top: 30px;
+
+		.container {
+			position: relative;
+			text-align: center;
+			background: $darkGray url("../images/retroTile.png") repeat scroll center;
+			@include box-shadow(0 4px 4px -3px $darkGray);
+
+			.section__badge {
+				position: absolute;
+				margin-top: -40px;
+				margin-left: 25px;
+				width: 80px;
+				height: 80px;
+				top: 50%;
+				left: 15px;
+				font-size: 30px;
+				font-weight: 700;
+				color: #FFF;
+				line-height: 0.8;
+				background-color: var(--secondary-color);
+				border-radius: 50%;
+				@include box-shadow(0 0 4px rgba(0,0,0,0.8));
+
+				&:before {
+					display: inline-block;
+					margin-top: 20px;
+					margin-bottom: 10px;
+					padding-top: 5px;
+					padding-bottom: 5px;
+					border-top: 1px solid #FFF;
+					border-bottom: 1px solid #FFF;
+					-ms-transform: skew(0,-8deg); /* IE 9 */
+			    -webkit-transform: skew(0,-8deg); /* Chrome, Safari, Opera */
+			    transform: skew(0,-8deg);
+				}
+			}
+
+			&:before {
+				position: absolute;
+				content: "";
+				margin-top: -25px;
+				left: 0;
+				top: 50%;
+				border-left: 16px solid #FFF;
+				border-top: 25px solid transparent;
+				border-bottom: 25px solid transparent;
+			}
+
+			&:after {
+				position: absolute;
+				content: "";
+				margin-top: -25px;
+				right: 0;
+				top: 50%;
+				border-right: 16px solid #FFF;
+				border-top: 25px solid transparent;
+				border-bottom: 25px solid transparent;
+			}
+		}
+	}
+
+	.section > .container .row{
+		background-color: $lightGray;
+	}
+
+
+	// Footer
+
+	footer {
+		padding-top: 10px;
+		background-color: var(--primary-color);
+		p {
+			color: #FFF;
+		}
+		.copyRight {
+			text-align: right;
+		}
+	}
 }
 
 // fontVersus
 
-#fontsVersus {
+#fonts-versus {
 	text-transform: uppercase;
-	.vsTag {
+
+	.versus__tag {
 		margin-bottom: 20px;
-	}
-	.vsTagInner {
-		padding: 5px 15px;
-		border: 2px solid black;
+
+		span {
+			padding: 5px 15px;
+			border: 2px solid black;
+		}
 	}
 }
 
-// Navbar
 
-#homeNav {
+// Nav bar
+
+#home-nav {
 	background: $darkGray url("../images/retroTile.png") repeat scroll center;
-	.navbar-brand {
-		color: #FFF;
-		background-color: $mainColor;
-		&:hover {
-			background-color: lighten($mainColor, 10%);
+
+	.nav__logo {
+		a {
+			color: #FFF;
+			background-color: var(--primary-color);
+
+			&:hover {
+				// background-color: lighten(var(--primary-color), 10%);
+			}
 		}
 	}
+
 	li a {
 		color: #FFF;
 	}
 }
 
+
 // Header
 
-#header {
+#home-header {
 	background: #1a1a1a url("http://lorempixel.com/g/1920/600/nature/") no-repeat fixed center;
 	background-size: cover;
-	border-bottom: 10px solid $fillColor;
-	.headerTag {
-		.headerTagInner {
-			padding: 15px;
-			width: 300px;
-			height: 300px;
-			background-color: $secondaryColor;
-			@include border-radius(50%);
-		}
+	border-bottom: 10px solid var(--tertiary-color);
+
+	.header__tag {
+
 		h1 {
 			position: relative;
 			margin-top: 105px;
+			font-weight: 700;
+			text-transform: uppercase;
 			margin-bottom: 12px;
 			padding-bottom: 5px;
 			color: #FFF;
+
 			&:before {
 				margin-left: -15px;
 				bottom: -3px;
@@ -178,24 +202,32 @@ p {
 				background-color: #FFF;
 			}
 		}
+
 		h3 {
 			color: #FFF;
 			text-transform: uppercase;
 			letter-spacing: 3px;
 		}
 	}
-	h1 {
-		font-weight: 700;
-		text-transform: uppercase;
+
+	.header__tag-inner {
+		padding: 15px;
+		width: 300px;
+		height: 300px;
+		background-color: var(--secondary-color);
+		@include border-radius(50%);
 	}
+
 	p {
 		margin-top: 20px;
 		margin-bottom: 15px;
 		max-width: 50%;
 		color: #FFF;
 	}
-	.headerOverlay {
-		background-color: rgba($fillColor, 0.3);
+
+	.header__overlay {
+		background-color: var(--tertiary-color);
+		opacity: 0.3;
 	}
 }
 
@@ -203,41 +235,42 @@ button {
 	padding: 6px 20px;
 	font-family: 'mainFont';
 	font-size: 18px;
-	color: $mainColor;
+	color: var(--primary-color);
 	font-weight: 700;
 	text-transform: uppercase;
 	background-color: transparent;
-	border: 2px solid $mainColor;
+	border: 2px solid var(--primary-color);
 	transition: all 0.4s ease-in-out;
 	&:hover {
 		color: #FFF;
-		background-color: $mainColor;
+		background-color: var(--primary-color);
 	}
 }
 
 // Skills
 
-#skills {
-	.col-sm-4 {
-		margin-top: 15px;
-	}
-	.titleIcon:before {
+#home-skills {
+
+	.section__badge:before {
 		content: "12";
 	}
+
 	.row {
 		margin-right: 0;
 		margin-left: 0;
 	}
 }
 
-.skillBox {
+.skills__item {
 	color: #FFF;
 	text-align: center;
+
 	h3 {
 		position: relative;
 		margin: 0;
 		padding: 50px 15px 15px;
-		color: $mainColor;
+		color: var(--primary-color);
+
 		&:before {
 			position: absolute;
 			content: "";
@@ -246,60 +279,65 @@ button {
 			height: 4px;
 			left: 50%;
 			bottom: -4px;
-			background-color: $mainColor;
+			background-color: var(--primary-color);
 		}
 	}
-	.bottomWrapper {
-	}
+
 	p {
 		margin: 0;
 		padding: 15px;
 		position: relative;
-		color: $fillColor;
+		color: var(--tertiary-color);
 	}
+
 	button {
 		margin-bottom: 10px;
 		padding: 0;
-		font-family: 'secondaryFont';
 		font-size: 18px;
 		color: $darkGray;
 		font-weight: 300;
 		text-transform: lowercase;
 		background-color: transparent;
 		border: none;
+
 		&:hover {
-			color: lighten($secondaryColor, 10%);
+			// color: lighten(var(--secondary-color), 10%);
 		}
 	}
 }
 
 
-// history
+// History
 
-#history {
+#home-history {
 	margin-top: 15px;
 	margin-bottom: 15px;
-	.titleIcon:before {
+
+	.section__badge:before {
 		content: "34";
 	}
+
 	.wrapper {
 		padding-top: 20px;
 		background-color: $lightGray;
 	}
+
 	p {
 		padding: 15px;
 	}
 }
 
 
-// randomWords
+// Random Words
 
-#randomWords {
+#home-words {
 	margin-top: 15px;
 	margin-bottom: 15px;
-	.titleIcon:before {
+
+	.section__badge:before {
 		content: "56";
 	}
+
 	.wrapper {
 		.row {
 			margin-left: 0;
@@ -307,97 +345,110 @@ button {
 			padding-top: 30px;
 		}
 	}
+
 	p {
 		padding: 15px;
 	}
 }
 
 
-// aboutUs
+// Team
 
-#aboutUs {
+#home-team {
 	margin-top: 15px;
 	margin-bottom: 15px;
 	background-color: $lightGray;
-	border-bottom: 5px solid $mainColor;
-	.container .wrapper{
+	border-bottom: 5px solid var(--primary-color);
+
+	.container .wrapper {
 		overflow: hidden;
 		padding: 15px;
 		border-radius: 7px;
 	}
-	.aboutUsTag {
+
+	.team__tag {
 		margin-top: 80px;
+
+		h1 {
+			font-size: 76px;
+			font-weight: 700;
+			color: var(--primary-color);
+			line-height: 0.8;
+		}
 	}
-	.aboutUsBig {
-		font-family: 'mainFont';
-		font-size: 76px;
-		font-weight: 700;
-		color: $mainColor;
-		line-height: 0.8;
-	}
+
 	h3 {
 		margin-top: 5px;
 		margin-bottom: 25px;
 		padding-bottom: 5px;
-		font-family: 'mainFont';
 		font-size: 28px;
 		font-weight: 700;
 		color: $darkGray;
 		text-transform: uppercase;
 		border-bottom: 4px solid $darkGray;
 	}
+
 	h4 {
 		font-weight: 700;
 	}
-	h6 {
+
+	h5 {
 		z-index: 10;
 		margin-bottom: 2px;
-		font-family: 'mainFont';
 		font-weight: 700;
-		color: $mainColor;
+		color: var(--primary-color);
 	}
 }
 
 
 // Prices
 
-#prices {
+#home-prices {
 	margin-bottom: 100px;
-	.titleIcon:before {
+
+	.section__badge:before {
 		content: "78";
 	}
+
 	.row {
 		margin-right: 0;
 		margin-left: 0;
 		padding-top: 20px;
 	}
+
 	h3 {
 		font-weight: 700;
-		color: $mainColor;
+		color: var(--primary-color);
 	}
+
 	h4 {
 		font-size: 18px;
 		font-weight: 300;
-		color: $fillColor;
+		color: var(--tertiary-color);
 		text-transform: uppercase;
 	}
-	.priceTag {
+
+	.prices__tag {
 		margin-bottom: 15px;
 		font-family: 'mainFont';
 		font-weight: 700;
 	}
-	ul {
-		text-align: left;
-		padding-left: 3%;
-		padding-right: 3%;
-		li {
-			font-family: 'mainFont';
-			font-size: 18px;
-			font-weight: 700;
-			color: $darkGray;
-			border-bottom: 4px solid $darkGray;
+
+	.prices__list {
+		ul {
+			text-align: left;
+			padding-left: 3%;
+			padding-right: 3%;
+
+			li {
+				font-size: 18px;
+				font-weight: 700;
+				color: $darkGray;
+				border-bottom: 4px solid $darkGray;
+			}
 		}
 	}
+
 	button {
 		margin-top: 20px;
 		margin-bottom: -40px;
@@ -408,87 +459,81 @@ button {
 		color: #FFF;
 		border: 0;
 		border-radius: 50%;
-		background-color: $mainColor;
-		@include box-shadow(0 4px darken($mainColor, 10%));
+		background-color: var(--primary-color);
+		// @include box-shadow(0 4px darken(var(--primary-color), 10%));
 		&:hover {
-			background-color: lighten($mainColor, 10%);
-			@include box-shadow(0 4px $mainColor);
+			// background-color: lighten(var(--primary-color), 10%);
+			@include box-shadow(0 4px var(--primary-color));
 		}
 	}
 }
 
+
 // Blog
 
-#blogPosts {
-	.titleIcon:before {
+#home-blog {
+
+	.section__badge:before {
 		content: "09";
 	}
+
 	.row {
 		margin-right: 0;
 		margin-left: 0;
 		padding-top: 15px;
 	}
+
 	h3 {
 		color: $darkGray;
 	}
+
 	h5 {
 		font-weight: 700;
-		color: $mainColor;
+		color: var(--primary-color);
 	}
 }
 
 
 // Contact
 
-#contact {
+#home-contact {
 	margin-bottom: 30px;
-	.titleIcon:before {
+
+	.section__badge:before {
 		content: "10";
 	}
-	.row {
-		margin-right: 0;
-		margin-left: 0;
-		padding-top: 20px;
-	}
+	
 	.textBox {
 		min-height: 203px;
 		padding: 15px;
 	}
+
 	h3 {
 		font-weight: 300;
-		color: $mainColor;
+		color: var(--primary-color);
 	}
+
 	p {
 		color: $darkGray;
 	}
+
 	input, textarea {
 		padding: 12px;
 		font-family: 'secondaryFont';
 		font-size: 16px;
 		font-weight: 700;
-		color: $secondaryColor;
+		color: var(--secondary-color);
 		background-color: transparent;
-		border-bottom: 4px solid $secondaryColor;
+		border-bottom: 4px solid var(--secondary-color);
 		@include transitionNormal(all);
+
 		&:hover, &:focus {
-			background-color: $secondaryColor;
+			background-color: var(--secondary-color);
 			color: #FFF;
 		}
 	}
+
 	textarea {
 		min-height: 140px;
-	}
-}
-
-// Footer
-
-footer {
-	padding-top: 10px;
-	background-color: $mainColor;
-	p {
-		color: #FFF;
-	}
-	.copyRight {
-		text-align: right;
 	}
 }
