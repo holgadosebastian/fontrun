@@ -6,40 +6,19 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-4">
+		<ul class="row">
+			<li class="col-sm-4"
+				ng-repeat="skill in main.skills">
 				<div class="skills__item">
-					<h3 class="skills__item-title">First skill</h3>
+					<h3 class="skills__item-title">{{ skill.title }}</h3>
 					<div class="skills__item-description">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur incidunt sapiente ipsum modi ex quod.</p>
+						<p>{{ skill.description }}</p>
 						<span class="skills__item-button">
-							<span>View more</span>
+							<span class="font__primary">View more</span>
 						</span>
 					</div>
 				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="skills__item">
-					<h3 class="skills__item-title">First skill</h3>
-					<div class="skills__item-description">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur incidunt sapiente ipsum modi ex quod.</p>
-						<span class="skills__item-button">
-							<span>View more</span>
-						</span>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="skills__item">
-					<h3 class="skills__item-title">First skill</h3>
-					<div class="skills__item-description">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur incidunt sapiente ipsum modi ex quod.</p>
-						<span class="skills__item-button">
-							<span>View more</span>
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
+			</li>
+		</ul>
 	</div>
 </section>

@@ -15,11 +15,21 @@
 		ng-class="{ 'side-menu--show' : menu.showSideMenu }">
 
 		<header>
-			<img class="side-menu__logo" src="images/fontrun-logo-white.svg" alt="fontRun logo white">
+			<img class="side-menu__logo" src="images/fontrun-logo-white.svg" alt="fontRun logo white"
+				ng-click="menu.showAboutModal = true">
 
 			<div class="side-menu__view">
 				<p>Current view</p>
-				<p>Scheme</p>
+				<div>
+					<a ng-href="#!/"
+						ng-class="{ 'side-menu__view-item' : view.current === 'theme' }">
+						<span>Theme</span>
+					</a>
+					<a ng-href="#!/test"
+						ng-class="{ 'side-menu__view-item' : view.current === 'card' }">
+						<span>Cards</span>
+					</a>
+				</div>
 			</div>
 
 			<span class="side-menu__close"
@@ -28,30 +38,26 @@
 			</span>
 		</header>
 
-		<div class="side-menu__content">
-			<div class="side-menu__font-select">
+		<ul class="side-menu__content">
+			<li class="side-menu__font-select">
 				<p class="side-menu__title side-menu__title--collapsable" ng-click="menu.hideSelectedFonts = !menu.hideSelectedFonts">Selected fonts <span><i class="fa" ng-class="'fa-chevron-' + (menu.hideSelectedFonts ? 'down' : 'up')"></i></span></p>
 				<ul ng-hide="menu.hideSelectedFonts">
-					<li ng-class="{ 'side-menu__font-select--edit' : menu.editPrimaryFont }"
-							ng-click="menu.editPrimaryFont = true">
+					<li>
 						<p class="side-menu__title -h4">MAIN FONT</p>
-						<p class="side-menu__title -h2">{{ fonts.primary | fontName }}</p>
-						<input class="side-menu__input side-menu__input--font -h2" type="text" ng-model="fonts.primary">
+						<input class="side-menu__input -h2" type="text" ng-model="fonts.primary">
 					</li>
 					<span class="side-menu__font-switch"
 						ng-click="menu.switchFonts()">
 						<span class="fa fa-exchange fa-rotate-90"></span>
 					</span>
-					<li ng-class="{ 'side-menu__font-select--edit' : menu.editSecondaryFont }"
-							ng-click="menu.editSecondaryFont = true">
+					<li>
 						<p class="side-menu__title -h4">SECONDARY FONT</p>
-						<p class="side-menu__title -h2">{{ fonts.secondary | fontName }}</p>
-						<input class="side-menu__input side-menu__input--font -h2" type="text" ng-model="fonts.secondary">
+						<input class="side-menu__input -h2" type="text" ng-model="fonts.secondary">
 					</li>
 				</ul>
-			</div>
+			</li>
 
-			<div>
+			<li>
 				<p class="side-menu__title side-menu__title--collapsable" ng-click="menu.hideColorPallete = !menu.hideColorPallete">Color pallette <span><i class="fa" ng-class="'fa-chevron-' + (menu.hideColorPallete ? 'down' : 'up')"></i></span></p>
 				<ul class="side-menu__selected-colors"
 					ng-hide="menu.hideColorPallete">
@@ -71,9 +77,9 @@
 						<input class="side-menu__input side-menu__input--color" type="text" ng-model="colors.tertiary">
 					</li>
 				</ul>
-			</div>
+			</li>
 
-			<div>
+			<li>
 				<p class="side-menu__title side-menu__title--collapsable" ng-click="menu.hideSchemes = !menu.hideSchemes">Schemes <span><i class="fa" ng-class="'fa-chevron-' + (menu.hideSchemes ? 'down' : 'up')"></i></span></p>
 				<ul class="side-menu__loaded-schemes"
 					ng-hide="menu.hideSchemes">
@@ -95,11 +101,28 @@
 						<span class="loaded-scheme__add"><i class="fa fa-plus"></i></span>
 					</li>
 				</ul>
-			</div>
-		</div>
+			</li>
+		</ul>
 
 		<footer>
 			<span>Developed by <a href="http://ohsebastian.com" target="_blank">Sebastián Holgado</a></span>
 		</footer>
 	</nav>
+
+	<div class="fr-modal" ng-class="{ 'modal--show' : menu.showAboutModal }">
+		<div class="modal__container">
+			<header>
+				<p class="-h1">About FontRun</p>
+				<span class="modal__close"
+					ng-click="menu.showAboutModal = false">
+					<i class="fa fa-close"></i>
+				</span>
+			</header>
+			<div class="modal__body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae id minima quod accusamus impedit molestias velit voluptatem nostrum iste consequuntur laudantium tempore neque, rerum, distinctio, inventore ab iusto laborum cupiditate nulla dolor quidem reiciendis et nisi perspiciatis. Nostrum non, praesentium excepturi deserunt obcaecati, totam dolorum, voluptatem repellat vero voluptatum magnam.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae id minima quod accusamus impedit molestias velit voluptatem nostrum iste consequuntur laudantium tempore neque, rerum, distinctio, inventore ab iusto laborum cupiditate nulla dolor quidem reiciendis et nisi perspiciatis. Nostrum non, praesentium excepturi deserunt obcaecati, totam dolorum, voluptatem repellat vero voluptatum magnam.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae id minima quod accusamus impedit molestias velit voluptatem nostrum iste consequuntur laudantium tempore neque, rerum, distinctio, inventore ab iusto laborum cupiditate nulla dolor quidem reiciendis et nisi perspiciatis. Nostrum non, praesentium excepturi deserunt obcaecati, totam dolorum, voluptatem repellat vero voluptatum magnam.</p>
+			</div>
+		</div>
+	</div>
 </div>

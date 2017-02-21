@@ -5,9 +5,10 @@ angular.module('fontRunApp')
     '$rootScope',
     '$scope',
     '$timeout',
+    '$location',
 		'premadeThemes',
 		'SchemeSrv',
-  	function ( $rootScope, $scope, $timeout, premadeThemes, SchemeSrv ) {
+  	function ( $rootScope, $scope, $timeout, $location, premadeThemes, SchemeSrv ) {
       var self = this;
 			self.premadeThemes = premadeThemes;
       self.showSideMenu = true;
@@ -55,6 +56,16 @@ angular.module('fontRunApp')
                 $rootScope.themes.current = premadeThemes[currentThemeIndex + 1].name;
               } else {
                 $rootScope.themes.current = premadeThemes[0].name;
+              }
+              break;
+            case 118:
+              var currentView = $rootScope.view.current;
+              if ( currentView === 'theme' ) {
+                $rootScope.view.current = 'card';
+                $location.url('/test');
+              } else {
+                $rootScope.view.current = 'theme';
+                $location.url('/');
               }
               break;
             case 49:

@@ -40,12 +40,15 @@
     .site__wrapper	h3,
     .site__wrapper	h6,
     .site__wrapper	p,
-    .site__wrapper .font__secondary {
+    .site__wrapper .font__secondary,
+    .section__badge::before,
+    .site__wrapper input[type='text'],
+    .site__wrapper textarea {
   		font-family: {{ fonts.secondary | fontName }};
   	}
   </style>
 </head>
-<body ng-controller="MainCtrl as main">
+<body>
 
   <ng-include src="'partials/side-menu.html'"></ng-include>
 

@@ -20,10 +20,24 @@ angular
     function ($routeProvider) {
       $routeProvider
         .when('/', {
-          templateUrl: 'views/home-view.html'
+          templateUrl: 'views/home-view.html',
+          controller: 'MainCtrl',
+          controllerAs: 'main',
+          resolve: {
+            view: function() {
+              return 'theme';
+            }
+          }
         })
         .when('/test', {
-          templateUrl: 'views/test-view.html'
+          templateUrl: 'views/test-view.html',
+          controller: 'MainCtrl',
+          controllerAs: 'main',
+          resolve: {
+            view: function() {
+              return 'card';
+            }
+          }
         })
         .otherwise( {
           redirectTo: '/'
@@ -35,6 +49,8 @@ angular
     'premadeThemes',
     function( $rootScope, premadeThemes ) {
       var body = document.body;
+
+      $rootScope.view = {};
 
       $rootScope.fonts = {};
       $rootScope.fonts.primary = 'Abril+Fatface';
