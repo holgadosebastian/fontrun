@@ -1,0 +1,54 @@
+// Vars
+
+$spacing: (
+  hg: 30px,
+  lg: 20px,
+  bg: 15px,
+  md: 10px,
+  sm: 5px
+);
+
+
+@each $size, $dimension in $spacing {
+	.utils__ {
+	  &m--#{$size} {
+	    margin: $dimension;
+	  }
+
+	  &mt--#{$size} {
+	    margin-top: $dimension;
+	  }
+
+	  &mr--#{$size} {
+	    margin-right: $dimension;
+	  }
+
+	  &mb--#{$size} {
+	    margin-bottom: $dimension;
+	  }
+
+	  &ml--#{$size} {
+	    margin-left: $dimension;
+	  }
+
+	  &p--#{$size} {
+	    padding: $dimension;
+	  }
+
+	  &pt--#{$size} {
+	    padding-top: $dimension;
+	  }
+
+	  &pr--#{$size} {
+	    padding-right: $dimension;
+	  }
+
+	  &pb--#{$size} {
+	    padding-bottom: $dimension;
+	  }
+
+	  &pl--#{$size} {
+	    padding-left: $dimension;
+	  }
+	}
+}

@@ -10,7 +10,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 @import "variables/mixins";
 @import "base/layout";
 
+@import "app/utils";
 @import "app/fontrun";
-@import "app/side-menu";
+@import "app/fr-ui";
 @import "app/template";
 @import "app/test-cards";

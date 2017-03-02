@@ -40,14 +40,17 @@
     .site__wrapper	h3,
     .site__wrapper	h6,
     .site__wrapper	p,
-    .site__wrapper .font__secondary {
+    .site__wrapper .font__secondary,
+    .section__badge::before,
+    .site__wrapper input[type='text'],
+    .site__wrapper textarea {
   		font-family: {{ fonts.secondary | fontName }};
   	}
   </style>
 </head>
-<body ng-controller="MainCtrl as main">
+<body>
 
-  <ng-include src="'partials/side-menu.html'"></ng-include>
+  <ng-include src="'partials/ui.html'"></ng-include>
 
   <main ng-view class="site__wrapper" ng-class="{ 'site__wrapper--menu' : controls.showSideMenu }"></main>
 
@@ -57,6 +60,7 @@
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="bower_components/angular-route/angular-route.min.js"></script>
   <script src="bower_components/underscore/underscore-min.js"></script>
+  <script src="bower_components/angular-clipboard/angular-clipboard.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
