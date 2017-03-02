@@ -2,7 +2,8 @@
 
 angular
   .module('fontRunApp', [
-    'ngRoute'
+    'ngRoute',
+    'angular-clipboard'
   ])
   .constant( 'premadeThemes', [
     { name: 'agnostic' },
@@ -46,15 +47,20 @@ angular
   ])
   .run([
     '$rootScope',
+    '$location',
     'premadeThemes',
-    function( $rootScope, premadeThemes ) {
+    function( $rootScope, $location, premadeThemes ) {
       var body = document.body;
+      var queryParams = $location.search();
 
       $rootScope.view = {};
 
+      $rootScope.controls = {};
+      $rootScope.controls.showSideMenu = true;
+
       $rootScope.fonts = {};
-      $rootScope.fonts.primary = 'Abril+Fatface';
-      $rootScope.fonts.secondary = 'Raleway';
+      $rootScope.fonts.primary = queryParams.primaryfont || 'Abril+Fatface';
+      $rootScope.fonts.secondary =  queryParams.secondaryfont || 'Raleway';
       $rootScope.fonts.getGoogleFonts = function () {
         var fonts = $rootScope.fonts.primary;
 
@@ -66,9 +72,9 @@ angular
       };
 
       $rootScope.colors = {};
-      $rootScope.colors.primary = 'F53357';
-      $rootScope.colors.secondary = '47384D';
-      $rootScope.colors.tertiary = '3F585F';
+      $rootScope.colors.primary = queryParams.primarycolor || 'F53357';
+      $rootScope.colors.secondary = queryParams.secondarycolor || '47384D';
+      $rootScope.colors.tertiary = queryParams.tertiarycolor || '3F585F';
 
       $rootScope.themes = {};
       $rootScope.themes.current = premadeThemes[0].name;

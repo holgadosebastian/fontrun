@@ -8,10 +8,10 @@ angular.module('fontRunApp')
     '$location',
 		'premadeThemes',
 		'SchemeSrv',
-  	function ( $rootScope, $scope, $timeout, $location, premadeThemes, SchemeSrv ) {
+    'clipboard',
+  	function ( $rootScope, $scope, $timeout, $location, premadeThemes, SchemeSrv, clipboard ) {
       var self = this;
 			self.premadeThemes = premadeThemes;
-      self.showSideMenu = true;
 
       // Colours
 
@@ -40,12 +40,36 @@ angular.module('fontRunApp')
         self.schemes = SchemeSrv.getSavedSchemes();
       };
 
+      self.getShareableUrl = function() {
+        $location.search(
+          {
+            'primarycolor': $rootScope.colors.primary,
+            'secondarycolor': $rootScope.colors.secondary,
+            'tertiarycolor': $rootScope.colors.tertiary,
+            'primaryfont': $rootScope.fonts.primary,
+            'secondaryfont': $rootScope.fonts.secondary
+          }
+        );
+
+        $timeout( function() {
+          clipboard.copyText( location.href );
+        }, 1);
+      };
+
+      self.getShareableSchemes = function() {
+        clipboard.copyText( localStorage.schemes );
+      };
+
+      self.addSchemes = function() {
+        self.schemes = SchemeSrv.addSchemes( self.schemesString );
+      };
+
       // Keyboard Events
       $(document).keypress( function(e) {
         $timeout( function() { // TODO: Remove timeout once I find a better way to update scope
           switch ( e.keyCode ) {
             case 113:
-                self.showSideMenu = !self.showSideMenu;
+                $rootScope.controls.showSideMenu = !$rootScope.controls.showSideMenu;
               break;
             case 102:
               self.switchFonts();

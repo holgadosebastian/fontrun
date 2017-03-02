@@ -41,5 +41,26 @@ angular.module('fontRunApp')
 				schemes.splice(index, 1);
 				localStorage.setItem('schemes', JSON.stringify(schemes));
 			};
+
+			this.addSchemes = function( schemesString ) {
+				var data = {};
+				var schemesJSON = [];
+
+				try {
+					schemesJSON = JSON.parse( schemesString );
+				} catch( err ) {
+					console.log( err );
+					data.error = 'The format was incorrect';
+				}
+
+				if ( schemesJSON.length > 0 ) {
+					var schemes = this.getSavedSchemes();
+					localStorage.setItem('schemes', JSON.stringify( schemes.concat( schemesJSON ) ));
+
+					data.schemes = this.getSavedSchemes();
+				}
+
+				return data;
+			};
 		}
 	]);
