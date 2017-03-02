@@ -9,9 +9,12 @@
     .site__wrapper	h3,
     .site__wrapper	h6,
     .site__wrapper	p,
-    .site__wrapper .font__secondary {
+    .site__wrapper .font__secondary,
+    .section__badge::before,
+    .site__wrapper input[type='text'],
+    .site__wrapper textarea {
   		font-family: {{ fonts.secondary | fontName }};
-  	}</style><body ng-controller="MainCtrl as main"><ng-include src="'partials/side-menu.html'"></ng-include><main ng-view class=site__wrapper ng-class="{ 'site__wrapper--menu' : controls.showSideMenu }"></main><script src=scripts/vendor.js></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  	}</style><body><ng-include src="'partials/ui.html'"></ng-include><main ng-view class=site__wrapper ng-class="{ 'site__wrapper--menu' : controls.showSideMenu }"></main><script src=scripts/vendor.js></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
