@@ -45,6 +45,11 @@
 		}
 	}
 
+	.section__button {
+		display: inline-block;
+		cursor: pointer;
+	}
+
 	.section__reload {
 		position: absolute;
 		top: 50%;
@@ -167,8 +172,6 @@
 
 #home-header {
 	position: relative;
-	padding-top: 250px;
-	padding-bottom: 100px;
 
 	.header__overlay {
 		position: absolute;
@@ -178,30 +181,12 @@
 		height: 100%;
 	}
 
-	.header__tag {
-		text-align: center;
-	}
-
-	.header__tag-inner {
-		display: inline-block;
-
-		h1 {
-			font-size: 30px;
-		}
-
-		h3 {
-			margin-bottom: 0;
-			font-size: 18px;
-		}
-
-		h1,
-		h3 {
-			margin-top: 0;
-		}
-	}
-
-	.header__button {
-		cursor: pointer;
+	.container {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-align-items: center;
+		align-items: center;
+		height: 500px;
 	}
 }
 
@@ -261,25 +246,15 @@
 		text-align: center;
 	}
 
-	h3 {
-		color: $mainColor;
-	}
-
 	.prices__tag {
 		margin-bottom: 15px;
 		font-size: 50px;
-		color: $secondaryColor;
 	}
 
 	ul {
-		padding-left: 0;
 
 		li {
-			margin-top: 5px;
-			margin-bottom: 10px;
-			list-style: none;
 			font-size: 18px;
-			color: $darkGray;
 		}
 	}
 }
@@ -296,7 +271,7 @@
 
 #home-contact {
 	h3 {
-		margin-top: 0;
+		margin-bottom: 10px;
 	}
 
 	.contact__icons {
@@ -338,10 +313,5 @@
 		min-height: 120px;
 		max-width: 100%;
 		margin-bottom: 15px;
-	}
-
-	button {
-		margin-bottom: 20px;
-		margin-left: 15px;
 	}
 }

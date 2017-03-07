@@ -2,6 +2,9 @@
 @import "../variables/colorPalette";
 @import "../variables/mixins";
 
+$theme-gray-light: #E8E8E8;
+$theme-gray-dark: #1E1E1E;
+
 body {
 	background-color: #FFF;
 }
@@ -18,37 +21,33 @@ body {
 	h2 {
 		display: inline-block;
 		position: relative;
-		margin: 8px 0;
-		padding: 0;
-		font-size: 28px;
 		color: #FFF;
+		line-height: 46px;
 		font-weight: 700;
 		text-align: center;
 
-		&:before {
+		&:before,
+		&:after {
 			position: absolute;
 			content: "";
 			top: 50%;
-			left: -40px;
 			width: 25px;
 			height: 1px;
 			background-color: #FFF;
 		}
 
+		&:before {
+			left: -40px;
+		}
+
 		&:after {
-			position: absolute;
-			content: "";
-			top: 50%;
 			right: -40px;
-			width: 25px;
-			height: 1px;
-			background-color: #FFF;
 		}
 	}
 
 	p {
 		font-weight: 400;
-		color: $darkGray;
+		color: $theme-gray-dark;
 	}
 
 	// Layout
@@ -59,7 +58,7 @@ body {
 		.container {
 			position: relative;
 			text-align: center;
-			background: $darkGray url("../images/retroTile.png") repeat scroll center;
+			background: $theme-gray-dark url("../../images/retro-tile.png") repeat scroll center;
 			@include box-shadow(0 4px 4px -3px $darkGray);
 
 			.section__badge {
@@ -92,32 +91,42 @@ body {
 				}
 			}
 
-			&:before {
-				position: absolute;
-				content: "";
-				margin-top: -25px;
-				left: 0;
-				top: 50%;
-				border-left: 16px solid #FFF;
-				border-top: 25px solid transparent;
-				border-bottom: 25px solid transparent;
-			}
-
+			&:before,
 			&:after {
 				position: absolute;
 				content: "";
 				margin-top: -25px;
-				right: 0;
 				top: 50%;
-				border-right: 16px solid #FFF;
 				border-top: 25px solid transparent;
 				border-bottom: 25px solid transparent;
+			}
+
+			&:before {
+				left: 0;
+				border-left: 16px solid #FFF;
+			}
+
+			&:after {
+				right: 0;
+				border-right: 16px solid #FFF;
 			}
 		}
 	}
 
-	.section > .container .row{
-		background-color: $lightGray;
+	.section__body {
+		padding: 20px 15px 15px;
+		background-color: $theme-gray-light;
+	}
+
+	.section__button {
+		padding: 0 15px;
+		height: 40px;
+		font-size: 18px;
+		color: #FFF;
+		font-weight: 700;
+		line-height: 40px;
+		border-radius: 20px;
+		background-color: var(--primary-color);
 	}
 
 
@@ -138,7 +147,6 @@ body {
 // fontVersus
 
 #fonts-versus {
-	text-transform: uppercase;
 
 	.versus__tag {
 		margin-bottom: 20px;
@@ -154,7 +162,7 @@ body {
 // Nav bar
 
 #home-nav {
-	background: $darkGray url("../images/retroTile.png") repeat scroll center;
+	background: $theme-gray-dark url("../../images/retro-tile.png") repeat scroll center;
 
 	.nav__logo {
 		a {
@@ -176,9 +184,9 @@ body {
 // Header
 
 #home-header {
-	background: #1a1a1a url("http://lorempixel.com/g/1920/600/nature/") no-repeat fixed center;
+	background: #1a1a1a url("https://unsplash.it/1000/500?image=998") no-repeat fixed center;
 	background-size: cover;
-	border-bottom: 10px solid var(--tertiary-color);
+	text-align: center;
 
 	.header__tag {
 
@@ -219,8 +227,7 @@ body {
 	}
 
 	p {
-		margin-top: 20px;
-		margin-bottom: 15px;
+		margin: 20px auto 15px;
 		max-width: 50%;
 		color: #FFF;
 	}
@@ -228,22 +235,6 @@ body {
 	.header__overlay {
 		background-color: var(--tertiary-color);
 		opacity: 0.3;
-	}
-}
-
-button {
-	padding: 6px 20px;
-	font-family: 'mainFont';
-	font-size: 18px;
-	color: var(--primary-color);
-	font-weight: 700;
-	text-transform: uppercase;
-	background-color: transparent;
-	border: 2px solid var(--primary-color);
-	transition: all 0.4s ease-in-out;
-	&:hover {
-		color: #FFF;
-		background-color: var(--primary-color);
 	}
 }
 
@@ -259,49 +250,31 @@ button {
 		margin-right: 0;
 		margin-left: 0;
 	}
-}
 
-.skills__item {
-	color: #FFF;
-	text-align: center;
+	.skills__item {
+		color: #FFF;
+		text-align: center;
 
-	h3 {
-		position: relative;
-		margin: 0;
-		padding: 50px 15px 15px;
-		color: var(--primary-color);
+		h3 {
+			position: relative;
+			padding: 30px 0 15px;
+			color: var(--primary-color);
 
-		&:before {
-			position: absolute;
-			content: "";
-			margin-left: -15px;
-			width: 30px;
-			height: 4px;
-			left: 50%;
-			bottom: -4px;
-			background-color: var(--primary-color);
+			&:before {
+				position: absolute;
+				content: "";
+				margin-left: -15px;
+				width: 30px;
+				height: 4px;
+				left: 50%;
+				bottom: -4px;
+				background-color: var(--primary-color);
+			}
 		}
-	}
 
-	p {
-		margin: 0;
-		padding: 15px;
-		position: relative;
-		color: var(--tertiary-color);
-	}
-
-	button {
-		margin-bottom: 10px;
-		padding: 0;
-		font-size: 18px;
-		color: $darkGray;
-		font-weight: 300;
-		text-transform: lowercase;
-		background-color: transparent;
-		border: none;
-
-		&:hover {
-			// color: lighten(var(--secondary-color), 10%);
+		p {
+			margin-top: 15px;
+			margin-bottom: 15px;
 		}
 	}
 }
@@ -315,15 +288,6 @@ button {
 
 	.section__badge:before {
 		content: "34";
-	}
-
-	.wrapper {
-		padding-top: 20px;
-		background-color: $lightGray;
-	}
-
-	p {
-		padding: 15px;
 	}
 }
 
@@ -413,7 +377,6 @@ button {
 	.row {
 		margin-right: 0;
 		margin-left: 0;
-		padding-top: 20px;
 	}
 
 	h3 {
@@ -430,41 +393,25 @@ button {
 
 	.prices__tag {
 		margin-bottom: 15px;
-		font-family: 'mainFont';
+		font-family: var(--primary-font);
 		font-weight: 700;
 	}
 
 	.prices__list {
 		ul {
 			text-align: left;
-			padding-left: 3%;
-			padding-right: 3%;
 
 			li {
 				font-size: 18px;
 				font-weight: 700;
-				color: $darkGray;
-				border-bottom: 4px solid $darkGray;
+				color: $theme-gray-dark;
+				border-bottom: 4px solid $theme-gray-dark;
 			}
 		}
 	}
 
-	button {
-		margin-top: 20px;
-		margin-bottom: -40px;
-		padding: 0;
-		width: 100px;
-		height: 100px;
-		font-size: 14px;
-		color: #FFF;
-		border: 0;
-		border-radius: 50%;
-		background-color: var(--primary-color);
-		// @include box-shadow(0 4px darken(var(--primary-color), 10%));
-		&:hover {
-			// background-color: lighten(var(--primary-color), 10%);
-			@include box-shadow(0 4px var(--primary-color));
-		}
+	.section__button {
+		margin-top: 15px;
 	}
 }
 
@@ -502,7 +449,7 @@ button {
 	.section__badge:before {
 		content: "10";
 	}
-	
+
 	.textBox {
 		min-height: 203px;
 		padding: 15px;
@@ -514,12 +461,19 @@ button {
 	}
 
 	p {
-		color: $darkGray;
+		color: $theme-gray-dark;
+	}
+
+	.contact__icons {
+		li {
+			color: #FFF;
+			background-color: var(--secondary-color);
+			border-radius: 50%;
+		}
 	}
 
 	input, textarea {
 		padding: 12px;
-		font-family: 'secondaryFont';
 		font-size: 16px;
 		font-weight: 700;
 		color: var(--secondary-color);
