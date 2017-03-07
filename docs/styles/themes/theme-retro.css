@@ -128,64 +128,59 @@ $fillColor: #002635;
 $lightGray: #f1f1f1;
 $mediumGray: #636363;
 $darkGray: #323232;*/
-/* line 5, ../../../app/styles/themes/theme-retro.scss */
+/* line 8, ../../../app/styles/themes/theme-retro.scss */
 body {
   background-color: #FFF;
 }
 
-/* line 13, ../../../app/styles/themes/theme-retro.scss */
+/* line 16, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper h1 {
   color: var(--primary-color);
   font-weight: 700;
 }
-/* line 18, ../../../app/styles/themes/theme-retro.scss */
+/* line 21, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper h2 {
   display: inline-block;
   position: relative;
-  margin: 8px 0;
-  padding: 0;
-  font-size: 28px;
   color: #FFF;
+  line-height: 46px;
   font-weight: 700;
   text-align: center;
 }
-/* line 28, ../../../app/styles/themes/theme-retro.scss */
+/* line 29, ../../../app/styles/themes/theme-retro.scss */
+.site__wrapper h2:before, .site__wrapper h2:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  width: 25px;
+  height: 1px;
+  background-color: #FFF;
+}
+/* line 39, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper h2:before {
-  position: absolute;
-  content: "";
-  top: 50%;
   left: -40px;
-  width: 25px;
-  height: 1px;
-  background-color: #FFF;
 }
-/* line 38, ../../../app/styles/themes/theme-retro.scss */
+/* line 43, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper h2:after {
-  position: absolute;
-  content: "";
-  top: 50%;
   right: -40px;
-  width: 25px;
-  height: 1px;
-  background-color: #FFF;
 }
-/* line 49, ../../../app/styles/themes/theme-retro.scss */
+/* line 48, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper p {
   font-weight: 400;
   color: #1E1E1E;
 }
-/* line 56, ../../../app/styles/themes/theme-retro.scss */
+/* line 55, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper .section__header {
   margin-top: 30px;
 }
-/* line 59, ../../../app/styles/themes/theme-retro.scss */
+/* line 58, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper .section__header .container {
   position: relative;
   text-align: center;
-  background: #1E1E1E url("../images/retroTile.png") repeat scroll center;
+  background: #1E1E1E url("../../images/retro-tile.png") repeat scroll center;
   box-shadow: 0 4px 4px -3px #1E1E1E;
 }
-/* line 65, ../../../app/styles/themes/theme-retro.scss */
+/* line 64, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper .section__header .container .section__badge {
   position: absolute;
   margin-top: -40px;
@@ -202,7 +197,7 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
 }
-/* line 81, ../../../app/styles/themes/theme-retro.scss */
+/* line 80, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper .section__header .container .section__badge:before {
   display: inline-block;
   margin-top: 20px;
@@ -215,81 +210,86 @@ body {
   /* Chrome, Safari, Opera */
   transform: skew(0, -8deg);
 }
-/* line 95, ../../../app/styles/themes/theme-retro.scss */
+/* line 94, ../../../app/styles/themes/theme-retro.scss */
+.site__wrapper .section__header .container:before, .site__wrapper .section__header .container:after {
+  position: absolute;
+  content: "";
+  margin-top: -25px;
+  top: 50%;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+}
+/* line 104, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper .section__header .container:before {
-  position: absolute;
-  content: "";
-  margin-top: -25px;
   left: 0;
-  top: 50%;
   border-left: 16px solid #FFF;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
 }
-/* line 106, ../../../app/styles/themes/theme-retro.scss */
+/* line 109, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper .section__header .container:after {
-  position: absolute;
-  content: "";
-  margin-top: -25px;
   right: 0;
-  top: 50%;
   border-right: 16px solid #FFF;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
 }
-/* line 119, ../../../app/styles/themes/theme-retro.scss */
-.site__wrapper .section > .container .row {
+/* line 116, ../../../app/styles/themes/theme-retro.scss */
+.site__wrapper .section__body {
+  padding: 20px 15px 15px;
   background-color: #E8E8E8;
 }
-/* line 126, ../../../app/styles/themes/theme-retro.scss */
+/* line 121, ../../../app/styles/themes/theme-retro.scss */
+.site__wrapper .section__button {
+  padding: 0 15px;
+  height: 40px;
+  font-size: 18px;
+  color: #FFF;
+  font-weight: 700;
+  line-height: 40px;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+}
+/* line 135, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper footer {
   padding-top: 10px;
   background-color: var(--primary-color);
 }
-/* line 129, ../../../app/styles/themes/theme-retro.scss */
+/* line 138, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper footer p {
   color: #FFF;
 }
-/* line 132, ../../../app/styles/themes/theme-retro.scss */
+/* line 141, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper footer .copyRight {
   text-align: right;
 }
 
-/* line 140, ../../../app/styles/themes/theme-retro.scss */
-#fonts-versus {
-  text-transform: uppercase;
-}
-/* line 143, ../../../app/styles/themes/theme-retro.scss */
+/* line 151, ../../../app/styles/themes/theme-retro.scss */
 #fonts-versus .versus__tag {
   margin-bottom: 20px;
 }
-/* line 146, ../../../app/styles/themes/theme-retro.scss */
+/* line 154, ../../../app/styles/themes/theme-retro.scss */
 #fonts-versus .versus__tag span {
   padding: 5px 15px;
   border: 2px solid black;
 }
 
-/* line 156, ../../../app/styles/themes/theme-retro.scss */
+/* line 164, ../../../app/styles/themes/theme-retro.scss */
 #home-nav {
-  background: #1E1E1E url("../images/retroTile.png") repeat scroll center;
+  background: #1E1E1E url("../../images/retro-tile.png") repeat scroll center;
 }
-/* line 160, ../../../app/styles/themes/theme-retro.scss */
+/* line 168, ../../../app/styles/themes/theme-retro.scss */
 #home-nav .nav__logo a {
   color: #FFF;
   background-color: var(--primary-color);
 }
-/* line 170, ../../../app/styles/themes/theme-retro.scss */
+/* line 178, ../../../app/styles/themes/theme-retro.scss */
 #home-nav li a {
   color: #FFF;
 }
 
-/* line 178, ../../../app/styles/themes/theme-retro.scss */
+/* line 186, ../../../app/styles/themes/theme-retro.scss */
 #home-header {
-  background: #1a1a1a url("http://lorempixel.com/g/1920/600/nature/") no-repeat fixed center;
+  background: #1a1a1a url("https://unsplash.it/1000/500?image=998") no-repeat fixed center;
   background-size: cover;
-  border-bottom: 10px solid var(--tertiary-color);
+  text-align: center;
 }
-/* line 185, ../../../app/styles/themes/theme-retro.scss */
+/* line 193, ../../../app/styles/themes/theme-retro.scss */
 #home-header .header__tag h1 {
   position: relative;
   margin-top: 105px;
@@ -299,7 +299,7 @@ body {
   padding-bottom: 5px;
   color: #FFF;
 }
-/* line 194, ../../../app/styles/themes/theme-retro.scss */
+/* line 202, ../../../app/styles/themes/theme-retro.scss */
 #home-header .header__tag h1:before {
   margin-left: -15px;
   bottom: -3px;
@@ -310,13 +310,13 @@ body {
   height: 3px;
   background-color: #FFF;
 }
-/* line 206, ../../../app/styles/themes/theme-retro.scss */
+/* line 214, ../../../app/styles/themes/theme-retro.scss */
 #home-header .header__tag h3 {
   color: #FFF;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-/* line 213, ../../../app/styles/themes/theme-retro.scss */
+/* line 221, ../../../app/styles/themes/theme-retro.scss */
 #home-header .header__tag-inner {
   padding: 15px;
   width: 300px;
@@ -324,61 +324,40 @@ body {
   background-color: var(--secondary-color);
   border-radius: 50%;
 }
-/* line 221, ../../../app/styles/themes/theme-retro.scss */
+/* line 229, ../../../app/styles/themes/theme-retro.scss */
 #home-header p {
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin: 20px auto 15px;
   max-width: 50%;
   color: #FFF;
 }
-/* line 228, ../../../app/styles/themes/theme-retro.scss */
+/* line 235, ../../../app/styles/themes/theme-retro.scss */
 #home-header .header__overlay {
   background-color: var(--tertiary-color);
   opacity: 0.3;
 }
 
-/* line 234, ../../../app/styles/themes/theme-retro.scss */
-button {
-  padding: 6px 20px;
-  font-family: 'mainFont';
-  font-size: 18px;
-  color: var(--primary-color);
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: transparent;
-  border: 2px solid var(--primary-color);
-  transition: all 0.4s ease-in-out;
-}
-/* line 244, ../../../app/styles/themes/theme-retro.scss */
-button:hover {
-  color: #FFF;
-  background-color: var(--primary-color);
-}
-
-/* line 254, ../../../app/styles/themes/theme-retro.scss */
+/* line 245, ../../../app/styles/themes/theme-retro.scss */
 #home-skills .section__badge:before {
   content: "12";
 }
-/* line 258, ../../../app/styles/themes/theme-retro.scss */
+/* line 249, ../../../app/styles/themes/theme-retro.scss */
 #home-skills .row {
   margin-right: 0;
   margin-left: 0;
 }
-
-/* line 264, ../../../app/styles/themes/theme-retro.scss */
-.skills__item {
+/* line 254, ../../../app/styles/themes/theme-retro.scss */
+#home-skills .skills__item {
   color: #FFF;
   text-align: center;
 }
-/* line 268, ../../../app/styles/themes/theme-retro.scss */
-.skills__item h3 {
+/* line 258, ../../../app/styles/themes/theme-retro.scss */
+#home-skills .skills__item h3 {
   position: relative;
-  margin: 0;
-  padding: 50px 15px 15px;
+  padding: 30px 0 15px;
   color: var(--primary-color);
 }
-/* line 274, ../../../app/styles/themes/theme-retro.scss */
-.skills__item h3:before {
+/* line 263, ../../../app/styles/themes/theme-retro.scss */
+#home-skills .skills__item h3:before {
   position: absolute;
   content: "";
   margin-left: -15px;
@@ -388,89 +367,67 @@ button:hover {
   bottom: -4px;
   background-color: var(--primary-color);
 }
-/* line 286, ../../../app/styles/themes/theme-retro.scss */
-.skills__item p {
-  margin: 0;
-  padding: 15px;
-  position: relative;
-  color: var(--tertiary-color);
-}
-/* line 293, ../../../app/styles/themes/theme-retro.scss */
-.skills__item button {
-  margin-bottom: 10px;
-  padding: 0;
-  font-size: 18px;
-  color: #1E1E1E;
-  font-weight: 300;
-  text-transform: lowercase;
-  background-color: transparent;
-  border: none;
+/* line 275, ../../../app/styles/themes/theme-retro.scss */
+#home-skills .skills__item p {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-/* line 312, ../../../app/styles/themes/theme-retro.scss */
+/* line 285, ../../../app/styles/themes/theme-retro.scss */
 #home-history {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* line 316, ../../../app/styles/themes/theme-retro.scss */
+/* line 289, ../../../app/styles/themes/theme-retro.scss */
 #home-history .section__badge:before {
   content: "34";
 }
-/* line 320, ../../../app/styles/themes/theme-retro.scss */
-#home-history .wrapper {
-  padding-top: 20px;
-  background-color: #E8E8E8;
-}
-/* line 325, ../../../app/styles/themes/theme-retro.scss */
-#home-history p {
-  padding: 15px;
-}
 
-/* line 333, ../../../app/styles/themes/theme-retro.scss */
+/* line 297, ../../../app/styles/themes/theme-retro.scss */
 #home-words {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* line 337, ../../../app/styles/themes/theme-retro.scss */
+/* line 301, ../../../app/styles/themes/theme-retro.scss */
 #home-words .section__badge:before {
   content: "56";
 }
-/* line 342, ../../../app/styles/themes/theme-retro.scss */
+/* line 306, ../../../app/styles/themes/theme-retro.scss */
 #home-words .wrapper .row {
   margin-left: 0;
   margin-right: 0;
   padding-top: 30px;
 }
-/* line 349, ../../../app/styles/themes/theme-retro.scss */
+/* line 313, ../../../app/styles/themes/theme-retro.scss */
 #home-words p {
   padding: 15px;
 }
 
-/* line 357, ../../../app/styles/themes/theme-retro.scss */
+/* line 321, ../../../app/styles/themes/theme-retro.scss */
 #home-team {
   margin-top: 15px;
   margin-bottom: 15px;
   background-color: #E8E8E8;
   border-bottom: 5px solid var(--primary-color);
 }
-/* line 363, ../../../app/styles/themes/theme-retro.scss */
+/* line 327, ../../../app/styles/themes/theme-retro.scss */
 #home-team .container .wrapper {
   overflow: hidden;
   padding: 15px;
   border-radius: 7px;
 }
-/* line 369, ../../../app/styles/themes/theme-retro.scss */
+/* line 333, ../../../app/styles/themes/theme-retro.scss */
 #home-team .team__tag {
   margin-top: 80px;
 }
-/* line 372, ../../../app/styles/themes/theme-retro.scss */
+/* line 336, ../../../app/styles/themes/theme-retro.scss */
 #home-team .team__tag h1 {
   font-size: 76px;
   font-weight: 700;
   color: var(--primary-color);
   line-height: 0.8;
 }
-/* line 380, ../../../app/styles/themes/theme-retro.scss */
+/* line 344, ../../../app/styles/themes/theme-retro.scss */
 #home-team h3 {
   margin-top: 5px;
   margin-bottom: 25px;
@@ -481,11 +438,11 @@ button:hover {
   text-transform: uppercase;
   border-bottom: 4px solid #1E1E1E;
 }
-/* line 391, ../../../app/styles/themes/theme-retro.scss */
+/* line 355, ../../../app/styles/themes/theme-retro.scss */
 #home-team h4 {
   font-weight: 700;
 }
-/* line 395, ../../../app/styles/themes/theme-retro.scss */
+/* line 359, ../../../app/styles/themes/theme-retro.scss */
 #home-team h5 {
   z-index: 10;
   margin-bottom: 2px;
@@ -493,115 +450,104 @@ button:hover {
   color: var(--primary-color);
 }
 
-/* line 406, ../../../app/styles/themes/theme-retro.scss */
+/* line 370, ../../../app/styles/themes/theme-retro.scss */
 #home-prices {
   margin-bottom: 100px;
 }
-/* line 409, ../../../app/styles/themes/theme-retro.scss */
+/* line 373, ../../../app/styles/themes/theme-retro.scss */
 #home-prices .section__badge:before {
   content: "78";
 }
-/* line 413, ../../../app/styles/themes/theme-retro.scss */
+/* line 377, ../../../app/styles/themes/theme-retro.scss */
 #home-prices .row {
   margin-right: 0;
   margin-left: 0;
-  padding-top: 20px;
 }
-/* line 419, ../../../app/styles/themes/theme-retro.scss */
+/* line 382, ../../../app/styles/themes/theme-retro.scss */
 #home-prices h3 {
   font-weight: 700;
   color: var(--primary-color);
 }
-/* line 424, ../../../app/styles/themes/theme-retro.scss */
+/* line 387, ../../../app/styles/themes/theme-retro.scss */
 #home-prices h4 {
   font-size: 18px;
   font-weight: 300;
   color: var(--tertiary-color);
   text-transform: uppercase;
 }
-/* line 431, ../../../app/styles/themes/theme-retro.scss */
+/* line 394, ../../../app/styles/themes/theme-retro.scss */
 #home-prices .prices__tag {
   margin-bottom: 15px;
-  font-family: 'mainFont';
+  font-family: var(--primary-font);
   font-weight: 700;
 }
-/* line 438, ../../../app/styles/themes/theme-retro.scss */
+/* line 401, ../../../app/styles/themes/theme-retro.scss */
 #home-prices .prices__list ul {
   text-align: left;
-  padding-left: 3%;
-  padding-right: 3%;
 }
-/* line 443, ../../../app/styles/themes/theme-retro.scss */
+/* line 404, ../../../app/styles/themes/theme-retro.scss */
 #home-prices .prices__list ul li {
   font-size: 18px;
   font-weight: 700;
   color: #1E1E1E;
   border-bottom: 4px solid #1E1E1E;
 }
-/* line 452, ../../../app/styles/themes/theme-retro.scss */
-#home-prices button {
-  margin-top: 20px;
-  margin-bottom: -40px;
-  padding: 0;
-  width: 100px;
-  height: 100px;
-  font-size: 14px;
-  color: #FFF;
-  border: 0;
-  border-radius: 50%;
-  background-color: var(--primary-color);
-}
-/* line 464, ../../../app/styles/themes/theme-retro.scss */
-#home-prices button:hover {
-  box-shadow: 0 4px var(--primary-color);
+/* line 413, ../../../app/styles/themes/theme-retro.scss */
+#home-prices .section__button {
+  margin-top: 15px;
 }
 
-/* line 476, ../../../app/styles/themes/theme-retro.scss */
+/* line 423, ../../../app/styles/themes/theme-retro.scss */
 #home-blog .section__badge:before {
   content: "09";
 }
-/* line 480, ../../../app/styles/themes/theme-retro.scss */
+/* line 427, ../../../app/styles/themes/theme-retro.scss */
 #home-blog .row {
   margin-right: 0;
   margin-left: 0;
   padding-top: 15px;
 }
-/* line 486, ../../../app/styles/themes/theme-retro.scss */
+/* line 433, ../../../app/styles/themes/theme-retro.scss */
 #home-blog h3 {
   color: #1E1E1E;
 }
-/* line 490, ../../../app/styles/themes/theme-retro.scss */
+/* line 437, ../../../app/styles/themes/theme-retro.scss */
 #home-blog h5 {
   font-weight: 700;
   color: var(--primary-color);
 }
 
-/* line 499, ../../../app/styles/themes/theme-retro.scss */
+/* line 446, ../../../app/styles/themes/theme-retro.scss */
 #home-contact {
   margin-bottom: 30px;
 }
-/* line 502, ../../../app/styles/themes/theme-retro.scss */
+/* line 449, ../../../app/styles/themes/theme-retro.scss */
 #home-contact .section__badge:before {
   content: "10";
 }
-/* line 506, ../../../app/styles/themes/theme-retro.scss */
+/* line 453, ../../../app/styles/themes/theme-retro.scss */
 #home-contact .textBox {
   min-height: 203px;
   padding: 15px;
 }
-/* line 511, ../../../app/styles/themes/theme-retro.scss */
+/* line 458, ../../../app/styles/themes/theme-retro.scss */
 #home-contact h3 {
   font-weight: 300;
   color: var(--primary-color);
 }
-/* line 516, ../../../app/styles/themes/theme-retro.scss */
+/* line 463, ../../../app/styles/themes/theme-retro.scss */
 #home-contact p {
   color: #1E1E1E;
 }
-/* line 520, ../../../app/styles/themes/theme-retro.scss */
+/* line 468, ../../../app/styles/themes/theme-retro.scss */
+#home-contact .contact__icons li {
+  color: #FFF;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+}
+/* line 475, ../../../app/styles/themes/theme-retro.scss */
 #home-contact input, #home-contact textarea {
   padding: 12px;
-  font-family: 'secondaryFont';
   font-size: 16px;
   font-weight: 700;
   color: var(--secondary-color);
@@ -611,12 +557,12 @@ button:hover {
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
-/* line 530, ../../../app/styles/themes/theme-retro.scss */
+/* line 484, ../../../app/styles/themes/theme-retro.scss */
 #home-contact input:hover, #home-contact input:focus, #home-contact textarea:hover, #home-contact textarea:focus {
   background-color: var(--secondary-color);
   color: #FFF;
 }
-/* line 536, ../../../app/styles/themes/theme-retro.scss */
+/* line 490, ../../../app/styles/themes/theme-retro.scss */
 #home-contact textarea {
   min-height: 140px;
 }
