@@ -7,9 +7,9 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="wrapper">
+		<div class="section__body wrapper">
 			<ul class="words__list">
-				<li ng-repeat="word in main.randomWords">{{ word }}</li>
+				<li ng-repeat="item in main.randomWords" style="{{ item.style }}">{{ item.word }}</li>
 			</ul>
 		</div>
 	</div>

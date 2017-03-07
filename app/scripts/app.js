@@ -6,8 +6,8 @@ angular
     'angular-clipboard'
   ])
   .constant( 'premadeThemes', [
-    { name: 'agnostic' },
     { name: 'retro' },
+    { name: 'agnostic' },
     { name: 'blizzard' },
     { name: 'future' }
     // { name: 'cupcake' },
@@ -48,8 +48,9 @@ angular
   .run([
     '$rootScope',
     '$location',
+    '$filter',
     'premadeThemes',
-    function( $rootScope, $location, premadeThemes ) {
+    function( $rootScope, $location, $filter, premadeThemes ) {
       var body = document.body;
       var queryParams = $location.search();
 
@@ -62,10 +63,10 @@ angular
       $rootScope.fonts.primary = queryParams.primaryfont || 'Abril+Fatface';
       $rootScope.fonts.secondary =  queryParams.secondaryfont || 'Raleway';
       $rootScope.fonts.getGoogleFonts = function () {
-        var fonts = $rootScope.fonts.primary;
+        var fonts = $rootScope.fonts.primary + ':300,300i,400,400i,700,700i';
 
         if ( $rootScope.fonts.secondary ) {
-          fonts += '|' + $rootScope.fonts.secondary;
+          fonts += '|' + $rootScope.fonts.secondary + ':300,300i,400,400i,700,700i';
         }
 
         return fonts;
@@ -94,6 +95,18 @@ angular
       $rootScope.$watch('colors.tertiary', function(newColor, oldColor) {
         if (newColor !== oldColor ) {
           body.style.setProperty('--tertiary-color', '#' + newColor);
+        }
+      });
+
+      $rootScope.$watch('fonts.primary', function(newFont, oldFont) {
+        if (newFont !== oldFont ) {
+          body.style.setProperty('--primary-font', newFont);
+        }
+      });
+
+      $rootScope.$watch('fonts.secondary', function(newFont, oldFont) {
+        if (newFont !== oldFont ) {
+          body.style.setProperty('--secondary-font', $filter('fontName')(newFont));
         }
       });
 

@@ -280,7 +280,7 @@
 				background-color: #FFF;
 				color: $fr-color-secondary-darker;
 
-				input[type='text'] {
+				.side-menu__input {
 					color: $fr-color-secondary-darker;
 				}
 			}
@@ -291,7 +291,7 @@
 		}
 
 		label,
-		input[type='text'] {
+		.side-menu__input {
 			display: block;
 			margin-bottom: 0;
 			cursor: pointer;
@@ -315,13 +315,13 @@
 				background-color: #FFF;
 
 				i,
-				input[type='text'] {
+				.side-menu__input {
 					color: $fr-color-secondary-darker;
 				}
 			}
 
 			i,
-			input[type='text'] {
+			.side-menu__input {
 				transition: color 0.5s ease;
 			}
 
