@@ -1,12 +1,11 @@
 @import "compass";
-@import "../variables/colorPalette";
-@import "../variables/mixins";
 
 // Mixins
 
+$theme-gray-dark: #1E1E1E;
 $theme-color-border: rgba( 255, 255, 255, 0.2);
 $theme-transparent-bg: rgba( 255, 255, 255, 0.1);
-$theme-dark-bg: rgba($darkGray, 0.9);
+$theme-dark-bg: rgba($theme-gray-dark, 0.9);
 
 @mixin boxShadowSite() {
 	@include box-shadow(0 0 0 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 0 8px 1px rgba(0, 0, 0, 0.5));
@@ -51,6 +50,25 @@ body {
 
 	// Layout
 
+	.section__button {
+		padding: 6px 20px;
+		font-size: 18px;
+		color: #FFF;
+		font-weight: 300;
+		text-transform: capitalize;
+		background-color: transparent;
+		border-radius: 5px;
+		border: none;
+		background-color: var(--primary-color);
+		// @include background-image(linear-gradient(var(--secondary-color), lighten(var(--secondary-color), 5%)));
+		@include boxShadowSite();
+		transition: all 0.5s ease;
+
+		&:hover {
+			// @include background-image(linear-gradient(lighten(var(--secondary-color), 5%), lighten(var(--secondary-color), 15%)));
+		}
+	}
+
 }
 // fontVersus
 
@@ -77,8 +95,8 @@ body {
 // Nav bar
 
 #home-nav {
-	position: absolute;
-	width: 100%;
+	position: relative;
+	bottom: -52px;
 	background-color: $theme-transparent-bg;
 	z-index: 1;
 	border-top: 1px solid $theme-color-border;
@@ -100,10 +118,10 @@ body {
 		a {
 			font-weight: 300;
 			color: #FFF;
-			@include transitionNormal();
+			transition: all 0.5s ease;
 
 			&:hover {
-				// background-color: rgba(var(--primary-color), 0.8);
+				background-color: var(--primary-color);
 			}
 		}
 	}
@@ -134,32 +152,12 @@ body {
 	}
 }
 
-button {
-	padding: 6px 20px;
-	font-family: 'mainFont';
-	font-size: 18px;
-	color: #FFF;
-	font-weight: 300;
-	text-transform: capitalize;
-	background-color: transparent;
-	border-radius: 5px;
-	border: none;
-	// @include background-image(linear-gradient(var(--secondary-color), lighten(var(--secondary-color), 5%)));
-	@include boxShadowSite();
-	@include transitionSlow();
-	&:hover {
-		color: #FFF;
-		// @include background-image(linear-gradient(lighten(var(--secondary-color), 5%), lighten(var(--secondary-color), 15%)));
-	}
-}
-
 // Skills
 
 #home-skills {
 	.skills__item {
-		// background-color: rgba(var(--tertiary-color), 0.85); // Darken
+		background-color: $theme-transparent-bg;
 		@include boxShadowSite();
-		z-index: 10;
 
 		h3 {
 			margin: 0;
@@ -175,14 +173,12 @@ button {
 		}
 
 		p {
-			margin: 0;
 			padding: 15px;
 			color: #FFF;
 		}
 
-		button {
-			display: block;
-			margin: 0 auto;
+		.section__button {
+			margin-left: 15px;
 		}
 	}
 }
@@ -279,7 +275,6 @@ button {
 
 	.prices__tag {
 		margin-bottom: 15px;
-		font-family: 'mainFont';
 		font-weight: 700;
 	}
 
@@ -359,12 +354,6 @@ button {
 		}
 	}
 
-	.textBox {
-		min-height: 203px;
-		padding: 15px;
-		@include glassBg();
-	}
-
 	h3 {
 		font-weight: 300;
 		color: var(--primary-color);
@@ -374,15 +363,15 @@ button {
 		color: #FFF;
 	}
 
-	input, textarea {
+	input,
+	textarea {
 		padding: 12px;
-		font-family: 'secondaryFont';
 		font-size: 16px;
 		color: #FFF;
 		background-color: $theme-dark-bg;
 		border: 1px solid $theme-color-border;
 		border-radius: 2px;
-		@include transitionSlow(border);
+		transition: border 0.5s ease;
 		&:hover, &:focus {
 			// border: 1px solid lighten(var(--secondary-color), 5%);
 			outline: none;
@@ -399,12 +388,9 @@ button {
 // Footer
 
 footer {
-	padding-top: 10px;
 	background-color: var(--primary-color);
+
 	p {
 		color: #FFF;
-	}
-	.copyRight {
-		text-align: right;
 	}
 }

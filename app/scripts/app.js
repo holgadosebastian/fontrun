@@ -6,6 +6,7 @@ angular
     'angular-clipboard'
   ])
   .constant( 'premadeThemes', [
+    { name: 'lean' },
     { name: 'retro' },
     { name: 'agnostic' },
     { name: 'blizzard' },
@@ -14,14 +15,13 @@ angular
     // { name: 'cupcake-flat' },
     // { name: 'googly' },
     // { name: 'hip' },
-    // { name: 'lean' },
   ])
   .config([
     '$routeProvider',
     function ($routeProvider) {
       $routeProvider
         .when('/', {
-          templateUrl: 'views/home-view.html',
+          templateUrl: 'components/home/home-view.html',
           controller: 'MainCtrl',
           controllerAs: 'main',
           resolve: {
@@ -31,7 +31,7 @@ angular
           }
         })
         .when('/test', {
-          templateUrl: 'views/test-view.html',
+          templateUrl: 'components/cards/cards-view.html',
           controller: 'MainCtrl',
           controllerAs: 'main',
           resolve: {

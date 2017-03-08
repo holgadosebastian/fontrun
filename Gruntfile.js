@@ -45,7 +45,10 @@ module.exports = function (grunt) {
                 files: ['Gruntfile.js']
             },
             compass: {
-                files: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
+                files: [
+                    '<%= config.app %>/styles/{,*/}*.{scss,sass}',
+                    '<%= config.app %>/components/{,*/}*.{scss,sass}'
+                ],
                 tasks: ['compass:server', 'autoprefixer']
             },
             styles: {

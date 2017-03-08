@@ -10,12 +10,12 @@ angular.module('fontRunApp')
 		'SchemeSrv',
     'clipboard',
   	function ( $rootScope, $scope, $timeout, $location, premadeThemes, SchemeSrv, clipboard ) {
-      var self = this;
-			self.premadeThemes = premadeThemes;
+      var vm = this;
+			vm.premadeThemes = premadeThemes;
 
       // Colours
 
-      self.switchFonts = function () {
+      vm.switchFonts = function () {
         var mainFont = angular.copy( $rootScope.fonts.primary );
 
         $rootScope.fonts.primary = $rootScope.fonts.secondary;
@@ -24,23 +24,23 @@ angular.module('fontRunApp')
 
       // Schemes
 
-      self.schemes = SchemeSrv.getSavedSchemes();
+      vm.schemes = SchemeSrv.getSavedSchemes();
 
-      self.saveCurrentScheme = function() {
+      vm.saveCurrentScheme = function() {
         SchemeSrv.saveCurrentScheme();
-        self.schemes = SchemeSrv.getSavedSchemes();
+        vm.schemes = SchemeSrv.getSavedSchemes();
       };
 
-      self.setScheme = function( scheme ) {
+      vm.setScheme = function( scheme ) {
         SchemeSrv.setScheme( scheme );
       };
 
-      self.deleteScheme = function( index ) {
+      vm.deleteScheme = function( index ) {
         SchemeSrv.deleteScheme( index );
-        self.schemes = SchemeSrv.getSavedSchemes();
+        vm.schemes = SchemeSrv.getSavedSchemes();
       };
 
-      self.getShareableUrl = function() {
+      vm.getShareableUrl = function() {
         $location.search(
           {
             'primarycolor': $rootScope.colors.primary,
@@ -56,23 +56,30 @@ angular.module('fontRunApp')
         }, 1);
       };
 
-      self.getShareableSchemes = function() {
+      vm.getShareableSchemes = function() {
         clipboard.copyText( localStorage.schemes );
       };
 
-      self.addSchemes = function() {
-        self.schemes = SchemeSrv.addSchemes( self.schemesString );
+      vm.addSchemes = function() {
+        vm.schemes = SchemeSrv.addSchemes( vm.schemesString );
       };
 
       // Keyboard Events
       $(document).keypress( function(e) {
+        if ( e.target.tagName === 'INPUT') { return; }
+
         $timeout( function() { // TODO: Remove timeout once I find a better way to update scope
           switch ( e.keyCode ) {
             case 113:
+                vm.hideUi = false;
                 $rootScope.controls.showSideMenu = !$rootScope.controls.showSideMenu;
               break;
             case 102:
-              self.switchFonts();
+              vm.switchFonts();
+              break;
+            case 104:
+                vm.hideUi = !vm.hideUi;
+                $rootScope.controls.showSideMenu = false;
               break;
             case 116:
               var currentThemeIndex = _.indexOf(_.pluck(premadeThemes, 'name'), $rootScope.themes.current);
@@ -105,7 +112,7 @@ angular.module('fontRunApp')
               var savedSchemes = SchemeSrv.getSavedSchemes();
 
               if ( savedSchemes && savedSchemes.length > schemeIndex ) {
-                self.setScheme( SchemeSrv.getSavedSchemes()[schemeIndex] );
+                vm.setScheme( SchemeSrv.getSavedSchemes()[schemeIndex] );
               }
               break;
             default:

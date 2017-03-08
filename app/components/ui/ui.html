@@ -1,4 +1,5 @@
-<div ng-controller="MenuCtrl as menu" class="fr-ui">
+<div ng-controller="MenuCtrl as menu" class="fr-ui ui"
+	ng-hide="menu.hideUi">
 	<span class="fr-side-menu__open"
 		ng-click="controls.showSideMenu = true">
 		<i class="fa fa-cogs"></i>
@@ -66,43 +67,43 @@
 				<ul class="side-menu__selected-colors"
 					ng-hide="menu.hideColorPallete">
 					<li>
-						<span ng-style="{ 'background-color': '#'+colors.primary }"></span>
-						<i>#</i>
+						<div ng-style="{ 'background-color': '#'+colors.primary }"></div>
+						<span>#</span>
 						<input class="side-menu__input side-menu__input--color" type="text" ng-model="colors.primary">
 					</li>
 					<li>
-						<span ng-style="{ 'background-color': '#'+colors.secondary }"></span>
-						<i>#</i>
+						<div ng-style="{ 'background-color': '#'+colors.secondary }"></div>
+						<span>#</span>
 						<input class="side-menu__input side-menu__input--color" type="text" ng-model="colors.secondary">
 					</li>
 					<li>
-						<span ng-style="{ 'background-color': '#'+colors.tertiary }"></span>
-						<i>#</i>
+						<div ng-style="{ 'background-color': '#'+colors.tertiary }"></div>
+						<span>#</span>
 						<input class="side-menu__input side-menu__input--color" type="text" ng-model="colors.tertiary">
 					</li>
 				</ul>
 			</li>
 
-			<li>
+			<li class="ui-schemes">
 				<p class="-h2 side-menu__title side-menu__title--collapsable" ng-click="menu.hideSchemes = !menu.hideSchemes">Schemes <span><i class="fa" ng-class="'fa-chevron-' + (menu.hideSchemes ? 'down' : 'up')"></i></span></p>
-				<ul class="side-menu__loaded-schemes"
+				<ul class="ui-schemes__list"
 					ng-hide="menu.hideSchemes">
-					<li class="side-menu__loaded-scheme"
+					<li class="ui-schemes__scheme"
 						ng-click="menu.setScheme( scheme )"
 						ng-repeat="scheme in menu.schemes">
-						<p class="loaded-scheme__font -h6">{{ scheme.primaryFont }}</p>
-						<p class="loaded-scheme__font -h6">{{ scheme.secondaryFont }}</p>
-						<ul class="loaded-scheme__colors">
+						<p class="ui-schemes__font -h6">{{ scheme.primaryFont }}</p>
+						<p class="ui-schemes__font -h6">{{ scheme.secondaryFont }}</p>
+						<ul class="ui-schemes__colors">
 							<li ng-style="{ 'background-color' : '#' + scheme.primaryColor}"></li>
 							<li ng-style="{ 'background-color' : '#' + scheme.secondaryColor}"></li>
 							<li ng-style="{ 'background-color' : '#' + scheme.tertiaryColor}"></li>
 						</ul>
-						<span class="loaded-scheme__delete" ng-click="menu.deleteScheme( $index )"><i class="fa fa-close"></i></span>
+						<span class="ui-schemes__delete" ng-click="menu.deleteScheme( $index )"><i class="fa fa-close"></i></span>
 					</li>
 
-					<li class="side-menu__loaded-scheme"
+					<li class="ui-schemes__scheme"
 						ng-click="menu.saveCurrentScheme()">
-						<span class="loaded-scheme__add"><i class="fa fa-plus"></i></span>
+						<span class="ui-schemes__add"><i class="fa fa-plus"></i></span>
 					</li>
 				</ul>
 			</li>
@@ -150,6 +151,7 @@
 				<p class="utils__mt--md">In under 5 minutes get an idea if the chosen fonts and color palette work well together so you can start creating your own designs in your own design software, or directly code the website/application you are building.</p>
 				<p class="-h4 utils__mt--lg">Hotkeys</p>
 				<p class="utils__mt--sm">Q - Open/Close side panel</p>
+				<p class="utils__mt--sm">H - Show/Hide UI</p>
 				<p class="utils__mt--sm">T - Next theme</p>
 				<p class="utils__mt--sm">V - Switch views</p>
 				<p class="utils__mt--sm">F - Switch fonts</p>

@@ -1,6 +1,4 @@
 @import "compass";
-@import "../variables/colorPalette";
-@import "../variables/mixins";
 
 $theme-gray-light: #E8E8E8;
 $theme-gray-dark: #1E1E1E;
@@ -59,7 +57,7 @@ body {
 			position: relative;
 			text-align: center;
 			background: $theme-gray-dark url("../../images/retro-tile.png") repeat scroll center;
-			@include box-shadow(0 4px 4px -3px $darkGray);
+			@include box-shadow(0 4px 4px -3px $theme-gray-dark);
 
 			.section__badge {
 				position: absolute;
@@ -129,6 +127,10 @@ body {
 		background-color: var(--primary-color);
 	}
 
+	.section__reload {
+		right: 25px;
+		color: #FFF;
+	}
 
 	// Footer
 
@@ -321,7 +323,7 @@ body {
 #home-team {
 	margin-top: 15px;
 	margin-bottom: 15px;
-	background-color: $lightGray;
+	background-color: $theme-gray-light;
 	border-bottom: 5px solid var(--primary-color);
 
 	.container .wrapper {
@@ -347,9 +349,9 @@ body {
 		padding-bottom: 5px;
 		font-size: 28px;
 		font-weight: 700;
-		color: $darkGray;
+		color: $theme-gray-dark;
 		text-transform: uppercase;
-		border-bottom: 4px solid $darkGray;
+		border-bottom: 4px solid $theme-gray-dark;
 	}
 
 	h4 {
@@ -431,7 +433,7 @@ body {
 	}
 
 	h3 {
-		color: $darkGray;
+		color: $theme-gray-dark;
 	}
 
 	h5 {
@@ -472,14 +474,15 @@ body {
 		}
 	}
 
-	input, textarea {
+	input,
+	textarea {
 		padding: 12px;
 		font-size: 16px;
 		font-weight: 700;
 		color: var(--secondary-color);
 		background-color: transparent;
 		border-bottom: 4px solid var(--secondary-color);
-		@include transitionNormal(all);
+		transition: all 0.5s ease;
 
 		&:hover, &:focus {
 			background-color: var(--secondary-color);

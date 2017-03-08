@@ -9,8 +9,19 @@ $fr-color-secondary-lighter: lighten(#332532, 5%);
 
 $fr-font-primary: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-h1, h2, h3, h4, h5 {
-	margin-top: 0;
-	font-family: $fr-font-primary;
-	color: inherit;
+// Base
+
+.ui {
+	h1, h2, h3, h4, h5, h6, p {
+		margin-top: 0;
+		font-family: $fr-font-primary;
+		color: inherit;
+	}
 }
+
+// Imports
+
+@import "styles/ui-button";
+@import "styles/ui-side-menu";
+@import "styles/ui-schemes";
+@import "styles/ui-actions";
