@@ -1,0 +1,24 @@
+<section id="home-skills">
+	<div class="section__header">
+		<div class="container">
+			<span class="section__badge"></span>
+			<h2 class="section__title">Our skills</h2>
+		</div>
+	</div>
+	<div class="container">
+		<ul class="section__body row">
+			<li class="col-sm-4"
+				ng-repeat="skill in main.skills">
+				<div class="skills__item">
+					<h3 class="skills__item-title">{{ skill.title }}</h3>
+					<div class="skills__item-description">
+						<p>{{ skill.description }}</p>
+						<span class="section__button">
+							<span class="font__primary">View more</span>
+						</span>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
