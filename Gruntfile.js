@@ -270,7 +270,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= config.dist %>',
-                    src: '{,*/}*.html',
+                    src: ['{,*/}*.html', 'components/{,*/}*.html'],
                     dest: '<%= config.dist %>'
                 }]
             }
@@ -315,6 +315,7 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.webp',
                         '{,*/}*.html',
+                        'components/{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
                         'bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/*.*'
                     ]
