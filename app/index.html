@@ -50,9 +50,9 @@
 </head>
 <body>
 
-  <ng-include src="'components/ui/ui.html'"></ng-include>
+  <ui></ui>
 
-  <main ng-view class="site__wrapper" ng-class="{ 'site__wrapper--menu' : controls.showSideMenu }"></main>
+  <main ng-view class="site__wrapper" ng-class="{ 'site__wrapper--menu' : $root.controls.showSideMenu }"></main>
 
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
@@ -77,7 +77,8 @@
   <!-- build:js({app,.tmp}) scripts/main.js -->
   <script src="scripts/app.js"></script>
   <script src="scripts/controllers/main-controller.js"></script>
-  <script src="components/ui/ui-controller.js"></script>
+  <script src="components/ui/ui-component.js"></script>
+  <script src="components/modal/modal-component.js"></script>
 
   <script src="scripts/services/scheme-service.js"></script>
   <script src="scripts/services/random-content-service.js"></script>

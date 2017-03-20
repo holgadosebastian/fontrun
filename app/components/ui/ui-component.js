@@ -1,17 +1,25 @@
-'use strict';
+(function() {
+  'use strict';
 
-angular.module('fontRunApp')
-  .controller('MenuCtrl', [
-    '$rootScope',
-    '$scope',
-    '$timeout',
-    '$location',
-		'premadeThemes',
-		'SchemeSrv',
-    'clipboard',
-  	function ( $rootScope, $scope, $timeout, $location, premadeThemes, SchemeSrv, clipboard ) {
+  angular
+    .module('fontRunApp')
+    .component('ui', {
+      templateUrl: 'components/ui/ui.html',
+      controller: [
+      	'$rootScope',
+        '$scope',
+      	'$timeout',
+      	'$location',
+      	'premadeThemes',
+      	'SchemeSrv',
+      	'clipboard',
+        UiController
+      ]
+    });
+
+    function UiController( $rootScope, $scope, $timeout, $location, premadeThemes, SchemeSrv, clipboard ) {
       var vm = this;
-			vm.premadeThemes = premadeThemes;
+      vm.premadeThemes = premadeThemes;
 
       // Colours
 
@@ -65,23 +73,23 @@ angular.module('fontRunApp')
       };
 
       // Keyboard Events
-      $(document).keypress( function(e) {
+      $(document).keyup( function(e) {
         if ( e.target.tagName === 'INPUT') { return; }
 
         $timeout( function() { // TODO: Remove timeout once I find a better way to update scope
           switch ( e.keyCode ) {
-            case 113:
+            case 81:
                 vm.hideUi = false;
                 $rootScope.controls.showSideMenu = !$rootScope.controls.showSideMenu;
               break;
-            case 102:
+            case 70:
               vm.switchFonts();
               break;
-            case 104:
+            case 72:
                 vm.hideUi = !vm.hideUi;
                 $rootScope.controls.showSideMenu = false;
               break;
-            case 116:
+            case 84:
               var currentThemeIndex = _.indexOf(_.pluck(premadeThemes, 'name'), $rootScope.themes.current);
               if ( premadeThemes && currentThemeIndex < premadeThemes.length - 1 ) {
                 $rootScope.themes.current = premadeThemes[currentThemeIndex + 1].name;
@@ -89,7 +97,7 @@ angular.module('fontRunApp')
                 $rootScope.themes.current = premadeThemes[0].name;
               }
               break;
-            case 118:
+            case 86:
               var currentView = $rootScope.view.current;
               if ( currentView === 'theme' ) {
                 $rootScope.view.current = 'card';
@@ -115,10 +123,14 @@ angular.module('fontRunApp')
                 vm.setScheme( SchemeSrv.getSavedSchemes()[schemeIndex] );
               }
               break;
+            case 27:
+              $scope.$emit('modal.close');
+              break;
             default:
               console.log('This event does not exist: ' + e.keyCode);
           }
         }, 1);
       });
-  	}
-  ]);
+    }
+
+})();

@@ -15,5 +15,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 // Components
 
 @import "../components/ui/ui";
+@import "../components/modal/modal";
 @import "../components/home/home";
 @import "app/test-cards";
