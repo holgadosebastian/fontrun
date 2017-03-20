@@ -1,21 +1,29 @@
-'use strict';
+(function() {
+  'use strict';
 
-angular.module('fontRunApp')
-  .controller('MenuCtrl', [
-    '$rootScope',
-    '$scope',
-    '$timeout',
-    '$location',
-		'premadeThemes',
-		'SchemeSrv',
-    'clipboard',
-  	function ( $rootScope, $scope, $timeout, $location, premadeThemes, SchemeSrv, clipboard ) {
-      var self = this;
-			self.premadeThemes = premadeThemes;
+  angular
+    .module('fontRunApp')
+    .component('ui', {
+      templateUrl: 'components/ui/ui.html',
+      controller: [
+      	'$rootScope',
+        '$scope',
+      	'$timeout',
+      	'$location',
+      	'premadeThemes',
+      	'SchemeSrv',
+      	'clipboard',
+        UiController
+      ]
+    });
+
+    function UiController( $rootScope, $scope, $timeout, $location, premadeThemes, SchemeSrv, clipboard ) {
+      var vm = this;
+      vm.premadeThemes = premadeThemes;
 
       // Colours
 
-      self.switchFonts = function () {
+      vm.switchFonts = function () {
         var mainFont = angular.copy( $rootScope.fonts.primary );
 
         $rootScope.fonts.primary = $rootScope.fonts.secondary;
@@ -24,23 +32,23 @@ angular.module('fontRunApp')
 
       // Schemes
 
-      self.schemes = SchemeSrv.getSavedSchemes();
+      vm.schemes = SchemeSrv.getSavedSchemes();
 
-      self.saveCurrentScheme = function() {
+      vm.saveCurrentScheme = function() {
         SchemeSrv.saveCurrentScheme();
-        self.schemes = SchemeSrv.getSavedSchemes();
+        vm.schemes = SchemeSrv.getSavedSchemes();
       };
 
-      self.setScheme = function( scheme ) {
+      vm.setScheme = function( scheme ) {
         SchemeSrv.setScheme( scheme );
       };
 
-      self.deleteScheme = function( index ) {
+      vm.deleteScheme = function( index ) {
         SchemeSrv.deleteScheme( index );
-        self.schemes = SchemeSrv.getSavedSchemes();
+        vm.schemes = SchemeSrv.getSavedSchemes();
       };
 
-      self.getShareableUrl = function() {
+      vm.getShareableUrl = function() {
         $location.search(
           {
             'primarycolor': $rootScope.colors.primary,
@@ -56,25 +64,32 @@ angular.module('fontRunApp')
         }, 1);
       };
 
-      self.getShareableSchemes = function() {
+      vm.getShareableSchemes = function() {
         clipboard.copyText( localStorage.schemes );
       };
 
-      self.addSchemes = function() {
-        self.schemes = SchemeSrv.addSchemes( self.schemesString );
+      vm.addSchemes = function() {
+        vm.schemes = SchemeSrv.addSchemes( vm.schemesString );
       };
 
       // Keyboard Events
-      $(document).keypress( function(e) {
+      $(document).keyup( function(e) {
+        if ( e.target.tagName === 'INPUT') { return; }
+
         $timeout( function() { // TODO: Remove timeout once I find a better way to update scope
           switch ( e.keyCode ) {
-            case 113:
+            case 81:
+                vm.hideUi = false;
                 $rootScope.controls.showSideMenu = !$rootScope.controls.showSideMenu;
               break;
-            case 102:
-              self.switchFonts();
+            case 70:
+              vm.switchFonts();
               break;
-            case 116:
+            case 72:
+                vm.hideUi = !vm.hideUi;
+                $rootScope.controls.showSideMenu = false;
+              break;
+            case 84:
               var currentThemeIndex = _.indexOf(_.pluck(premadeThemes, 'name'), $rootScope.themes.current);
               if ( premadeThemes && currentThemeIndex < premadeThemes.length - 1 ) {
                 $rootScope.themes.current = premadeThemes[currentThemeIndex + 1].name;
@@ -82,7 +97,7 @@ angular.module('fontRunApp')
                 $rootScope.themes.current = premadeThemes[0].name;
               }
               break;
-            case 118:
+            case 86:
               var currentView = $rootScope.view.current;
               if ( currentView === 'theme' ) {
                 $rootScope.view.current = 'card';
@@ -105,13 +120,17 @@ angular.module('fontRunApp')
               var savedSchemes = SchemeSrv.getSavedSchemes();
 
               if ( savedSchemes && savedSchemes.length > schemeIndex ) {
-                self.setScheme( SchemeSrv.getSavedSchemes()[schemeIndex] );
+                vm.setScheme( SchemeSrv.getSavedSchemes()[schemeIndex] );
               }
+              break;
+            case 27:
+              $scope.$emit('modal.close');
               break;
             default:
               console.log('This event does not exist: ' + e.keyCode);
           }
         }, 1);
       });
-  	}
-  ]);
+    }
+
+})();

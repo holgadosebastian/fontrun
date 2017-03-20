@@ -26,6 +26,23 @@ body {
 		background-color: var(--tertiary-color);
 		border-left: 6px solid var(--primary-color);
 	}
+
+	.section__button {
+		padding: 0 20px;
+		font-size: 18px;
+		color: #FFF;
+		font-weight: 300;
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 34px;
+		background-color: var(--primary-color);
+		transition: all 0.4s ease-in-out;
+
+		&:hover {
+			color: #FFF;
+			background-color: var(--primary-color);
+		}
+	}
 }
 
 // fontVersus
@@ -152,11 +169,11 @@ body {
 	}
 
 	p {
-		padding: 5px 15px;
+		padding: 5px 15px 10px;
 		color: $theme-gray-light;
 	}
 
-	button {
+	.section__button {
 		width: 100%;
 	}
 }
@@ -219,7 +236,7 @@ body {
 #home-prices {
 
 	.prices__option {
-		padding-top: 5px;
+		padding-top: 15px;
 		background-color: var(--tertiary-color);
 	}
 
@@ -237,19 +254,15 @@ body {
 
 	.prices__tag {
 		margin-bottom: 15px;
-		font-family: 'mainFont';
 		font-weight: 700;
 	}
 
-	ul {
-		margin-bottom: 20px;
-		padding-right: 15px;
-		padding-left: 15px;
-
+	.prices__list {
+		ul {
+			margin-bottom: 20px;
+		}
+		
 		li {
-			margin: 0;
-			padding: 8px 12px 4px;
-			font-family: 'mainFont';
 			font-size: 18px;
 			font-weight: 300;
 			color: $theme-gray-light;
@@ -262,7 +275,7 @@ body {
 		}
 	}
 
-	button {
+	.section__button {
 		width: 100%;
 	}
 }
@@ -303,7 +316,6 @@ body {
 	input,
 	textarea {
 		padding: 10px;
-		font-family: 'secondaryFont';
 		font-size: 16px;
 		font-weight: 300;
 		color: #FFF;
