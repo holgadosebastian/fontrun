@@ -317,9 +317,7 @@ body {
   color: var(--secondary-color);
   background-color: transparent;
   border-bottom: 4px solid var(--secondary-color);
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
+  transition: all 0.5s ease;
 }
 /* line 365, ../../../app/styles/themes/theme-agnostic.scss */
 #home-contact input:hover, #home-contact input:focus,
