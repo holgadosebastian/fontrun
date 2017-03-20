@@ -1,144 +1,14 @@
-/*$mainColor: #33FFE6;
-$secondaryColor: #FF2789;
-$fillColor: #2B2E3A;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #037E8C;
-$secondaryColor: #F24C27;
-$fillColor: #024959;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #FF3D7F;
-$secondaryColor: #3FB8AF;
-$fillColor: #7FC7AF;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #D44F3D;
-$secondaryColor: #1C152E;
-$fillColor: #DCAB40;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #FF2EFF;
-$secondaryColor: #D4DC14;
-$fillColor: #4DDA9E;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #ef4b54;
-$secondaryColor: #268180;
-$fillColor: #f8e1b2;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;
-*/
-/*$mainColor: #CC4452;
-$secondaryColor: #723147;
-$fillColor: #E6B098;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #FEB41C;
-$secondaryColor: #363F45;
-$fillColor: #5E7C88;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #FC4349;
-$secondaryColor: #6DBCDB;
-$fillColor: #2C3E50;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #D96666;
-$secondaryColor: #F2E5A2;
-$fillColor: #81AC8B;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;
-*/
-/*$mainColor: #588C8C;
-$secondaryColor: #D9042B;
-$fillColor: #011C26;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #45B29D;
-$secondaryColor: #DF5A49;
-$fillColor: #334D5C;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #E27A3F;
-$secondaryColor: #DF5A49;
-$fillColor: #45B29D;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #DF5A49;
-$secondaryColor: #45B29D;
-$fillColor: #334D5C;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #B296BC;
-$secondaryColor: #00BACF;
-$fillColor: #8F8A8C;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/* $mainColor: #56D9CD;
-$secondaryColor: #4588D8;
-$fillColor: #4588D8;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E; */
-/*$mainColor: #4588D8;
-$secondaryColor: #5dffea;
-$fillColor: #4588D8;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #56D9CD;
-$secondaryColor: #4588D8;
-$accentColor: #F2385A;
-// $fillColor: #0c4d8d;
-$fillColor: #002635;
-
-$lightGray: #f1f1f1;
-$mediumGray: #636363;
-$darkGray: #323232;*/
-/* line 8, ../../../app/styles/themes/theme-retro.scss */
+/* line 6, ../../../app/styles/themes/theme-retro.scss */
 body {
   background-color: #FFF;
 }
 
-/* line 16, ../../../app/styles/themes/theme-retro.scss */
+/* line 14, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper h1 {
   color: var(--primary-color);
   font-weight: 700;
 }
-/* line 21, ../../../app/styles/themes/theme-retro.scss */
+/* line 19, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper h2 {
   display: inline-block;
   position: relative;
@@ -147,7 +17,7 @@ body {
   font-weight: 700;
   text-align: center;
 }
-/* line 29, ../../../app/styles/themes/theme-retro.scss */
+/* line 27, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper h2:before, .site__wrapper h2:after {
   position: absolute;
   content: "";
@@ -156,31 +26,31 @@ body {
   height: 1px;
   background-color: #FFF;
 }
-/* line 39, ../../../app/styles/themes/theme-retro.scss */
+/* line 37, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper h2:before {
   left: -40px;
 }
-/* line 43, ../../../app/styles/themes/theme-retro.scss */
+/* line 41, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper h2:after {
   right: -40px;
 }
-/* line 48, ../../../app/styles/themes/theme-retro.scss */
+/* line 46, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper p {
   font-weight: 400;
   color: #1E1E1E;
 }
-/* line 55, ../../../app/styles/themes/theme-retro.scss */
+/* line 53, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper .section__header {
   margin-top: 30px;
 }
-/* line 58, ../../../app/styles/themes/theme-retro.scss */
+/* line 56, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper .section__header .container {
   position: relative;
   text-align: center;
   background: #1E1E1E url("../../images/retro-tile.png") repeat scroll center;
   box-shadow: 0 4px 4px -3px #1E1E1E;
 }
-/* line 64, ../../../app/styles/themes/theme-retro.scss */
+/* line 62, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper .section__header .container .section__badge {
   position: absolute;
   margin-top: -40px;
@@ -197,7 +67,7 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
 }
-/* line 80, ../../../app/styles/themes/theme-retro.scss */
+/* line 78, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper .section__header .container .section__badge:before {
   display: inline-block;
   margin-top: 20px;
@@ -210,7 +80,7 @@ body {
   /* Chrome, Safari, Opera */
   transform: skew(0, -8deg);
 }
-/* line 94, ../../../app/styles/themes/theme-retro.scss */
+/* line 92, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper .section__header .container:before, .site__wrapper .section__header .container:after {
   position: absolute;
   content: "";
@@ -219,22 +89,22 @@ body {
   border-top: 25px solid transparent;
   border-bottom: 25px solid transparent;
 }
-/* line 104, ../../../app/styles/themes/theme-retro.scss */
+/* line 102, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper .section__header .container:before {
   left: 0;
   border-left: 16px solid #FFF;
 }
-/* line 109, ../../../app/styles/themes/theme-retro.scss */
+/* line 107, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper .section__header .container:after {
   right: 0;
   border-right: 16px solid #FFF;
 }
-/* line 116, ../../../app/styles/themes/theme-retro.scss */
+/* line 114, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper .section__body {
   padding: 20px 15px 15px;
   background-color: #E8E8E8;
 }
-/* line 121, ../../../app/styles/themes/theme-retro.scss */
+/* line 119, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper .section__button {
   padding: 0 15px;
   height: 40px;
@@ -245,51 +115,56 @@ body {
   border-radius: 20px;
   background-color: var(--primary-color);
 }
-/* line 135, ../../../app/styles/themes/theme-retro.scss */
+/* line 130, ../../../app/styles/themes/theme-retro.scss */
+.site__wrapper .section__reload {
+  right: 25px;
+  color: #FFF;
+}
+/* line 137, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper footer {
   padding-top: 10px;
   background-color: var(--primary-color);
 }
-/* line 138, ../../../app/styles/themes/theme-retro.scss */
+/* line 140, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper footer p {
   color: #FFF;
 }
-/* line 141, ../../../app/styles/themes/theme-retro.scss */
+/* line 143, ../../../app/styles/themes/theme-retro.scss */
 .site__wrapper footer .copyRight {
   text-align: right;
 }
 
-/* line 151, ../../../app/styles/themes/theme-retro.scss */
+/* line 153, ../../../app/styles/themes/theme-retro.scss */
 #fonts-versus .versus__tag {
   margin-bottom: 20px;
 }
-/* line 154, ../../../app/styles/themes/theme-retro.scss */
+/* line 156, ../../../app/styles/themes/theme-retro.scss */
 #fonts-versus .versus__tag span {
   padding: 5px 15px;
   border: 2px solid black;
 }
 
-/* line 164, ../../../app/styles/themes/theme-retro.scss */
+/* line 166, ../../../app/styles/themes/theme-retro.scss */
 #home-nav {
   background: #1E1E1E url("../../images/retro-tile.png") repeat scroll center;
 }
-/* line 168, ../../../app/styles/themes/theme-retro.scss */
+/* line 170, ../../../app/styles/themes/theme-retro.scss */
 #home-nav .nav__logo a {
   color: #FFF;
   background-color: var(--primary-color);
 }
-/* line 178, ../../../app/styles/themes/theme-retro.scss */
+/* line 180, ../../../app/styles/themes/theme-retro.scss */
 #home-nav li a {
   color: #FFF;
 }
 
-/* line 186, ../../../app/styles/themes/theme-retro.scss */
+/* line 188, ../../../app/styles/themes/theme-retro.scss */
 #home-header {
   background: #1a1a1a url("https://unsplash.it/1000/500?image=998") no-repeat fixed center;
   background-size: cover;
   text-align: center;
 }
-/* line 193, ../../../app/styles/themes/theme-retro.scss */
+/* line 195, ../../../app/styles/themes/theme-retro.scss */
 #home-header .header__tag h1 {
   position: relative;
   margin-top: 105px;
@@ -299,7 +174,7 @@ body {
   padding-bottom: 5px;
   color: #FFF;
 }
-/* line 202, ../../../app/styles/themes/theme-retro.scss */
+/* line 204, ../../../app/styles/themes/theme-retro.scss */
 #home-header .header__tag h1:before {
   margin-left: -15px;
   bottom: -3px;
@@ -310,13 +185,13 @@ body {
   height: 3px;
   background-color: #FFF;
 }
-/* line 214, ../../../app/styles/themes/theme-retro.scss */
+/* line 216, ../../../app/styles/themes/theme-retro.scss */
 #home-header .header__tag h3 {
   color: #FFF;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-/* line 221, ../../../app/styles/themes/theme-retro.scss */
+/* line 223, ../../../app/styles/themes/theme-retro.scss */
 #home-header .header__tag-inner {
   padding: 15px;
   width: 300px;
@@ -324,39 +199,39 @@ body {
   background-color: var(--secondary-color);
   border-radius: 50%;
 }
-/* line 229, ../../../app/styles/themes/theme-retro.scss */
+/* line 231, ../../../app/styles/themes/theme-retro.scss */
 #home-header p {
   margin: 20px auto 15px;
   max-width: 50%;
   color: #FFF;
 }
-/* line 235, ../../../app/styles/themes/theme-retro.scss */
+/* line 237, ../../../app/styles/themes/theme-retro.scss */
 #home-header .header__overlay {
   background-color: var(--tertiary-color);
   opacity: 0.3;
 }
 
-/* line 245, ../../../app/styles/themes/theme-retro.scss */
+/* line 247, ../../../app/styles/themes/theme-retro.scss */
 #home-skills .section__badge:before {
   content: "12";
 }
-/* line 249, ../../../app/styles/themes/theme-retro.scss */
+/* line 251, ../../../app/styles/themes/theme-retro.scss */
 #home-skills .row {
   margin-right: 0;
   margin-left: 0;
 }
-/* line 254, ../../../app/styles/themes/theme-retro.scss */
+/* line 256, ../../../app/styles/themes/theme-retro.scss */
 #home-skills .skills__item {
   color: #FFF;
   text-align: center;
 }
-/* line 258, ../../../app/styles/themes/theme-retro.scss */
+/* line 260, ../../../app/styles/themes/theme-retro.scss */
 #home-skills .skills__item h3 {
   position: relative;
   padding: 30px 0 15px;
   color: var(--primary-color);
 }
-/* line 263, ../../../app/styles/themes/theme-retro.scss */
+/* line 265, ../../../app/styles/themes/theme-retro.scss */
 #home-skills .skills__item h3:before {
   position: absolute;
   content: "";
@@ -367,67 +242,67 @@ body {
   bottom: -4px;
   background-color: var(--primary-color);
 }
-/* line 275, ../../../app/styles/themes/theme-retro.scss */
+/* line 277, ../../../app/styles/themes/theme-retro.scss */
 #home-skills .skills__item p {
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-/* line 285, ../../../app/styles/themes/theme-retro.scss */
+/* line 287, ../../../app/styles/themes/theme-retro.scss */
 #home-history {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* line 289, ../../../app/styles/themes/theme-retro.scss */
+/* line 291, ../../../app/styles/themes/theme-retro.scss */
 #home-history .section__badge:before {
   content: "34";
 }
 
-/* line 297, ../../../app/styles/themes/theme-retro.scss */
+/* line 299, ../../../app/styles/themes/theme-retro.scss */
 #home-words {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* line 301, ../../../app/styles/themes/theme-retro.scss */
+/* line 303, ../../../app/styles/themes/theme-retro.scss */
 #home-words .section__badge:before {
   content: "56";
 }
-/* line 306, ../../../app/styles/themes/theme-retro.scss */
+/* line 308, ../../../app/styles/themes/theme-retro.scss */
 #home-words .wrapper .row {
   margin-left: 0;
   margin-right: 0;
   padding-top: 30px;
 }
-/* line 313, ../../../app/styles/themes/theme-retro.scss */
+/* line 315, ../../../app/styles/themes/theme-retro.scss */
 #home-words p {
   padding: 15px;
 }
 
-/* line 321, ../../../app/styles/themes/theme-retro.scss */
+/* line 323, ../../../app/styles/themes/theme-retro.scss */
 #home-team {
   margin-top: 15px;
   margin-bottom: 15px;
   background-color: #E8E8E8;
   border-bottom: 5px solid var(--primary-color);
 }
-/* line 327, ../../../app/styles/themes/theme-retro.scss */
+/* line 329, ../../../app/styles/themes/theme-retro.scss */
 #home-team .container .wrapper {
   overflow: hidden;
   padding: 15px;
   border-radius: 7px;
 }
-/* line 333, ../../../app/styles/themes/theme-retro.scss */
+/* line 335, ../../../app/styles/themes/theme-retro.scss */
 #home-team .team__tag {
   margin-top: 80px;
 }
-/* line 336, ../../../app/styles/themes/theme-retro.scss */
+/* line 338, ../../../app/styles/themes/theme-retro.scss */
 #home-team .team__tag h1 {
   font-size: 76px;
   font-weight: 700;
   color: var(--primary-color);
   line-height: 0.8;
 }
-/* line 344, ../../../app/styles/themes/theme-retro.scss */
+/* line 346, ../../../app/styles/themes/theme-retro.scss */
 #home-team h3 {
   margin-top: 5px;
   margin-bottom: 25px;
@@ -438,11 +313,11 @@ body {
   text-transform: uppercase;
   border-bottom: 4px solid #1E1E1E;
 }
-/* line 355, ../../../app/styles/themes/theme-retro.scss */
+/* line 357, ../../../app/styles/themes/theme-retro.scss */
 #home-team h4 {
   font-weight: 700;
 }
-/* line 359, ../../../app/styles/themes/theme-retro.scss */
+/* line 361, ../../../app/styles/themes/theme-retro.scss */
 #home-team h5 {
   z-index: 10;
   margin-bottom: 2px;
@@ -450,119 +325,120 @@ body {
   color: var(--primary-color);
 }
 
-/* line 370, ../../../app/styles/themes/theme-retro.scss */
+/* line 372, ../../../app/styles/themes/theme-retro.scss */
 #home-prices {
   margin-bottom: 100px;
 }
-/* line 373, ../../../app/styles/themes/theme-retro.scss */
+/* line 375, ../../../app/styles/themes/theme-retro.scss */
 #home-prices .section__badge:before {
   content: "78";
 }
-/* line 377, ../../../app/styles/themes/theme-retro.scss */
+/* line 379, ../../../app/styles/themes/theme-retro.scss */
 #home-prices .row {
   margin-right: 0;
   margin-left: 0;
 }
-/* line 382, ../../../app/styles/themes/theme-retro.scss */
+/* line 384, ../../../app/styles/themes/theme-retro.scss */
 #home-prices h3 {
   font-weight: 700;
   color: var(--primary-color);
 }
-/* line 387, ../../../app/styles/themes/theme-retro.scss */
+/* line 389, ../../../app/styles/themes/theme-retro.scss */
 #home-prices h4 {
   font-size: 18px;
   font-weight: 300;
   color: var(--tertiary-color);
   text-transform: uppercase;
 }
-/* line 394, ../../../app/styles/themes/theme-retro.scss */
+/* line 396, ../../../app/styles/themes/theme-retro.scss */
 #home-prices .prices__tag {
   margin-bottom: 15px;
   font-family: var(--primary-font);
   font-weight: 700;
 }
-/* line 401, ../../../app/styles/themes/theme-retro.scss */
+/* line 403, ../../../app/styles/themes/theme-retro.scss */
 #home-prices .prices__list ul {
   text-align: left;
 }
-/* line 404, ../../../app/styles/themes/theme-retro.scss */
+/* line 406, ../../../app/styles/themes/theme-retro.scss */
 #home-prices .prices__list ul li {
   font-size: 18px;
   font-weight: 700;
   color: #1E1E1E;
   border-bottom: 4px solid #1E1E1E;
 }
-/* line 413, ../../../app/styles/themes/theme-retro.scss */
+/* line 415, ../../../app/styles/themes/theme-retro.scss */
 #home-prices .section__button {
   margin-top: 15px;
 }
 
-/* line 423, ../../../app/styles/themes/theme-retro.scss */
+/* line 425, ../../../app/styles/themes/theme-retro.scss */
 #home-blog .section__badge:before {
   content: "09";
 }
-/* line 427, ../../../app/styles/themes/theme-retro.scss */
+/* line 429, ../../../app/styles/themes/theme-retro.scss */
 #home-blog .row {
   margin-right: 0;
   margin-left: 0;
   padding-top: 15px;
 }
-/* line 433, ../../../app/styles/themes/theme-retro.scss */
+/* line 435, ../../../app/styles/themes/theme-retro.scss */
 #home-blog h3 {
   color: #1E1E1E;
 }
-/* line 437, ../../../app/styles/themes/theme-retro.scss */
+/* line 439, ../../../app/styles/themes/theme-retro.scss */
 #home-blog h5 {
   font-weight: 700;
   color: var(--primary-color);
 }
 
-/* line 446, ../../../app/styles/themes/theme-retro.scss */
+/* line 448, ../../../app/styles/themes/theme-retro.scss */
 #home-contact {
   margin-bottom: 30px;
 }
-/* line 449, ../../../app/styles/themes/theme-retro.scss */
+/* line 451, ../../../app/styles/themes/theme-retro.scss */
 #home-contact .section__badge:before {
   content: "10";
 }
-/* line 453, ../../../app/styles/themes/theme-retro.scss */
+/* line 455, ../../../app/styles/themes/theme-retro.scss */
 #home-contact .textBox {
   min-height: 203px;
   padding: 15px;
 }
-/* line 458, ../../../app/styles/themes/theme-retro.scss */
+/* line 460, ../../../app/styles/themes/theme-retro.scss */
 #home-contact h3 {
   font-weight: 300;
   color: var(--primary-color);
 }
-/* line 463, ../../../app/styles/themes/theme-retro.scss */
+/* line 465, ../../../app/styles/themes/theme-retro.scss */
 #home-contact p {
   color: #1E1E1E;
 }
-/* line 468, ../../../app/styles/themes/theme-retro.scss */
+/* line 470, ../../../app/styles/themes/theme-retro.scss */
 #home-contact .contact__icons li {
   color: #FFF;
   background-color: var(--secondary-color);
   border-radius: 50%;
 }
-/* line 475, ../../../app/styles/themes/theme-retro.scss */
-#home-contact input, #home-contact textarea {
+/* line 477, ../../../app/styles/themes/theme-retro.scss */
+#home-contact input,
+#home-contact textarea {
   padding: 12px;
   font-size: 16px;
   font-weight: 700;
   color: var(--secondary-color);
   background-color: transparent;
   border-bottom: 4px solid var(--secondary-color);
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
+  transition: all 0.5s ease;
 }
-/* line 484, ../../../app/styles/themes/theme-retro.scss */
-#home-contact input:hover, #home-contact input:focus, #home-contact textarea:hover, #home-contact textarea:focus {
+/* line 487, ../../../app/styles/themes/theme-retro.scss */
+#home-contact input:hover, #home-contact input:focus,
+#home-contact textarea:hover,
+#home-contact textarea:focus {
   background-color: var(--secondary-color);
   color: #FFF;
 }
-/* line 490, ../../../app/styles/themes/theme-retro.scss */
+/* line 493, ../../../app/styles/themes/theme-retro.scss */
 #home-contact textarea {
   min-height: 140px;
 }

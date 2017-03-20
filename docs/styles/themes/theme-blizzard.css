@@ -1,145 +1,15 @@
-/*$mainColor: #33FFE6;
-$secondaryColor: #FF2789;
-$fillColor: #2B2E3A;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #037E8C;
-$secondaryColor: #F24C27;
-$fillColor: #024959;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #FF3D7F;
-$secondaryColor: #3FB8AF;
-$fillColor: #7FC7AF;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #D44F3D;
-$secondaryColor: #1C152E;
-$fillColor: #DCAB40;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #FF2EFF;
-$secondaryColor: #D4DC14;
-$fillColor: #4DDA9E;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #ef4b54;
-$secondaryColor: #268180;
-$fillColor: #f8e1b2;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;
-*/
-/*$mainColor: #CC4452;
-$secondaryColor: #723147;
-$fillColor: #E6B098;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #FEB41C;
-$secondaryColor: #363F45;
-$fillColor: #5E7C88;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #FC4349;
-$secondaryColor: #6DBCDB;
-$fillColor: #2C3E50;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #D96666;
-$secondaryColor: #F2E5A2;
-$fillColor: #81AC8B;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;
-*/
-/*$mainColor: #588C8C;
-$secondaryColor: #D9042B;
-$fillColor: #011C26;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #45B29D;
-$secondaryColor: #DF5A49;
-$fillColor: #334D5C;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #E27A3F;
-$secondaryColor: #DF5A49;
-$fillColor: #45B29D;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #DF5A49;
-$secondaryColor: #45B29D;
-$fillColor: #334D5C;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #B296BC;
-$secondaryColor: #00BACF;
-$fillColor: #8F8A8C;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/* $mainColor: #56D9CD;
-$secondaryColor: #4588D8;
-$fillColor: #4588D8;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E; */
-/*$mainColor: #4588D8;
-$secondaryColor: #5dffea;
-$fillColor: #4588D8;
-
-$lightGray: #E8E8E8;
-$mediumGray: #767676;
-$darkGray: #1E1E1E;*/
-/*$mainColor: #56D9CD;
-$secondaryColor: #4588D8;
-$accentColor: #F2385A;
-// $fillColor: #0c4d8d;
-$fillColor: #002635;
-
-$lightGray: #f1f1f1;
-$mediumGray: #636363;
-$darkGray: #323232;*/
-/* line 25, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 24, ../../../app/styles/themes/theme-blizzard.scss */
 body {
   background-color: var(--tertiary-color);
 }
 
-/* line 33, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 32, ../../../app/styles/themes/theme-blizzard.scss */
 .site__wrapper h1 {
   color: var(--primary-color);
   font-weight: 700;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
-/* line 39, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 38, ../../../app/styles/themes/theme-blizzard.scss */
 .site__wrapper h2 {
   position: relative;
   margin: 8px 0;
@@ -152,87 +22,9 @@ body {
   background-color: rgba(30, 30, 30, 0.9);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 0 8px 1px rgba(0, 0, 0, 0.5);
 }
-
-/* line 57, ../../../app/styles/themes/theme-blizzard.scss */
-#fonts-versus {
-  text-transform: uppercase;
-}
-/* line 60, ../../../app/styles/themes/theme-blizzard.scss */
-#fonts-versus .versus__wrapper {
-  padding: 5px 15px 0;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-/* line 67, ../../../app/styles/themes/theme-blizzard.scss */
-#fonts-versus .versus__tag {
-  margin-bottom: 20px;
-}
-/* line 70, ../../../app/styles/themes/theme-blizzard.scss */
-#fonts-versus .versus__tag span {
-  color: #FFF;
-}
-
-/* line 79, ../../../app/styles/themes/theme-blizzard.scss */
-#home-nav {
-  position: absolute;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-  z-index: 1;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-/* line 87, ../../../app/styles/themes/theme-blizzard.scss */
-#home-nav .nav__logo {
-  font-size: 24px;
-  font-weight: 300;
-  color: #FFF;
-}
-/* line 93, ../../../app/styles/themes/theme-blizzard.scss */
-#home-nav .nav__item {
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-}
-/* line 96, ../../../app/styles/themes/theme-blizzard.scss */
-#home-nav .nav__item:last-child {
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-}
-/* line 100, ../../../app/styles/themes/theme-blizzard.scss */
-#home-nav .nav__item a {
-  font-weight: 300;
-  color: #FFF;
-  transition-property: "all";
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
-}
-
-/* line 114, ../../../app/styles/themes/theme-blizzard.scss */
-#home-header {
-  background: #1a1a1a url("http://lorempixel.com/g/1920/600/nature/") no-repeat fixed center;
-  background-size: cover;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-/* line 119, ../../../app/styles/themes/theme-blizzard.scss */
-#home-header h1 {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-/* line 124, ../../../app/styles/themes/theme-blizzard.scss */
-#home-header p {
-  margin-top: 20px;
-  margin-bottom: 15px;
-  max-width: 50%;
-  color: #FFF;
-}
-/* line 131, ../../../app/styles/themes/theme-blizzard.scss */
-#home-header .header__overlay {
-  background-color: var(--tertiary-color);
-  opacity: 0.3;
-}
-
-/* line 137, ../../../app/styles/themes/theme-blizzard.scss */
-button {
+/* line 53, ../../../app/styles/themes/theme-blizzard.scss */
+.site__wrapper .section__button {
   padding: 6px 20px;
-  font-family: 'mainFont';
   font-size: 18px;
   color: #FFF;
   font-weight: 300;
@@ -240,22 +32,95 @@ button {
   background-color: transparent;
   border-radius: 5px;
   border: none;
+  background-color: var(--primary-color);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 0 8px 1px rgba(0, 0, 0, 0.5);
-  transition-property: "all";
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+  transition: all 0.5s ease;
 }
-/* line 150, ../../../app/styles/themes/theme-blizzard.scss */
-button:hover {
+
+/* line 75, ../../../app/styles/themes/theme-blizzard.scss */
+#fonts-versus {
+  text-transform: uppercase;
+}
+/* line 78, ../../../app/styles/themes/theme-blizzard.scss */
+#fonts-versus .versus__wrapper {
+  padding: 5px 15px 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 85, ../../../app/styles/themes/theme-blizzard.scss */
+#fonts-versus .versus__tag {
+  margin-bottom: 20px;
+}
+/* line 88, ../../../app/styles/themes/theme-blizzard.scss */
+#fonts-versus .versus__tag span {
   color: #FFF;
 }
 
-/* line 159, ../../../app/styles/themes/theme-blizzard.scss */
-#home-skills .skills__item {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 0 8px 1px rgba(0, 0, 0, 0.5);
-  z-index: 10;
+/* line 97, ../../../app/styles/themes/theme-blizzard.scss */
+#home-nav {
+  position: relative;
+  bottom: -52px;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-/* line 164, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 105, ../../../app/styles/themes/theme-blizzard.scss */
+#home-nav .nav__logo {
+  font-size: 24px;
+  font-weight: 300;
+  color: #FFF;
+}
+/* line 111, ../../../app/styles/themes/theme-blizzard.scss */
+#home-nav .nav__item {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* line 114, ../../../app/styles/themes/theme-blizzard.scss */
+#home-nav .nav__item:last-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* line 118, ../../../app/styles/themes/theme-blizzard.scss */
+#home-nav .nav__item a {
+  font-weight: 300;
+  color: #FFF;
+  transition: all 0.5s ease;
+}
+/* line 123, ../../../app/styles/themes/theme-blizzard.scss */
+#home-nav .nav__item a:hover {
+  background-color: var(--primary-color);
+}
+
+/* line 132, ../../../app/styles/themes/theme-blizzard.scss */
+#home-header {
+  background: #1a1a1a url("http://lorempixel.com/g/1920/600/nature/") no-repeat fixed center;
+  background-size: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* line 137, ../../../app/styles/themes/theme-blizzard.scss */
+#home-header h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* line 142, ../../../app/styles/themes/theme-blizzard.scss */
+#home-header p {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  max-width: 50%;
+  color: #FFF;
+}
+/* line 149, ../../../app/styles/themes/theme-blizzard.scss */
+#home-header .header__overlay {
+  background-color: var(--tertiary-color);
+  opacity: 0.3;
+}
+
+/* line 158, ../../../app/styles/themes/theme-blizzard.scss */
+#home-skills .skills__item {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 0 8px 1px rgba(0, 0, 0, 0.5);
+}
+/* line 162, ../../../app/styles/themes/theme-blizzard.scss */
 #home-skills .skills__item h3 {
   margin: 0;
   padding: 80px 15px 25px;
@@ -264,45 +129,43 @@ button:hover {
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
   background-image: url("http://lorempixel.com/400/200/");
 }
-/* line 173, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 171, ../../../app/styles/themes/theme-blizzard.scss */
 #home-skills .skills__item .skills__item-description {
   padding-bottom: 20px;
 }
-/* line 177, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 175, ../../../app/styles/themes/theme-blizzard.scss */
 #home-skills .skills__item p {
-  margin: 0;
   padding: 15px;
   color: #FFF;
 }
-/* line 183, ../../../app/styles/themes/theme-blizzard.scss */
-#home-skills .skills__item button {
-  display: block;
-  margin: 0 auto;
+/* line 180, ../../../app/styles/themes/theme-blizzard.scss */
+#home-skills .skills__item .section__button {
+  margin-left: 15px;
 }
 
-/* line 193, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 189, ../../../app/styles/themes/theme-blizzard.scss */
 #home-history {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* line 197, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 193, ../../../app/styles/themes/theme-blizzard.scss */
 #home-history .wrapper {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
 }
-/* line 201, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 197, ../../../app/styles/themes/theme-blizzard.scss */
 #home-history p {
   padding: 15px;
   color: #FFF;
 }
 
-/* line 210, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 206, ../../../app/styles/themes/theme-blizzard.scss */
 #home-words {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* line 214, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 210, ../../../app/styles/themes/theme-blizzard.scss */
 #home-words .words__list {
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -310,7 +173,7 @@ button:hover {
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
 }
 
-/* line 223, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 219, ../../../app/styles/themes/theme-blizzard.scss */
 #home-team {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -319,11 +182,11 @@ button:hover {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-/* line 231, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 227, ../../../app/styles/themes/theme-blizzard.scss */
 #home-team .team__tag {
   margin-top: 80px;
 }
-/* line 234, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 230, ../../../app/styles/themes/theme-blizzard.scss */
 #home-team .team__tag h1 {
   font-size: 76px;
   font-weight: 700;
@@ -331,51 +194,50 @@ button:hover {
   line-height: 0.8;
   text-transform: uppercase;
 }
-/* line 244, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 240, ../../../app/styles/themes/theme-blizzard.scss */
 #home-team .team__people li {
   padding: 10px;
   background-color: rgba(30, 30, 30, 0.9);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 0 8px 1px rgba(0, 0, 0, 0.5);
 }
-/* line 249, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 245, ../../../app/styles/themes/theme-blizzard.scss */
 #home-team .team__people li:not(:first-child) {
   margin-top: 15px;
 }
-/* line 255, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 251, ../../../app/styles/themes/theme-blizzard.scss */
 #home-team h3 {
   margin-top: 5px;
   font-size: 28px;
   font-weight: 700;
   color: #FFF;
 }
-/* line 262, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 258, ../../../app/styles/themes/theme-blizzard.scss */
 #home-team h5 {
   font-weight: 300;
   color: var(--secondary-color);
 }
 
-/* line 272, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 268, ../../../app/styles/themes/theme-blizzard.scss */
 #home-prices h3 {
   color: #FFF;
 }
-/* line 276, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 272, ../../../app/styles/themes/theme-blizzard.scss */
 #home-prices h4 {
   color: var(--primary-color);
 }
-/* line 280, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 276, ../../../app/styles/themes/theme-blizzard.scss */
 #home-prices .prices__tag {
   margin-bottom: 15px;
-  font-family: 'mainFont';
   font-weight: 700;
 }
-/* line 288, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 283, ../../../app/styles/themes/theme-blizzard.scss */
 #home-prices .prices__list ul {
   margin-bottom: 20px;
   text-align: left;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-/* line 295, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 290, ../../../app/styles/themes/theme-blizzard.scss */
 #home-prices .prices__list li {
   margin: 0;
   padding: 8px 12px 4px;
@@ -384,17 +246,17 @@ button:hover {
   color: #FFF;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-/* line 303, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 298, ../../../app/styles/themes/theme-blizzard.scss */
 #home-prices .prices__list li:hover {
   color: #FFF;
   background-color: var(--primary-color);
 }
-/* line 308, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 303, ../../../app/styles/themes/theme-blizzard.scss */
 #home-prices .prices__list li:last-child {
   border-bottom: none !important;
 }
 
-/* line 319, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 314, ../../../app/styles/themes/theme-blizzard.scss */
 #home-blog .row {
   margin-right: 0;
   margin-left: 0;
@@ -403,87 +265,74 @@ button:hover {
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
 }
-/* line 325, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 320, ../../../app/styles/themes/theme-blizzard.scss */
 #home-blog .row h3 {
   color: var(--primary-color);
   font-weight: 300;
 }
-/* line 330, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 325, ../../../app/styles/themes/theme-blizzard.scss */
 #home-blog .row h5 {
   color: var(--secondary-color);
 }
-/* line 334, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 329, ../../../app/styles/themes/theme-blizzard.scss */
 #home-blog .row p {
   color: #FFF;
 }
 
-/* line 345, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 340, ../../../app/styles/themes/theme-blizzard.scss */
 #home-contact .contact__message {
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
 }
-/* line 351, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 346, ../../../app/styles/themes/theme-blizzard.scss */
 #home-contact .contact__icons li {
   border-radius: 50%;
   background-color: var(--secondary-color);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 0 8px 1px rgba(0, 0, 0, 0.5);
 }
-/* line 356, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 351, ../../../app/styles/themes/theme-blizzard.scss */
 #home-contact .contact__icons li span {
   color: #FFF;
 }
-/* line 362, ../../../app/styles/themes/theme-blizzard.scss */
-#home-contact .textBox {
-  min-height: 203px;
-  padding: 15px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
-}
-/* line 368, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 357, ../../../app/styles/themes/theme-blizzard.scss */
 #home-contact h3 {
   font-weight: 300;
   color: var(--primary-color);
 }
-/* line 373, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 362, ../../../app/styles/themes/theme-blizzard.scss */
 #home-contact p {
   color: #FFF;
 }
-/* line 377, ../../../app/styles/themes/theme-blizzard.scss */
-#home-contact input, #home-contact textarea {
+/* line 366, ../../../app/styles/themes/theme-blizzard.scss */
+#home-contact input,
+#home-contact textarea {
   padding: 12px;
-  font-family: 'secondaryFont';
   font-size: 16px;
   color: #FFF;
   background-color: rgba(30, 30, 30, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 2px;
-  transition-property: border;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+  transition: border 0.5s ease;
 }
-/* line 386, ../../../app/styles/themes/theme-blizzard.scss */
-#home-contact input:hover, #home-contact input:focus, #home-contact textarea:hover, #home-contact textarea:focus {
+/* line 375, ../../../app/styles/themes/theme-blizzard.scss */
+#home-contact input:hover, #home-contact input:focus,
+#home-contact textarea:hover,
+#home-contact textarea:focus {
   outline: none;
   -webkit-appearance: none;
 }
-/* line 393, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 382, ../../../app/styles/themes/theme-blizzard.scss */
 #home-contact textarea {
   min-height: 140px;
 }
 
-/* line 401, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 390, ../../../app/styles/themes/theme-blizzard.scss */
 footer {
-  padding-top: 10px;
   background-color: var(--primary-color);
 }
-/* line 404, ../../../app/styles/themes/theme-blizzard.scss */
+/* line 393, ../../../app/styles/themes/theme-blizzard.scss */
 footer p {
   color: #FFF;
-}
-/* line 407, ../../../app/styles/themes/theme-blizzard.scss */
-footer .copyRight {
-  text-align: right;
 }
