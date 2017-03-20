@@ -1,0 +1,16 @@
+<section id="home-words">
+	<div class="section__header">
+		<div class="container">
+			<span class="section__badge"></span>
+			<h2 class="section__title">Some random words</h2>
+			<span class="section__reload" ng-click="main.setRandomWords()"><i class="fa fa-refresh"></i></span>
+		</div>
+	</div>
+	<div class="container">
+		<div class="section__body wrapper">
+			<ul class="words__list">
+				<li ng-repeat="item in main.randomWords" style="{{ item.style }}">{{ item.word }}</li>
+			</ul>
+		</div>
+	</div>
+</section>
