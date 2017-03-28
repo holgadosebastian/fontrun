@@ -1,0 +1,36 @@
+#home-nav {
+	margin-bottom: 0;
+	border-radius: 0;
+	border: none;
+
+	.nav__container {
+		display: flex;
+	}
+
+	.nav__logo {
+		flex-grow: 100;
+
+		a {
+			display: inline-block;
+			padding: 0 15px;
+			font-size: 24px;
+			color: #FFF;
+			line-height: 50px;
+		}
+	}
+
+	.nav__items {
+		margin-bottom: 0;
+	}
+
+	.nav__item {
+		float: left;
+		font-size: 18px;
+
+		a {
+			display: block;
+			padding: 0 15px;
+			line-height: 50px;
+		}
+	}
+}

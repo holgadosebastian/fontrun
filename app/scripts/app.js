@@ -22,7 +22,7 @@ angular
       $routeProvider
         .when('/', {
           templateUrl: 'components/home/home-view.html',
-          controller: 'MainCtrl',
+          controller: 'MainController',
           controllerAs: 'main',
           resolve: {
             view: function() {
@@ -32,7 +32,7 @@ angular
         })
         .when('/test', {
           templateUrl: 'components/cards/cards-view.html',
-          controller: 'MainCtrl',
+          controller: 'MainController',
           controllerAs: 'main',
           resolve: {
             view: function() {

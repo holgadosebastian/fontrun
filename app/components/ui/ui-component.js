@@ -19,58 +19,19 @@
 
     function UiController( $rootScope, $scope, $timeout, $location, premadeThemes, SchemeSrv, clipboard ) {
       var vm = this;
+
       vm.premadeThemes = premadeThemes;
-
-      // Colours
-
-      vm.switchFonts = function () {
-        var mainFont = angular.copy( $rootScope.fonts.primary );
-
-        $rootScope.fonts.primary = $rootScope.fonts.secondary;
-        $rootScope.fonts.secondary = mainFont;
-      };
-
-      // Schemes
-
+      vm.primaryFont = angular.copy($rootScope.fonts.primary);
+      vm.secondaryFont = angular.copy($rootScope.fonts.secondary);
+      vm.updateFont = updateFont;
+      vm.switchFonts = switchFonts;
       vm.schemes = SchemeSrv.getSavedSchemes();
-
-      vm.saveCurrentScheme = function() {
-        SchemeSrv.saveCurrentScheme();
-        vm.schemes = SchemeSrv.getSavedSchemes();
-      };
-
-      vm.setScheme = function( scheme ) {
-        SchemeSrv.setScheme( scheme );
-      };
-
-      vm.deleteScheme = function( index ) {
-        SchemeSrv.deleteScheme( index );
-        vm.schemes = SchemeSrv.getSavedSchemes();
-      };
-
-      vm.getShareableUrl = function() {
-        $location.search(
-          {
-            'primarycolor': $rootScope.colors.primary,
-            'secondarycolor': $rootScope.colors.secondary,
-            'tertiarycolor': $rootScope.colors.tertiary,
-            'primaryfont': $rootScope.fonts.primary,
-            'secondaryfont': $rootScope.fonts.secondary
-          }
-        );
-
-        $timeout( function() {
-          clipboard.copyText( location.href );
-        }, 1);
-      };
-
-      vm.getShareableSchemes = function() {
-        clipboard.copyText( localStorage.schemes );
-      };
-
-      vm.addSchemes = function() {
-        vm.schemes = SchemeSrv.addSchemes( vm.schemesString );
-      };
+      vm.saveCurrentScheme = saveCurrentScheme;
+      vm.setScheme = setScheme;
+      vm.deleteScheme = deleteScheme;
+      vm.getShareableUrl = getShareableUrl;
+      vm.getShareableSchemes = getShareableSchemes;
+      vm.addSchemes = addSchemes;
 
       // Keyboard Events
       $(document).keyup( function(e) {
@@ -131,6 +92,62 @@
           }
         }, 1);
       });
+
+      // Private functions
+      function updateFont( name, id, event ) {
+        if ( event && event.keyCode !== 13) return;
+        $rootScope.fonts[id] = name;
+        if ( event ) {
+          event.target.blur();
+        }
+      }
+
+      function switchFonts() {
+        var mainFont = angular.copy( $rootScope.fonts.primary );
+
+        vm.primaryFont = $rootScope.fonts.primary = $rootScope.fonts.secondary;
+        vm.secondaryFont = $rootScope.fonts.secondary = mainFont;
+      }
+
+      function saveCurrentScheme() {
+        SchemeSrv.saveCurrentScheme();
+        vm.schemes = SchemeSrv.getSavedSchemes();
+      }
+
+      function setScheme( scheme ) {
+        SchemeSrv.setScheme( scheme );
+      }
+
+      function deleteScheme( index ) {
+        SchemeSrv.deleteScheme( index );
+        vm.schemes = SchemeSrv.getSavedSchemes();
+      }
+
+      function getShareableUrl() {
+        $location.search(
+          {
+            'primarycolor': $rootScope.colors.primary,
+            'secondarycolor': $rootScope.colors.secondary,
+            'tertiarycolor': $rootScope.colors.tertiary,
+            'primaryfont': $rootScope.fonts.primary,
+            'secondaryfont': $rootScope.fonts.secondary
+          }
+        );
+
+        $timeout( function() {
+          clipboard.copyText( location.href );
+        }, 1);
+
+        $scope.$broadcast('popup.show.schemeShareCurrent');
+      }
+
+      function getShareableSchemes() {
+        clipboard.copyText( localStorage.schemes );
+      }
+
+      function addSchemes() {
+        vm.schemes = SchemeSrv.addSchemes( vm.schemesString );
+      }
     }
 
 })();

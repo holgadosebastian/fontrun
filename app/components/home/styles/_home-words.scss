@@ -1,0 +1,14 @@
+#home-words {
+	.words__list {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+
+		li {
+			flex-basis: 16.66666%;
+			font-size: 20px;
+			line-height: 1.5;
+		}
+	}
+}

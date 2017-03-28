@@ -1,16 +1,16 @@
 <section id="home-blog">
 	<div class="section__header">
-		<div class="container">
+		<div class="section__container">
 			<span class="section__badge"></span>
 			<h2 class="section__title">Some blog posts</h2>
 			<span class="section__reload" ng-click="main.setBlogPosts()"><i class="fa fa-refresh"></i></span>
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="section__container">
 		<div class="section__body wrapper">
-			<ul class="row">
-				<li class="col-sm-4"
+			<ul class="section__row">
+				<li class="section__column section__column--4"
 					ng-repeat="item in main.blogPosts">
 					<div class="blog__item">
 						<h3>{{ item.title }}</h3>

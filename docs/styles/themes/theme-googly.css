@@ -357,7 +357,7 @@ h2 {
   margin-bottom: 15px;
 }
 /* line 200, ../../../app/styles/themes/theme-googly.scss */
-#aboutUs .container .wrapper {
+#aboutUs .section__container .wrapper {
   overflow: hidden;
   padding: 15px;
   background-color: #FFF;

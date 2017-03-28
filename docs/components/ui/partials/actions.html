@@ -1,0 +1,28 @@
+<div>
+	<p class="-h2 side-menu__title side-menu__title--collapsable" ng-click="$ctrl.hideActions = !$ctrl.hideActions">Actions <span><i class="fa" ng-class="'fa-chevron-' + ($ctrl.hideActions ? 'down' : 'up')"></i></span></p>
+	<ul class="ui__actions"
+		ng-hide="$ctrl.hideActions">
+		<li ng-click="$ctrl.getShareableUrl()">
+			<span><i class="fa fa-share"></i></span>
+			<p>Share current scheme</p>
+		</li>
+		<li ng-click="$ctrl.getShareableSchemes()">
+			<span><i class="fa fa-list-ul"></i></span>
+			<p>Share saved schemes</p>
+		</li>
+		<li ng-click="$ctrl.showAddSchemesModal = true">
+			<span><i class="fa fa-list-ul"></i></span>
+			<p>Add schemes</p>
+		</li>
+		<li>
+			<span><i class="fa fa-share-alt"></i></span>
+			<p>Share on social</p>
+		</li>
+	</ul>
+
+	<popup label="schemeShareCurrent"
+		title="Current scheme copied to clipboard"
+		description="Now you can share the url with someone else. Paste it in the address bar."
+
+	></popup>
+</div>

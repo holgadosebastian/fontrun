@@ -12,43 +12,43 @@ $spacing: (
 @each $size, $dimension in $spacing {
 	.utils__ {
 	  &m--#{$size} {
-	    margin: $dimension;
+	    margin: $dimension !important;
 	  }
 
 	  &mt--#{$size} {
-	    margin-top: $dimension;
+	    margin-top: $dimension !important;
 	  }
 
 	  &mr--#{$size} {
-	    margin-right: $dimension;
+	    margin-right: $dimension !important;
 	  }
 
 	  &mb--#{$size} {
-	    margin-bottom: $dimension;
+	    margin-bottom: $dimension !important;
 	  }
 
 	  &ml--#{$size} {
-	    margin-left: $dimension;
+	    margin-left: $dimension !important;
 	  }
 
 	  &p--#{$size} {
-	    padding: $dimension;
+	    padding: $dimension !important;
 	  }
 
 	  &pt--#{$size} {
-	    padding-top: $dimension;
+	    padding-top: $dimension !important;
 	  }
 
 	  &pr--#{$size} {
-	    padding-right: $dimension;
+	    padding-right: $dimension !important;
 	  }
 
 	  &pb--#{$size} {
-	    padding-bottom: $dimension;
+	    padding-bottom: $dimension !important;
 	  }
 
 	  &pl--#{$size} {
-	    padding-left: $dimension;
+	    padding-left: $dimension !important;
 	  }
 	}
 }

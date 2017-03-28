@@ -1,0 +1,24 @@
+.fr-popup {
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	margin-left: -150px;
+	padding: 10px;
+	width: 300px;
+	background-color: $fr-color-secondary-darker;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease, transform 0.3s ease;
+	z-index: 5;
+	box-shadow: 4px 4px rgba(#000, 0.4);
+
+	&:not(.popup--show) {
+		transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
+	}
+
+	&.popup--show {
+		transform: translateX(-10px);
+		visibility: visible;
+		opacity: 1;
+	}
+}

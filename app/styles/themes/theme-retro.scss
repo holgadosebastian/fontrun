@@ -53,7 +53,7 @@ body {
 	.section__header {
 		margin-top: 30px;
 
-		.container {
+		.section__container {
 			position: relative;
 			text-align: center;
 			background: $theme-gray-dark url("../../images/retro-tile.png") repeat scroll center;
@@ -326,7 +326,7 @@ body {
 	background-color: $theme-gray-light;
 	border-bottom: 5px solid var(--primary-color);
 
-	.container .wrapper {
+	.section__container .wrapper {
 		overflow: hidden;
 		padding: 15px;
 		border-radius: 7px;

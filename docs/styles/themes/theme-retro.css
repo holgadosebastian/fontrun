@@ -44,14 +44,14 @@ body {
   margin-top: 30px;
 }
 /* line 56, ../../../app/styles/themes/theme-retro.scss */
-.site__wrapper .section__header .container {
+.site__wrapper .section__header .section__container {
   position: relative;
   text-align: center;
   background: #1E1E1E url("../../images/retro-tile.png") repeat scroll center;
   box-shadow: 0 4px 4px -3px #1E1E1E;
 }
 /* line 62, ../../../app/styles/themes/theme-retro.scss */
-.site__wrapper .section__header .container .section__badge {
+.site__wrapper .section__header .section__container .section__badge {
   position: absolute;
   margin-top: -40px;
   margin-left: 25px;
@@ -68,7 +68,7 @@ body {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
 }
 /* line 78, ../../../app/styles/themes/theme-retro.scss */
-.site__wrapper .section__header .container .section__badge:before {
+.site__wrapper .section__header .section__container .section__badge:before {
   display: inline-block;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -81,7 +81,7 @@ body {
   transform: skew(0, -8deg);
 }
 /* line 92, ../../../app/styles/themes/theme-retro.scss */
-.site__wrapper .section__header .container:before, .site__wrapper .section__header .container:after {
+.site__wrapper .section__header .section__container:before, .site__wrapper .section__header .section__container:after {
   position: absolute;
   content: "";
   margin-top: -25px;
@@ -90,12 +90,12 @@ body {
   border-bottom: 25px solid transparent;
 }
 /* line 102, ../../../app/styles/themes/theme-retro.scss */
-.site__wrapper .section__header .container:before {
+.site__wrapper .section__header .section__container:before {
   left: 0;
   border-left: 16px solid #FFF;
 }
 /* line 107, ../../../app/styles/themes/theme-retro.scss */
-.site__wrapper .section__header .container:after {
+.site__wrapper .section__header .section__container:after {
   right: 0;
   border-right: 16px solid #FFF;
 }
@@ -286,7 +286,7 @@ body {
   border-bottom: 5px solid var(--primary-color);
 }
 /* line 329, ../../../app/styles/themes/theme-retro.scss */
-#home-team .container .wrapper {
+#home-team .section__container .wrapper {
   overflow: hidden;
   padding: 15px;
   border-radius: 7px;

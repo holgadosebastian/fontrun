@@ -1,18 +1,33 @@
-'use strict';
+(function() {
+  'use strict';
 
-angular.module('fontRunApp')
-  .controller('MainCtrl', [
-    '$rootScope',
-    '$filter',
-    'RandomContentSrv',
-    'view',
-  	function ( $rootScope, $filter, RandomContentSrv, view ) {
+  angular.module('fontRunApp')
+    .controller('MainController', [
+      '$rootScope',
+      '$filter',
+      'RandomContentSrv',
+      'view',
+      MainController
+    ]);
+
+    function MainController( $rootScope, $filter, RandomContentSrv, view ) {
+      var vm = this;
+
       $rootScope.view.current = view;
 
-      var self = this;
+      vm.setSkills = setSkills;
+      vm.setRandomWords = setRandomWords;
+      vm.setBlogPosts = setBlogPosts;
 
+      // Init page random words
 
-      self.setSkills = function() {
+      vm.setSkills();
+      vm.setRandomWords();
+      vm.setBlogPosts();
+
+      // Private functions
+
+      function setSkills() {
         var skills = [];
 
         for (var i = 0; i < 3; i++) {
@@ -24,17 +39,17 @@ angular.module('fontRunApp')
           );
         }
 
-        self.skills = skills;
-      };
+        vm.skills = skills;
+      }
 
-      self.setRandomWords = function() {
-        self.randomWords = [];
-        self.randomWords = _.map( RandomContentSrv.getRandomWords(30), function( word ) {
+      function setRandomWords() {
+        vm.randomWords = [];
+        vm.randomWords = _.map( RandomContentSrv.getRandomWords(30), function( word ) {
           return { word: word, style: getRandomStyle() };
         });
-      };
+      }
 
-      self.setBlogPosts = function() {
+      function setBlogPosts() {
         var blogPosts = [];
 
         for (var i = 0; i < 3; i++) {
@@ -47,15 +62,9 @@ angular.module('fontRunApp')
           );
         }
 
-        self.blogPosts = blogPosts;
-      };
+        vm.blogPosts = blogPosts;
+      }
 
-      // Init page random words
-      self.setSkills();
-      self.setRandomWords();
-      self.setBlogPosts();
-
-      // Private functions
       function getRandomStyle() {
         var fontWeights = [300, 400, 700];
         var colors = ['--primary-color', '--secondary-color', '--tertiary-color'];
@@ -73,5 +82,6 @@ angular.module('fontRunApp')
 
         return styles.join(';');
       }
-  	}
-  ]);
+    }
+
+})();

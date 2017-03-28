@@ -1,0 +1,100 @@
+.site__wrapper {
+	transition: padding-left 0.5s ease;
+
+	&.site__wrapper--menu {
+		padding-left: 360px;
+	}
+
+	h1 {
+		font-size: 37px;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	h5 {
+		font-size: 18px;
+	}
+
+	h6 {
+		font-size: 16px;
+	}
+
+	p {
+		font-size: 18px;
+	}
+
+	.section__container {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 100%;
+		width: 1024px;
+	}
+
+	.section__row {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	.section__column {
+		padding-right: 15px;
+		padding-left: 15px;
+
+		@for $i from 1 through 12 {
+			&.section__column--#{$i} {
+				width: #{100 * $i / 12 + '%'};
+			}
+		}
+	}
+
+	.section__header {
+		.section__container {
+			position: relative;
+		}
+	}
+
+	.section__button {
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	.section__reload {
+		position: absolute;
+		top: 50%;
+		right: 15px;
+		margin-top: -20px;
+		width: 40px;
+		height: 40px;
+		font-size: 20px;
+		line-height: 40px;
+		text-align: center;
+		cursor: pointer;
+	}
+
+
+	// Footer
+
+	footer {
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		p {
+			color: #FFF;
+		}
+
+		.footer__author {
+			text-align: right;
+		}
+	}
+}

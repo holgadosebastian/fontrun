@@ -2,7 +2,6 @@
   "name": "web",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.1.0",
     "jquery": "~1.11.0",
     "angular": "1.6.1",
     "normalize-css": "normalize.css#^5.0.0",

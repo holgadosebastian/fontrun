@@ -1,20 +1,14 @@
-$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-
-// bower:scss
-@import '../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
-// endbower
-
 @import "compass";
 
 @import "variables/colorPalette";
 @import "variables/mixins";
-@import "base/layout";
-
+@import "app/layout";
 @import "app/utils";
 
 // Components
 
 @import "../components/ui/ui";
 @import "../components/modal/modal";
+@import "../components/popup/popup";
 @import "../components/home/home";
 @import "app/test-cards";

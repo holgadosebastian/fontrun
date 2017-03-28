@@ -189,7 +189,7 @@ body {
   border-bottom: 5px solid var(--primary-color);
 }
 /* line 221, ../../../app/styles/themes/theme-agnostic.scss */
-#home-team .container .wrapper {
+#home-team .section__container .wrapper {
   overflow: hidden;
   padding: 15px;
   border-radius: 7px;

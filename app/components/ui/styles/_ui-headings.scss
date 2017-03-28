@@ -1,0 +1,63 @@
+.fr-ui {
+	.-h1, .-h2, .-h3, .-h4, .-h5, .-h6,
+	p, li, span {
+		font-family: $fr-font-primary;
+		font-weight: 300;
+	}
+
+	.-h1 {
+		font-size: 30px;
+	}
+
+	.-h2 {
+		font-size: 26px;
+	}
+
+	.-h3 {
+		font-size: 22px;
+	}
+
+	.-h4 {
+		font-size: 20px;
+	}
+
+	.-h5 {
+		font-size: 18px;
+	}
+
+	.-h6 {
+		font-size: 14px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.side-menu__title {
+		position: relative;
+
+		&.side-menu__title--collapsable {
+			cursor: pointer;
+		}
+
+		span {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			margin-top: -12px;
+			height: 24px;
+			width: 24px;
+			line-height: 24px;
+			text-align: center;
+			font-size: 18px;
+			opacity: 0;
+			transition: opacity 0.5s ease;
+		}
+
+		&:hover {
+			span {
+				opacity: 1;
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+#fonts-versus {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+
+	.versus__wrapper {
+		padding: 20px;
+	}
+
+	.versus__primary,
+	.versus__secondary,
+	.versus__tag {
+		display: block;
+		text-align: center;
+	}
+
+	.versus__primary,
+	.versus__secondary {
+		margin-top: 5px;
+		margin-bottom: 25px;
+		font-size: 15vh;
+		line-height: 1;
+	}
+
+	.versus__primary {
+		color: var(--primary-color);
+	}
+
+	.versus__secondary {
+		color: var(--secondary-color);
+	}
+
+	.versus__tag {
+		span {
+			position: relative;
+			font-family: sans-serif;
+			font-weight: 700;
+			font-size: 20px;
+			color: $darkGray;
+		}
+	}
+}

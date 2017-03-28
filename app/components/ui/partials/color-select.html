@@ -1,0 +1,21 @@
+<div>
+	<p class="-h2 side-menu__title side-menu__title--collapsable" ng-click="$ctrl.hideColorPallete = !$ctrl.hideColorPallete">Color pallette <span><i class="fa" ng-class="'fa-chevron-' + ($ctrl.hideColorPallete ? 'down' : 'up')"></i></span></p>
+	<ul class="side-menu__selected-colors"
+		ng-hide="$ctrl.hideColorPallete">
+		<li>
+			<div ng-style="{ 'background-color': '#' + $root.colors.primary }"></div>
+			<span>#</span>
+			<input class="ui__input ui__input--color" type="text" ng-model="$root.colors.primary">
+		</li>
+		<li>
+			<div ng-style="{ 'background-color': '#' + $root.colors.secondary }"></div>
+			<span>#</span>
+			<input class="ui__input ui__input--color" type="text" ng-model="$root.colors.secondary">
+		</li>
+		<li>
+			<div ng-style="{ 'background-color': '#' + $root.colors.tertiary }"></div>
+			<span>#</span>
+			<input class="ui__input ui__input--color" type="text" ng-model="$root.colors.tertiary">
+		</li>
+	</ul>
+</div>

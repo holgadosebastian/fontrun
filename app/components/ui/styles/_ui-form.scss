@@ -1,0 +1,22 @@
+.fr-ui {
+
+	.ui__input {
+		background-color: transparent;
+		border: none;
+		color: #FFF;
+
+		&:hover,
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.ui__textarea {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		padding: 10px;
+		color: #FFF;
+		background-color: $fr-color-secondary-darker;
+	}
+}
