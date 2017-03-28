@@ -1,0 +1,23 @@
+<div>
+	<p class="-h2 side-menu__title side-menu__title--collapsable" ng-click="$ctrl.hideSchemes = !$ctrl.hideSchemes">Schemes <span><i class="fa" ng-class="'fa-chevron-' + ($ctrl.hideSchemes ? 'down' : 'up')"></i></span></p>
+	<ul class="ui-schemes__list"
+		ng-hide="$ctrl.hideSchemes">
+		<li class="ui-schemes__scheme"
+			ng-click="$ctrl.setScheme( scheme )"
+			ng-repeat="scheme in $ctrl.schemes">
+			<p class="ui-schemes__font -h6">{{ scheme.primaryFont }}</p>
+			<p class="ui-schemes__font -h6">{{ scheme.secondaryFont }}</p>
+			<ul class="ui-schemes__colors">
+				<li ng-style="{ 'background-color' : '#' + scheme.primaryColor}"></li>
+				<li ng-style="{ 'background-color' : '#' + scheme.secondaryColor}"></li>
+				<li ng-style="{ 'background-color' : '#' + scheme.tertiaryColor}"></li>
+			</ul>
+			<span class="ui-schemes__delete" ng-click="$ctrl.deleteScheme( $index )"><i class="fa fa-close"></i></span>
+		</li>
+
+		<li class="ui-schemes__scheme"
+			ng-click="$ctrl.saveCurrentScheme()">
+			<span class="ui-schemes__add"><i class="fa fa-plus"></i></span>
+		</li>
+	</ul>
+</div>

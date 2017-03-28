@@ -1,0 +1,27 @@
+<div>
+	<p class="-h2 side-menu__title side-menu__title--collapsable" ng-click="$ctrl.hideSelectedFonts = !$ctrl.hideSelectedFonts">Selected fonts <span><i class="fa" ng-class="'fa-chevron-' + ($ctrl.hideSelectedFonts ? 'down' : 'up')"></i></span></p>
+	<ul ng-hide="$ctrl.hideSelectedFonts">
+		<li>
+			<label for="main-font">
+				<p class="-h6">MAIN FONT</p>
+				<input class="ui__input -h2" type="text" id="main-font"
+					ng-model="$ctrl.primaryFont"
+					ng-keypress="$ctrl.updateFont( $ctrl.primaryFont, 'primary', $event )"
+					ng-blur="$ctrl.updateFont( $ctrl.primaryFont, 'primary', false )">
+			</label>
+		</li>
+		<span class="side-menu__font-switch"
+			ng-click="$ctrl.switchFonts()">
+			<i class="fa fa-exchange fa-rotate-90"></i>
+		</span>
+		<li>
+			<label for="secondary-font">
+				<p class="-h6">SECONDARY FONT</p>
+				<input class="ui__input -h2" type="text" id="secondary-font"
+					ng-model="$ctrl.secondaryFont"
+					ng-keypress="$ctrl.updateFont( $ctrl.secondaryFont, 'secondary', $event )"
+					ng-blur="$ctrl.updateFont( $ctrl.secondaryFont, 'secondary', false )">
+			</label>
+		</li>
+	</ul>
+</div>
