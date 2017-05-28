@@ -55,7 +55,7 @@
 			<li>
 				<ng-include src="'components/ui/partials/actions.html'"></ng-include>
 			</li>
-			
+
 		</ul>
 
 		<footer>
@@ -65,23 +65,27 @@
 
 
 	<modal title="About FontRun" show-modal="$ctrl.showAboutModal">
-		<p>FontRun is a tool to quickly try, test and share different fonts and different colors with preloaded themes that simulate the latest trends in design.</p>
+		<p><span class="utils__bold">FontRun</span> is a tool to quickly try, test and share different fonts and different colors with preloaded themes that simulate the latest trends in design.</p>
 		<p class="utils__mt--md">In under 5 minutes get an idea if the chosen fonts and color palette work well together so you can start creating your own designs in your own design software, or directly code the website/application you are building.</p>
 		<p class="-h4 utils__mt--lg">Hotkeys</p>
-		<p class="utils__mt--sm">Q - Open/Close side panel</p>
-		<p class="utils__mt--sm">H - Show/Hide UI</p>
-		<p class="utils__mt--sm">T - Next theme</p>
-		<p class="utils__mt--sm">V - Switch views</p>
-		<p class="utils__mt--sm">F - Switch fonts</p>
-		<p class="utils__mt--sm">1/9 - Select scheme</p>
+		<p class="ui-keys utils__mt--sm"><span>Q</span> <em>- Open/Close side panel</em></p>
+		<p class="ui-keys utils__mt--sm"><span>H</span> <em>- Show/Hide UI</em></p>
+		<p class="ui-keys utils__mt--sm"><span>T</span> <em>- Next theme</em></p>
+		<p class="ui-keys utils__mt--sm"><span>V</span> <em>- Switch views</em></p>
+		<p class="ui-keys utils__mt--sm"><span>F</span> <em>- Switch fonts</em></p>
+		<p class="ui-keys utils__mt--sm"><span>1</span> <em>/</em> <span>9</span> <em>- Select scheme</em></p>
 	</modal>
 
 	<modal title="Add schemes" show-modal="$ctrl.showAddSchemesModal">
-		<p>Paste the code below and press the button</p>
-		<textarea class="ui__textarea" name="name" rows="8" cols="80" ng-model="$ctrl.schemesString"></textarea>
+		<textarea placeholder="Paste the code here" class="ui__textarea" name="name" rows="8" cols="80" ng-model="$ctrl.schemesString"></textarea>
+		<p ng-show="$ctrl.addSchemesError" class="utils__mt--md"><i class="fa fa-warning"></i> There was an error with the used code. Please, make sure to paste a correct format.</p>
 		<span class="fr-button utils__mt--lg"
-			ng-click="$ctrl.addSchemes()">
-			<em>Add schemes</em>
+			ng-click="$ctrl.addSchemes( false )">
+			<em>Add</em>
+		</span>
+		<span class="fr-button utils__mt--lg"
+			ng-click="$ctrl.addSchemes( true )">
+			<em>Replace</em>
 		</span>
 	</modal>
 

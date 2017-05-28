@@ -52,3 +52,9 @@ $spacing: (
 	  }
 	}
 }
+
+.utils__ {
+  &bold {
+    font-weight: 700 !important;
+  }
+}

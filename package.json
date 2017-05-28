@@ -27,6 +27,10 @@
     "jshint-stylish": "^1.0.0",
     "load-grunt-tasks": "^3.5.2"
   },
+  "scripts": {
+    "start": "grunt serve",
+    "build": "grunt build"
+  },
   "engines": {
     "node": ">=0.8.0"
   }

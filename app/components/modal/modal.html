@@ -1,5 +1,7 @@
-<div class="fr-modal" ng-class="{ 'modal--show' : $ctrl.showModal }">
-	<div class="modal__container">
+<div class="fr-modal" ng-class="{ 'modal--show' : $ctrl.showModal }"
+	ng-click="$ctrl.showModal = false">
+	<div class="modal__container"
+		ng-click="$event.stopPropagation()">
 		<header>
 			<p class="-h1">{{ $ctrl.title }}</p>
 			<span class="modal__close"

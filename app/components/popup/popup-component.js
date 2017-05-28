@@ -20,7 +20,6 @@
 
 	  function PopupController( $scope, $timeout ) {
 			var vm = this;
-			console.log(vm.label);
 
 			vm.$onInit = function() {
 				$scope.$on( 'popup.show.' + vm.label, function() {
@@ -31,10 +30,6 @@
 					}, 3000 );
 				});
 			};
-
-			// vm.$onInit = function() {
-			// 	vm.label = ;
-			// };
 
 		}
 

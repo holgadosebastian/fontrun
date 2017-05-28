@@ -4,13 +4,12 @@
   angular.module('fontRunApp')
     .controller('MainController', [
       '$rootScope',
-      '$filter',
       'RandomContentSrv',
       'view',
       MainController
     ]);
 
-    function MainController( $rootScope, $filter, RandomContentSrv, view ) {
+    function MainController( $rootScope,RandomContentSrv, view ) {
       var vm = this;
 
       $rootScope.view.current = view;

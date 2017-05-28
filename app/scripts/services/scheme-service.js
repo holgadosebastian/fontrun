@@ -42,7 +42,7 @@ angular.module('fontRunApp')
 				localStorage.setItem('schemes', JSON.stringify(schemes));
 			};
 
-			this.addSchemes = function( schemesString ) {
+			this.addSchemes = function( schemesString, replace ) {
 				var data = {};
 				var schemesJSON = [];
 
@@ -53,9 +53,14 @@ angular.module('fontRunApp')
 					data.error = 'The format was incorrect';
 				}
 
-				if ( schemesJSON.length > 0 ) {
+				if ( !data.error && schemesJSON.length > 0 ) {
 					var schemes = this.getSavedSchemes();
-					localStorage.setItem('schemes', JSON.stringify( schemes.concat( schemesJSON ) ));
+
+					if ( replace ) {
+						localStorage.setItem('schemes', JSON.stringify( schemesJSON ));
+					} else {
+						localStorage.setItem('schemes', JSON.stringify( schemes.concat( schemesJSON ) ));
+					}
 
 					data.schemes = this.getSavedSchemes();
 				}

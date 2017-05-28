@@ -60,17 +60,9 @@ angular
       $rootScope.controls.showSideMenu = true;
 
       $rootScope.fonts = {};
-      $rootScope.fonts.primary = queryParams.primaryfont || 'Abril+Fatface';
+      $rootScope.fonts.primary = queryParams.primaryfont || 'Abril Fatface';
       $rootScope.fonts.secondary =  queryParams.secondaryfont || 'Raleway';
-      $rootScope.fonts.getGoogleFonts = function () {
-        var fonts = $rootScope.fonts.primary + ':300,300i,400,400i,700,700i';
-
-        if ( $rootScope.fonts.secondary ) {
-          fonts += '|' + $rootScope.fonts.secondary + ':300,300i,400,400i,700,700i';
-        }
-
-        return fonts;
-      };
+      $rootScope.fonts.getGoogleFonts = getGoogleFonts;
 
       $rootScope.colors = {};
       $rootScope.colors.primary = queryParams.primarycolor || 'F53357';
@@ -106,9 +98,19 @@ angular
 
       $rootScope.$watch('fonts.secondary', function(newFont, oldFont) {
         if (newFont !== oldFont ) {
-          body.style.setProperty('--secondary-font', $filter('fontName')(newFont));
+          body.style.setProperty('--secondary-font', newFont);
         }
       });
 
+      // Private functions
+      function getGoogleFonts() {
+        var fonts = $filter('fontName')($rootScope.fonts.primary) + ':300,300i,400,400i,700,700i';
+
+        if ( $rootScope.fonts.secondary ) {
+          fonts += '|' + $filter('fontName')($rootScope.fonts.secondary) + ':300,300i,400,400i,700,700i';
+        }
+
+        return fonts;
+      }
     }
   ]);

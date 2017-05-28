@@ -35,7 +35,7 @@
 
       // Keyboard Events
       $(document).keyup( function(e) {
-        if ( e.target.tagName === 'INPUT') { return; }
+        if ( e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' ) { return; }
 
         $timeout( function() { // TODO: Remove timeout once I find a better way to update scope
           switch ( e.keyCode ) {
@@ -143,10 +143,23 @@
 
       function getShareableSchemes() {
         clipboard.copyText( localStorage.schemes );
+
+        $scope.$broadcast('popup.show.schemeShareAll');
       }
 
-      function addSchemes() {
-        vm.schemes = SchemeSrv.addSchemes( vm.schemesString );
+      function addSchemes( replace ) {
+        var response = SchemeSrv.addSchemes( vm.schemesString, replace );
+
+        if ( !response.error ) {
+          vm.schemes = response.schemes;
+          $scope.$broadcast('popup.show.schemeAddedSuccess');
+          $scope.$emit('modal.close');
+          vm.addSchemesError = false;
+        } else {
+          vm.addSchemesError = true;
+        }
+
+        vm.schemesString = undefined;
       }
     }
 

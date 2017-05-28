@@ -1,4 +1,8 @@
 .fr-ui {
+	.ui__input,
+	.ui__textarea {
+		font-family: $fr-font-primary;
+	}
 
 	.ui__input {
 		background-color: transparent;
@@ -18,5 +22,22 @@
 		padding: 10px;
 		color: #FFF;
 		background-color: $fr-color-secondary-darker;
+
+		&::-webkit-input-placeholder {
+			font-family: $fr-font-primary;
+			color: #FFF;
+		}
+		&::-moz-placeholder {
+			font-family: $fr-font-primary;
+			color: #FFF;
+		}
+		&:-ms-input-placeholder {
+			font-family: $fr-font-primary;
+			color: #FFF;
+		}
+		&:-moz-placeholder {
+			font-family: $fr-font-primary;
+			color: #FFF;
+		}
 	}
 }
